@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<blueprint>
+	<groups>
+		<group object_id="1" name="start">
+			<nodes>
+				<node object_id="2" name="Self" position="85,160" />
+				<node object_id="4" name="Get Name" position="202,176" />
+				<node object_id="7" name="Print" position="375,191" />
+			</nodes>
+			<links>
+				<link object_id="11" from_object="2" from_slot="3212106847" to_object="4" to_slot="1220590042" />
+				<link object_id="12" from_object="4" from_slot="3212106847" to_object="7" to_slot="3572195896" />
+			</links>
+			<inputs />
+			<outputs />
+		</group>
+	</groups>
+</blueprint>

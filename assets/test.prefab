@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<prefab file_id="4b61712a79ea1ca46b9e5d6b9c9841a9">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
+			<components>
+				<item type_name="flame::cNode" />
+				<item type_name="flame::cCamera" />
+			</components>
+		</item>
+		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Directional Light">
+			<components>
+				<item type_name="flame::cNode" qut="0.800103,-0.46194,0.331414,0.191342" />
+				<item type_name="flame::cDirectionalLight" />
+			</components>
+		</item>
+		<item file_id="4add7312f5c25e601e2be0e099609493" name="Plane">
+			<components>
+				<item type_name="flame::cNode" />
+				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="default" />
+			</components>
+			<children>
+				<item file_id="4bac5acec6966ef81e576484531d228a" name="Cube">
+					<components>
+						<item type_name="flame::cNode" pos="5,0,5" />
+						<item type_name="flame::cMesh" mesh_name="standard_cube" material_name="default" />
+						<item type_name="flame::cBpInstance" bp_name="test.bp" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>
