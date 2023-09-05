@@ -16,20 +16,12 @@
 				<item type_name="flame::cDirectionalLight" />
 			</components>
 		</item>
-		<item file_id="4add7312f5c25e601e2be0e099609493" name="Plane">
+		<item file_id="4bac5acec6966ef81e576484531d228a" name="Root">
 			<components>
-				<item type_name="flame::cNode" />
-				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="default" />
+				<item type_name="flame::cNode" pos="5,0,5" />
+				<item type_name="flame::cMesh" mesh_name="standard_sphere" material_name="default" />
+				<item type_name="flame::cBpInstance" bp_name="test.bp" />
 			</components>
-			<children>
-				<item file_id="4bac5acec6966ef81e576484531d228a" name="Cube">
-					<components>
-						<item type_name="flame::cNode" pos="5,0,5" />
-						<item type_name="flame::cMesh" mesh_name="standard_cube" material_name="default" />
-						<item type_name="flame::cBpInstance" bp_name="test.bp" />
-					</components>
-				</item>
-			</children>
 		</item>
 	</children>
 </prefab>
