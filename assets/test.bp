@@ -1,18 +1,159 @@
 <?xml version="1.0"?>
 <blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" default_value="" />
+		<variable name="navmesh_nodes" type="VPU@flame::Entity" default_value="" />
+	</variables>
 	<groups>
 		<group object_id="1" name="start">
-			<nodes>
-				<node object_id="2" name="Self" position="85,160" />
-				<node object_id="4" name="Get Name" position="202,176" />
-				<node object_id="7" name="Print" position="375,191" />
-			</nodes>
-			<links>
-				<link object_id="11" from_object="2" from_slot="3212106847" to_object="4" to_slot="1220590042" />
-				<link object_id="12" from_object="4" from_slot="3212106847" to_object="7" to_slot="3572195896" />
-			</links>
+			<variables />
 			<inputs />
 			<outputs />
+			<blocks>
+				<block object_id="5" position="76,112" rect="84,154,2168,760" />
+				<block object_id="8" parent_id="5" position="1164,288" rect="1172,330,2104,632" />
+				<block object_id="11" parent_id="8" position="1708,352" rect="1716,394,2099,584" />
+				<block object_id="14" position="2225,149" rect="2233,191,2552,456" />
+			</blocks>
+			<nodes>
+				<node object_id="17" name="Variable" position="-84,319">
+					<inputs>
+						<input name="Name" value="3557266103" />
+					</inputs>
+				</node>
+				<node object_id="21" name="Loop" position="-122,207">
+					<inputs>
+						<input name="Times" value="1200" />
+					</inputs>
+				</node>
+				<node object_id="24" block_id="5" name="Variable" position="108,207">
+					<inputs>
+						<input name="Name" value="570817508" />
+					</inputs>
+				</node>
+				<node object_id="28" block_id="8" name="Spawn Prefab" position="1201,342">
+					<inputs>
+						<input name="Path" value="assets\hexagon.prefab" />
+					</inputs>
+				</node>
+				<node object_id="33" block_id="5" name="Vec3" position="937,207">
+					<inputs>
+						<input name="Y" value="0" />
+					</inputs>
+				</node>
+				<node object_id="38" block_id="5" name="Multiply" position="889,382">
+					<inputs>
+						<input name="B" value="0.75" />
+					</inputs>
+				</node>
+				<node object_id="42" block_id="5" name="Multiply" position="489,190">
+					<inputs>
+						<input name="B" value="0.866025" />
+					</inputs>
+				</node>
+				<node object_id="46" block_id="5" name="Vec2" position="444,463">
+					<inputs />
+				</node>
+				<node object_id="50" block_id="5" name="Perlin" position="680,543">
+					<inputs />
+				</node>
+				<node object_id="53" block_id="5" name="If" position="990,606">
+					<inputs />
+				</node>
+				<node object_id="57" block_id="5" name="Divide" position="537,574">
+					<inputs />
+				</node>
+				<node object_id="61" block_id="5" name="Integer Divide" position="235,254">
+					<inputs>
+						<input name="B" value="40" />
+					</inputs>
+				</node>
+				<node object_id="66" block_id="5" name="Vec2" position="332,567">
+					<inputs>
+						<input name="X" value="10" />
+						<input name="Y" value="10" />
+					</inputs>
+				</node>
+				<node object_id="70" block_id="5" name="Less" position="832,591">
+					<inputs>
+						<input name="B" value="0.45" />
+					</inputs>
+				</node>
+				<node object_id="74" block_id="5" name="Integer Divide" position="492,335">
+					<inputs>
+						<input name="B" value="2" />
+					</inputs>
+				</node>
+				<node object_id="79" block_id="5" name="Multiply" position="681,366">
+					<inputs>
+						<input name="B" value="0.433013" />
+					</inputs>
+				</node>
+				<node object_id="83" block_id="5" name="Add" position="780,207">
+					<inputs />
+				</node>
+				<node object_id="87" block_id="8" name="If" position="1486,510">
+					<inputs />
+				</node>
+				<node object_id="91" block_id="8" name="Less" position="1340,495">
+					<inputs>
+						<input name="B" value="0.01" />
+					</inputs>
+				</node>
+				<node object_id="95" block_id="8" name="Random" position="1185,510">
+					<inputs>
+						<input name="Seed" value="0" />
+					</inputs>
+				</node>
+				<node object_id="98" block_id="11" name="Spawn Prefab" position="1749,406">
+					<inputs>
+						<input name="Path" value="assets\procedural_rock.prefab" />
+					</inputs>
+				</node>
+				<node object_id="107" block_id="8" name="Array Add Item" position="1585,351">
+					<inputs />
+				</node>
+				<node object_id="140" block_id="14" name="Generate Navmesh" position="2302,206">
+					<inputs />
+				</node>
+				<node object_id="146" name="Variable" position="1468,0">
+					<inputs>
+						<input name="Name" value="1579636033" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="111" from_object="21" from_slot="2319815627" to_object="5" to_slot="348017528" />
+				<link object_id="112" from_object="33" from_slot="3212106847" to_object="28" to_slot="4072102052" />
+				<link object_id="113" from_object="17" from_slot="2248293481" to_object="28" to_slot="3414185277" />
+				<link object_id="114" from_object="53" from_slot="1388196741" to_object="8" to_slot="348017528" />
+				<link object_id="115" from_object="46" from_slot="3212106847" to_object="57" to_slot="2248286956" />
+				<link object_id="116" from_object="24" from_slot="2248293481" to_object="61" to_slot="2248286956" />
+				<link object_id="117" from_object="61" from_slot="1076657328" to_object="42" to_slot="2248286956" />
+				<link object_id="118" from_object="61" from_slot="1832044879" to_object="38" to_slot="2248286956" />
+				<link object_id="119" from_object="61" from_slot="1076657328" to_object="46" to_slot="2248297831" />
+				<link object_id="120" from_object="61" from_slot="1832044879" to_object="46" to_slot="2248297396" />
+				<link object_id="121" from_object="66" from_slot="3212106847" to_object="57" to_slot="2248288261" />
+				<link object_id="122" from_object="50" from_slot="3212106847" to_object="70" to_slot="2248286956" />
+				<link object_id="123" from_object="70" from_slot="2248293481" to_object="53" to_slot="1944756926" />
+				<link object_id="124" from_object="38" from_slot="3212106847" to_object="33" to_slot="2248298701" />
+				<link object_id="125" from_object="61" from_slot="1832044879" to_object="74" to_slot="2248286956" />
+				<link object_id="126" from_object="74" from_slot="1832044879" to_object="79" to_slot="2248286956" />
+				<link object_id="127" from_object="42" from_slot="3212106847" to_object="83" to_slot="2248286956" />
+				<link object_id="128" from_object="79" from_slot="3212106847" to_object="83" to_slot="2248288261" />
+				<link object_id="129" from_object="83" from_slot="3212106847" to_object="33" to_slot="2248297831" />
+				<link object_id="130" from_object="91" from_slot="2248293481" to_object="87" to_slot="1944756926" />
+				<link object_id="131" from_object="95" from_slot="3212106847" to_object="91" to_slot="2248286956" />
+				<link object_id="132" from_object="87" from_slot="1388196741" to_object="11" to_slot="348017528" />
+				<link object_id="133" from_object="17" from_slot="2248293481" to_object="98" to_slot="3414185277" />
+				<link object_id="134" from_object="33" from_slot="3212106847" to_object="98" to_slot="4072102052" />
+				<link object_id="137" from_object="28" from_slot="1220590042" to_object="107" to_slot="2554816518" />
+				<link object_id="138" from_object="57" from_slot="3212106847" to_object="50" to_slot="3049488178" />
+				<link object_id="139" from_object="5" from_slot="348017528" to_object="14" to_slot="348017528" />
+				<link object_id="150" from_object="146" from_slot="2248293481" to_object="107" to_slot="2300626566" />
+				<link object_id="151" from_object="146" from_slot="2104168461" to_object="107" to_slot="2129131874" />
+				<link object_id="152" from_object="146" from_slot="2248293481" to_object="140" to_slot="2033775002" />
+			</links>
 		</group>
 	</groups>
 </blueprint>

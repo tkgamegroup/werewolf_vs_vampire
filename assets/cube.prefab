@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<prefab file_id="479204237a04518f12b2bf5b9f7475af">
+	<components>
+		<item type_name="flame::cNode" />
+		<item type_name="flame::cMesh" mesh_name="standard_cube" material_name="default" />
+	</components>
+</prefab>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables />
+	<groups>
+		<group object_id="1" name="main">
+			<variables />
+			<inputs />
+			<outputs>
+				<output name="mesh" type="PU@flame::graphics::ControlMesh" />
+			</outputs>
+			<nodes>
+				<node object_id="5" name="Output" position="913,127" />
+				<node object_id="7" name="Control Mesh: Cube" position="-37,78">
+					<inputs />
+				</node>
+				<node object_id="10" name="Subdivide Control Mesh" position="341,0">
+					<inputs>
+						<input name="Levels" value="5" />
+					</inputs>
+				</node>
+				<node object_id="14" name="Displace Control Mesh" position="520,158">
+					<inputs />
+				</node>
+				<node object_id="20" name="Voronoi Texture" position="119,223">
+					<inputs>
+						<input name="Scale" value="2" />
+					</inputs>
+				</node>
+				<node object_id="23" name="Convert To Mesh" position="741,271">
+					<inputs />
+				</node>
+			</nodes>
+			<links>
+				<link object_id="26" from_object="7" from_slot="3835792028" to_object="10" to_slot="3835792028" />
+				<link object_id="27" from_object="14" from_slot="3835792028" to_object="23" to_slot="2522065507" />
+				<link object_id="28" from_object="10" from_slot="3835792028" to_object="14" to_slot="3835792028" />
+				<link object_id="29" from_object="14" from_slot="3835792028" to_object="5" to_slot="3811645116" />
+				<link object_id="30" from_object="20" from_slot="4115398996" to_object="14" to_slot="4115398996" />
+			</links>
+		</group>
+	</groups>
+</blueprint>

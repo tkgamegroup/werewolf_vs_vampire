@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="HP" type="D@float" default_value="" />
+		<variable name="Faction" type="D@uint" default_value="" />
+	</variables>
+	<groups>
+		<group object_id="1" name="main">
+			<variables />
+			<inputs />
+			<outputs />
+			<nodes>
+				<node object_id="5" name="Variable" position="-28,84">
+					<inputs>
+						<input name="Name" value="3048973573" />
+					</inputs>
+				</node>
+			</nodes>
+			<links />
+		</group>
+		<group object_id="8" name="update">
+			<variables />
+			<inputs />
+			<outputs />
+			<nodes>
+				<node object_id="12" name="Variable" position="24,101">
+					<inputs>
+						<input name="Name" value="858795131" />
+					</inputs>
+				</node>
+			</nodes>
+			<links />
+		</group>
+	</groups>
+</blueprint>
