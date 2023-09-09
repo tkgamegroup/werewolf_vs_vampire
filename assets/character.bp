@@ -1,22 +1,28 @@
 <?xml version="1.0"?>
 <blueprint>
 	<variables>
-		<variable name="HP" type="D@float" default_value="" />
-		<variable name="Faction" type="D@uint" default_value="" />
+		<variable name="HP" type="D@float" value="0" />
+		<variable name="Faction" type="D@uint" value="0" />
 	</variables>
 	<groups>
 		<group object_id="1" name="main">
 			<variables />
 			<inputs />
 			<outputs />
+			<blocks>
+				<block object_id="5" position="180,112" rect="188,154,712,536" />
+				<block object_id="16" parent_id="5" position="244,160" rect="252,202,616,472" />
+			</blocks>
 			<nodes>
-				<node object_id="5" name="Variable" position="-28,84">
+				<node object_id="19" block_id="16" name="Vec2" position="348,263">
 					<inputs>
-						<input name="Name" value="3048973573" />
+						<input name="X" value="0" />
+						<input name="Y" value="0" />
 					</inputs>
 				</node>
 			</nodes>
 			<links />
+			<data_binds />
 		</group>
 		<group object_id="8" name="update">
 			<variables />
@@ -30,6 +36,7 @@
 				</node>
 			</nodes>
 			<links />
+			<data_binds />
 		</group>
 	</groups>
 </blueprint>

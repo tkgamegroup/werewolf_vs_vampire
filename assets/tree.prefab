@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="4c97b50d2b15f53a4109c88c2894aaac" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" scl="0.5,0.5,0.5" />
+	</components>
+	<children>
+		<item file_id="47112b42c6a821f61c1ec00a1fa4d080" name="Cube">
+			<components>
+				<item type_name="flame::cNode" qut="0.707107,-0.707107,0,0" scl="0.198168,0.198168,0.198168" />
+				<item type_name="flame::cMesh" mesh_name="models\tree.fmod#mesh0" material_name="materials\Material.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>
