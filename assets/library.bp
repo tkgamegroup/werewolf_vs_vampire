@@ -6,6 +6,7 @@
 		<variable name="TileEmpty" type="D@uint" value="0" />
 		<variable name="TileMountain" type="D@uint" value="1" />
 		<variable name="TileForest" type="D@uint" value="2" />
+		<variable name="TileHouse" type="D@uint" value="3" />
 	</variables>
 	<groups>
 		<group object_id="1" name="main">

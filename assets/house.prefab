@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <prefab file_id="495b40c68764fb4e964ccc83dae315a9" name="RootNode">
 	<components>
-		<item type_name="flame::cNode" />
+		<item type_name="flame::cNode" scl="0.2,0.2,0.2" />
 	</components>
 	<children>
 		<item file_id="42761daf005bd33968829b649ee6838b" name="Cube">
