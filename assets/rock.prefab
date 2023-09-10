@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <prefab file_id="46780546154279f1d799faad6d693e90" name="RootNode">
 	<components>
-		<item type_name="flame::cNode" />
+		<item type_name="flame::cNode" scl="0.3,0.3,0.3" />
 	</components>
 	<children>
 		<item file_id="43ede2b696619c1f110f31eb55395bbc" name="Icosphere">
