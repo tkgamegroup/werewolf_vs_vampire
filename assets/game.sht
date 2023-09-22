@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sheet name="game">
+	<columns>
+		<column type="D@uint" name="state" default_value="" />
+	</columns>
+	<rows>
+		<row state="0" />
+	</rows>
+</sheet>

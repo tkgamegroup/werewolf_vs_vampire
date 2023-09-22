@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<sheet name="buildings">
+	<columns>
+		<column type="D@std::string" name="Name" />
+	</columns>
+	<rows>
+		<row Name="House" />
+	</rows>
+</sheet>
