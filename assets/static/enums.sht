@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <sheet name="enums">
 	<columns>
-		<column type="D@uint" name="TagHexTile" default_value="" />
-		<column type="D@uint" name="TagCharacter" default_value="" />
-		<column type="D@uint" name="TileEmpty" default_value="" />
-		<column type="D@uint" name="TileMountain" default_value="" />
-		<column type="D@uint" name="TileForest" default_value="" />
-		<column type="D@uint" name="TileHouse" default_value="" />
-		<column type="D@uint" name="TileBarracks" default_value="" />
+		<column type="D@uint" name="TagHexTile" />
+		<column type="D@uint" name="TagCharacter" />
+		<column type="D@uint" name="TagFriendly" />
+		<column type="D@uint" name="TagHostile" />
+		<column type="D@uint" name="TileEmpty" />
+		<column type="D@uint" name="TileMountain" />
+		<column type="D@uint" name="TileForest" />
+		<column type="D@uint" name="TileHouse" />
+		<column type="D@uint" name="TileBarracks" />
 	</columns>
 	<rows>
-		<row TagHexTile="2" TagCharacter="4" TileEmpty="0" TileMountain="1" TileForest="2" TileHouse="3" TileBarracks="4" />
+		<row TagHexTile="2" TagCharacter="4" TagFriendly="8" TagHostile="16" TileEmpty="0" TileMountain="1" TileForest="2" TileHouse="3" TileBarracks="4" />
 	</rows>
 </sheet>

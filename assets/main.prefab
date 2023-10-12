@@ -20,7 +20,7 @@
 			<components>
 				<item type_name="flame::cNode" pos="5,0,5" scl="3,3,3" />
 				<item type_name="flame::cMesh" mesh_name="standard_sphere" material_name="default" />
-				<item type_name="flame::cBpInstance" bp_name="test.bp" />
+				<item type_name="flame::cBpInstance" bp_name="static\game.bp" />
 			</components>
 		</item>
 	</children>

@@ -1,46 +1,65 @@
 <?xml version="1.0"?>
 <blueprint>
 	<variables>
-		<variable name="self" type="PU@flame::Entity" value="" />
+		<variable name="self" type="PU@flame::Entity" value="cdcdcdcdcdcdcdcd" />
 	</variables>
 	<groups>
 		<group object_id="1" name="update">
 			<variables />
 			<nodes>
-				<node object_id="5" name="Block" position="436,128" rect="444,170,952,488" />
-				<node object_id="12" parent_id="5" name="Spawn Prefab" position="643,198">
+				<node object_id="41" name="If True" position="31,-97" rect="39,-38,839,385">
 					<inputs>
-						<input name="Path" value="assets\extra\characters\ELF_SM_archer_A.prefab" />
+						<input name="Execute" value="1" />
 					</inputs>
 				</node>
-				<node object_id="17" parent_id="5" name="Variable" position="476,207">
+				<node object_id="5" parent_id="41" name="Timer" position="54,-15" rect="62,67,812,347">
+					<inputs>
+						<input name="Execute" value="1" />
+						<input name="Time" value="0" />
+					</inputs>
+				</node>
+				<node object_id="15" parent_id="5" name="Variable" position="105,89">
 					<inputs>
 						<input name="Name" value="3557266103" />
 					</inputs>
 				</node>
-				<node object_id="21" parent_id="5" name="Circle Random" position="465,287">
+				<node object_id="19" parent_id="5" name="Circle Random" position="94,169">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min Radius" value="2" />
 						<input name="Max Radius" value="5" />
 					</inputs>
 				</node>
-				<node object_id="26" parent_id="5" name="Add" position="652,335">
+				<node object_id="24" parent_id="5" name="Add" position="267,207">
 					<inputs>
 						<input type="D@glm::vec3" name="B" value="0,0.7,0" />
 					</inputs>
 				</node>
-				<node object_id="8" name="Timer" position="264,96">
+				<node object_id="31" parent_id="5" name="Spawn Character" position="550,95">
 					<inputs>
-						<input name="Time" value="0" />
+						<input name="Path" value="assets\extra\characters\ELF_SM_archer_A.prefab" />
+						<input name="Snap NavMesh" value="true" />
+						<input name="Tag To Add" value="0" />
+					</inputs>
+				</node>
+				<node object_id="45" name="Equal" position="-116,-31">
+					<inputs>
+						<input type="D@uint" name="B" value="1" />
+					</inputs>
+				</node>
+				<node object_id="55" name="Variable" position="-228,-15">
+					<inputs>
+						<input name="Name" value="1169273110" />
+						<input name="Location" value="70329639" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="30" from_node="8" from_slot="4000013465" to_node="5" to_slot="348017528" />
-				<link object_id="31" from_node="17" from_slot="2248293481" to_node="12" to_slot="3414185277" />
-				<link object_id="32" from_node="21" from_slot="3212106847" to_node="26" to_slot="2248286956" />
-				<link object_id="33" from_node="26" from_slot="3212106847" to_node="12" to_slot="1483901482" />
+				<link object_id="29" from_node="19" from_slot="3212106847" to_node="24" to_slot="2248286956" />
+				<link object_id="39" from_node="24" from_slot="3212106847" to_node="31" to_slot="1483901482" />
+				<link object_id="40" from_node="15" from_slot="2248293481" to_node="31" to_slot="3414185277" />
+				<link object_id="49" from_node="45" from_slot="2248293481" to_node="41" to_slot="1944756926" />
+				<link object_id="59" from_node="55" from_slot="2248293481" to_node="45" to_slot="2248286956" />
 			</links>
 		</group>
 	</groups>
