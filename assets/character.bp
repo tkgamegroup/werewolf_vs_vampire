@@ -5,12 +5,7 @@
 		<variable name="Faction" type="D@uint" value="0" />
 	</variables>
 	<groups>
-		<group object_id="1" name="main">
-			<variables />
-			<nodes />
-			<links />
-		</group>
-		<group object_id="15" name="update">
+		<group object_id="5" name="update">
 			<variables />
 			<nodes />
 			<links />
