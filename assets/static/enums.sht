@@ -2,16 +2,20 @@
 <sheet name="enums">
 	<columns>
 		<column type="D@uint" name="TagHexTile" />
+		<column type="D@uint" name="TagBuilding" />
 		<column type="D@uint" name="TagCharacter" />
 		<column type="D@uint" name="TagFriendly" />
 		<column type="D@uint" name="TagHostile" />
 		<column type="D@uint" name="TileEmpty" />
+		<column type="D@uint" name="TileConstructible" />
 		<column type="D@uint" name="TileMountain" />
 		<column type="D@uint" name="TileForest" />
+		<column type="D@uint" name="TileCastle" />
 		<column type="D@uint" name="TileHouse" />
 		<column type="D@uint" name="TileBarracks" />
+		<column type="D@uint" name="TileCreepCamp" />
 	</columns>
 	<rows>
-		<row TagHexTile="2" TagCharacter="4" TagFriendly="8" TagHostile="16" TileEmpty="0" TileMountain="1" TileForest="2" TileHouse="3" TileBarracks="4" />
+		<row TagHexTile="2" TagBuilding="4" TagCharacter="8" TagFriendly="16" TagHostile="32" TileEmpty="0" TileConstructible="1" TileMountain="2" TileForest="3" TileCastle="4" TileHouse="5" TileBarracks="6" TileCreepCamp="7"/>
 	</rows>
 </sheet>

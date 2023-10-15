@@ -7,27 +7,12 @@
 	<groups>
 		<group object_id="1" name="main">
 			<variables />
-			<nodes>
-				<node object_id="5" name="Block" position="180,112" rect="188,154,712,536" />
-				<node object_id="8" parent_id="5" name="Block" position="244,160" rect="252,202,616,472" />
-				<node object_id="11" parent_id="8" name="Vec2" position="348,263">
-					<inputs>
-						<input name="X" value="0" />
-						<input name="Y" value="0" />
-					</inputs>
-				</node>
-			</nodes>
+			<nodes />
 			<links />
 		</group>
 		<group object_id="15" name="update">
 			<variables />
-			<nodes>
-				<node object_id="19" name="Variable" position="28,96">
-					<inputs>
-						<input name="Name" value="858795131" />
-					</inputs>
-				</node>
-			</nodes>
+			<nodes />
 			<links />
 		</group>
 	</groups>
