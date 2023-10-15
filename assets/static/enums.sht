@@ -10,12 +10,14 @@
 		<column type="D@uint" name="TileConstructible" />
 		<column type="D@uint" name="TileMountain" />
 		<column type="D@uint" name="TileForest" />
-		<column type="D@uint" name="TileCastle" />
-		<column type="D@uint" name="TileHouse" />
-		<column type="D@uint" name="TileBarracks" />
-		<column type="D@uint" name="TileCreepCamp" />
+		<column type="D@uint" name="TileFriendlyBuilding" />
+		<column type="D@uint" name="TileHostileBuilding" />
+		<column type="D@uint" name="BuildingCastle" />
+		<column type="D@uint" name="BuildingHouse" />
+		<column type="D@uint" name="BuildingBarracks" />
+		<column type="D@uint" name="BuildingCreepCamp" />
 	</columns>
 	<rows>
-		<row TagHexTile="2" TagBuilding="4" TagCharacter="8" TagFriendly="16" TagHostile="32" TileEmpty="0" TileConstructible="1" TileMountain="2" TileForest="3" TileCastle="4" TileHouse="5" TileBarracks="6" TileCreepCamp="7"/>
+		<row TagHexTile="2" TagBuilding="4" TagCharacter="8" TagFriendly="16" TagHostile="32" TileEmpty="0" TileConstructible="1" TileMountain="2" TileForest="3" TileFriendlyBuilding="4" TileHostileBuilding="5" BuildingCastle="1" BuildingHouse="2" BuildingBarracks="3" BuildingCreepCamp="4"/>
 	</rows>
 </sheet>
