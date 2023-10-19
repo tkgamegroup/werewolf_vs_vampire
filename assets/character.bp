@@ -183,6 +183,27 @@
 						<input name="Name_hash" value="building" />
 					</inputs>
 				</node>
+				<node object_id="309" parent_id="162" name="Block" position="527,1296" rect="616,1312,816,1512" />
+				<node object_id="313" parent_id="309" name="Get Blueprint Instance" position="650,1327">
+					<inputs>
+						<input name="Name_hash" value="character" />
+					</inputs>
+				</node>
+				<node object_id="317" parent_id="309" name="If True" position="896,1360" rect="0,0,200,200">
+					<inputs>
+						<input name="Execute" value="1" />
+					</inputs>
+				</node>
+				<node object_id="326" parent_id="317" name="Variable" position="732,1440">
+					<inputs>
+						<input name="Name" value="2801804707" />
+					</inputs>
+				</node>
+				<node object_id="322" parent_id="317" name="Call BP void_uint" position="883,1447">
+					<inputs>
+						<input name="Name_hash" value="take_damage" />
+					</inputs>
+				</node>
 				<node object_id="186" parent_id="148" name="If" position="16,959" />
 				<node object_id="190" parent_id="148" name="Get Pos" position="-414,976" />
 				<node object_id="193" parent_id="148" name="Distance" position="-244,991" />
@@ -256,6 +277,11 @@
 				<link object_id="263" from_node="167" from_slot="1388196741" to_node="171" to_slot="348017528" />
 				<link object_id="264" from_node="182" from_slot="2371669298" to_node="174" to_slot="2371669298" />
 				<link object_id="265" from_node="178" from_slot="2248293481" to_node="174" to_slot="2248293481" />
+				<link object_id="312" from_node="167" from_slot="2976572120" to_node="309" to_slot="348017528" />
+				<link object_id="321" from_node="313" from_slot="2371669298" to_node="317" to_slot="1944756926" />
+				<link object_id="330" from_node="326" from_slot="2248293481" to_node="322" to_slot="2248293481" />
+				<link object_id="331" from_node="211" from_slot="2248293481" to_node="313" to_slot="1220590042" />
+				<link object_id="332" from_node="313" from_slot="2371669298" to_node="322" to_slot="2371669298" />
 			</links>
 		</group>
 		<group object_id="266" name="take_damage">
@@ -283,7 +309,6 @@
 				<node object_id="294" parent_id="291" name="Set Variable" position="204,192">
 					<inputs>
 						<input name="Name" value="3042876613" />
-						<input name="V" value="0" />
 					</inputs>
 				</node>
 				<node object_id="298" parent_id="291" name="Subtract" position="61,208" />
@@ -296,6 +321,7 @@
 				<link object_id="306" from_node="270" from_slot="2327019456" to_node="298" to_slot="2248288261" />
 				<link object_id="307" from_node="276" from_slot="2976572120" to_node="284" to_slot="348017528" />
 				<link object_id="308" from_node="272" from_slot="2248293481" to_node="298" to_slot="2248286956" />
+				<link object_id="333" from_node="298" from_slot="3212106847" to_node="294" to_slot="2248293481" />
 			</links>
 		</group>
 	</groups>
