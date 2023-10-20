@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<prefab file_id="47e1b4babd00e2a57f7efd38c1eeaaa9">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="40fffc8832bd6f92a9028cd9deae8f96" name="RootNode">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="4788edabe60520b78bebafa48b1c5e93" name="Cube">
+					<components>
+						<item type_name="flame::cNode" qut="0.707107,-0.707107,0,0" scl="100,100,100" />
+						<item type_name="flame::cMesh" mesh_name="models\defense_tower.fmod#mesh0" material_name="default" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>
