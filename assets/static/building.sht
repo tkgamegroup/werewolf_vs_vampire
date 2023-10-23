@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<sheet name="building">
+	<columns>
+		<column type="D@std::string" name="name" />
+		<column type="D@uint" name="cost_gold" />
+	</columns>
+	<rows>
+		<row name="Castle" cost_gold="10" />
+		<row name="House" cost_gold="1" />
+		<row name="Barracks" cost_gold="3" />
+		<row name="DefenseTower" cost_gold="2" />
+		<row name="CreepCamp" cost_gold="0" />
+	</rows>
+</sheet>
