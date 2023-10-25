@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
 <sheet name="building">
 	<columns>
-		<column type="D@std::string" name="name" />
+		<column type="D@std::wstring" name="name" />
 		<column type="D@uint" name="cost_gold" />
+		<column type="D@std::wstring" name="description" />
+		<column type="D@uint" name="max_level" />
+		<column type="VD@uint" name="upgrade_cost_gold" />
 	</columns>
 	<rows>
-		<row name="Castle" cost_gold="10" />
-		<row name="House" cost_gold="1" />
-		<row name="Barracks" cost_gold="3" />
-		<row name="DefenseTower" cost_gold="2" />
-		<row name="CreepCamp" cost_gold="0" />
+		<row name="Castle" cost_gold="10" description="Town center. Upgrade to unlock more buildings." max_level="3" upgrade_cost_gold="" />
+		<row name="House" cost_gold="1" description="Provide more food. Give you some gold at the end of rounds." max_level="10" upgrade_cost_gold="" />
+		<row name="Barracks" cost_gold="3" description="Training soldiers to defense or attack enemies." max_level="10" upgrade_cost_gold="" />
+		<row name="DefenseTower" cost_gold="2" description="Defense your town by shooting arrows to enemies." max_level="10" upgrade_cost_gold="" />
+		<row name="CreepCamp" cost_gold="0" description="Monsters comes from here and will attak your town!" max_level="1" upgrade_cost_gold="" />
 	</rows>
 </sheet>
