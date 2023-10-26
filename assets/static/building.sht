@@ -4,14 +4,23 @@
 		<column type="D@std::wstring" name="name" />
 		<column type="D@uint" name="cost_gold" />
 		<column type="D@std::wstring" name="description" />
-		<column type="D@uint" name="max_level" />
-		<column type="VD@uint" name="upgrade_cost_gold" />
+		<column type="D@std::wstring" name="effect_text" />
+		<column type="D@std::wstring" name="next_level" />
+		<column type="D@std::wstring" name="require_building" />
+		<column type="D@int" name="next_level_index" />
+		<column type="D@int" name="require_building_index" />
+		<column type="D@std::filesystem::path" name="spawn_prefab" />
+		<column type="D@float" name="spawn_interval" />
+		<column type="D@float" name="attack_range" />
+		<column type="D@uint" name="attack_damage" />
+		<column type="D@float" name="attack_interval" />
 	</columns>
 	<rows>
-		<row name="Castle" cost_gold="10" description="Town center. Upgrade to unlock more buildings." max_level="3" upgrade_cost_gold="" />
-		<row name="House" cost_gold="1" description="Provide more food. Give you some gold at the end of rounds." max_level="10" upgrade_cost_gold="" />
-		<row name="Barracks" cost_gold="3" description="Training soldiers to defense or attack enemies." max_level="10" upgrade_cost_gold="" />
-		<row name="DefenseTower" cost_gold="2" description="Defense your town by shooting arrows to enemies." max_level="10" upgrade_cost_gold="" />
-		<row name="CreepCamp" cost_gold="0" description="Monsters comes from here and will attak your town!" max_level="1" upgrade_cost_gold="" />
+		<row name="Castle" cost_gold="10" description="Town center. Upgrade to unlock more buildings." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="House" cost_gold="1" description="Provide food. Give you some gold at the end of rounds." effect_text="+5 food, +1 gold production" next_level="Farm" require_building="" next_level_index="5" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="Barracks" cost_gold="3" description="Training soldiers to defense or attack enemies." effect_text="+1 archer per 5 sec" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="DefenseTower" cost_gold="2" description="Defense your town by shooting arrows to enemies." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="CreepCamp" cost_gold="0" description="Monsters comes from here and will attak your town!" effect_text="" next_level="" require_building="CreepCamp" next_level_index="-1" require_building_index="4" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="Farm" cost_gold="3" description="Provide food. Give you some gold at the end of rounds." effect_text="+8 food, +2 gold production" next_level="" require_building="House" next_level_index="-1" require_building_index="1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
 	</rows>
 </sheet>

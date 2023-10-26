@@ -8,8 +8,8 @@
 		<variable name="destroyed" type="D@bool" value="false" />
 		<variable name="hp" type="D@uint" value="100" />
 		<variable name="hp_max" type="D@uint" value="100" />
-		<variable name="spawn_interval" type="D@float" value="1" />
 		<variable name="spawn_prefab" type="D@std::filesystem::path" value="" />
+		<variable name="spawn_interval" type="D@float" value="5" />
 		<variable name="attack_range" type="D@float" value="0" />
 		<variable name="attack_damage" type="D@uint" value="0" />
 		<variable name="attack_interval" type="D@float" value="0" />
