@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<sheet name="character">
+	<columns>
+		<column type="D@std::wstring" name="name" />
+		<column type="D@std::filesystem::path" name="prefab" />
+		<column type="D@std::wstring" name="description" />
+		<column type="D@uint" name="hp_max" />
+		<column type="D@float" name="attack_range" />
+		<column type="D@uint" name="attack_damage" />
+		<column type="D@float" name="attack_interval" />
+	</columns>
+	<rows>
+		<row name="Archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" hp_max="100" attack_range="5" attack_damage="5" attack_interval="1.5" />
+	</rows>
+</sheet>

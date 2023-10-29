@@ -10,18 +10,20 @@
 		<column type="D@std::wstring" name="require_building" />
 		<column type="D@int" name="next_level_index" />
 		<column type="D@int" name="require_building_index" />
-		<column type="D@std::filesystem::path" name="spawn_prefab" />
+		<column type="D@std::wstring" name="spawn_character" />
 		<column type="D@float" name="spawn_interval" />
 		<column type="D@float" name="attack_range" />
 		<column type="D@uint" name="attack_damage" />
 		<column type="D@float" name="attack_interval" />
+		<column type="D@int" name="spawn_character_index" />
+		<column type="D@uint" name="gold_production" />
 	</columns>
 	<rows>
-		<row name="Castle" prefab="assets\house.prefab" cost_gold="10" description="Town center. Upgrade to unlock more buildings." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
-		<row name="House" prefab="assets\house.prefab" cost_gold="1" description="Provide food. Give you some gold at the end of rounds." effect_text="+5 food, +1 gold production" next_level="Farm" require_building="" next_level_index="5" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
-		<row name="Barracks" prefab="assets\house.prefab" cost_gold="3" description="Training soldiers to defense or attack enemies." effect_text="+1 archer per 5 sec" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="assets\extra\characters\ELF_SM_archer_A.prefab" spawn_interval="5" attack_range="0" attack_damage="0" attack_interval="0" />
-		<row name="DefenseTower" prefab="assets\defense_tower.prefab" cost_gold="2" description="Defense your town by shooting arrows to enemies." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
-		<row name="CreepCamp" prefab="assets\house.prefab" cost_gold="0" description="Monsters comes from here and will attak your town!" effect_text="" next_level="" require_building="CreepCamp" next_level_index="-1" require_building_index="4" spawn_prefab="assets\extra\characters\ELF_SM_archer_A.prefab" spawn_interval="5" attack_range="0" attack_damage="0" attack_interval="0" />
-		<row name="Farm" prefab="assets\house.prefab" cost_gold="3" description="Provide food. Give you some gold at the end of rounds." effect_text="+8 food, +2 gold production" next_level="" require_building="House" next_level_index="-1" require_building_index="1" spawn_prefab="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" />
+		<row name="Castle" prefab="assets\house.prefab" cost_gold="10" description="Town center. Upgrade to unlock more buildings." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_character="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" spawn_character_index="-1" gold_production="0" />
+		<row name="House" prefab="assets\house.prefab" cost_gold="1" description="Provide food. Give you some gold at the end of rounds." effect_text="+5 food, +1 gold production" next_level="Farm" require_building="" next_level_index="5" require_building_index="-1" spawn_character="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" spawn_character_index="-1" gold_production="1" />
+		<row name="Barracks" prefab="assets\house.prefab" cost_gold="3" description="Training soldiers to defense or attack enemies." effect_text="+1 archer per 5 sec" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_character="Archer" spawn_interval="5" attack_range="0" attack_damage="0" attack_interval="0" spawn_character_index="-1" gold_production="0" />
+		<row name="DefenseTower" prefab="assets\defense_tower.prefab" cost_gold="2" description="Defense your town by shooting arrows to enemies." effect_text="" next_level="" require_building="" next_level_index="-1" require_building_index="-1" spawn_character="" spawn_interval="0" attack_range="10" attack_damage="50" attack_interval="1" spawn_character_index="-1" gold_production="0" />
+		<row name="CreepCamp" prefab="assets\house.prefab" cost_gold="0" description="Monsters comes from here and will attak your town!" effect_text="" next_level="" require_building="CreepCamp" next_level_index="-1" require_building_index="4" spawn_character="Archer" spawn_interval="5" attack_range="0" attack_damage="0" attack_interval="0" spawn_character_index="-1" gold_production="0" />
+		<row name="Farm" prefab="assets\house.prefab" cost_gold="3" description="Provide food. Give you some gold at the end of rounds." effect_text="+8 food, +2 gold production" next_level="" require_building="House" next_level_index="-1" require_building_index="1" spawn_character="" spawn_interval="0" attack_range="0" attack_damage="0" attack_interval="0" spawn_character_index="-1" gold_production="2" />
 	</rows>
 </sheet>
