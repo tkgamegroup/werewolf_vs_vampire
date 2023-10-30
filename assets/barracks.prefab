@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<prefab file_id="4ced26a9b90b6490c465a1539693f490">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="45a30809514d3c8c7790f1add56741ba" name="RootNode">
+			<components>
+				<item type_name="flame::cNode" scl="0.015,0.015,0.015" />
+			</components>
+			<children>
+				<item file_id="409823f2aaf1ca0c43397da627e80dba" name="Cube.012">
+					<components>
+						<item type_name="flame::cNode" pos="85.8657,18.0482,-92.466" qut="0.707107,-0.707107,0,0" scl="14.5395,14.5395,14.5395" />
+						<item type_name="flame::cMesh" mesh_name="models\barracks.fmod#mesh0" material_name="default" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>

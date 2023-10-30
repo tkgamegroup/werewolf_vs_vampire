@@ -8,8 +8,10 @@
 		<column type="D@float" name="attack_range" />
 		<column type="D@uint" name="attack_damage" />
 		<column type="D@float" name="attack_interval" />
+		<column type="D@uint" name="interest_tile" />
 	</columns>
 	<rows>
-		<row name="Archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" hp_max="100" attack_range="5" attack_damage="5" attack_interval="1.5" />
+		<row name="Archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" hp_max="100" attack_range="5" attack_damage="5" attack_interval="1.5" interest_tile="0" />
+		<row name="Worker" prefab="assets\extra\characters\ELF_SM_worker_A.prefab" description="" hp_max="5" attack_range="0" attack_damage="0" attack_interval="0" interest_tile="256" />
 	</rows>
 </sheet>
