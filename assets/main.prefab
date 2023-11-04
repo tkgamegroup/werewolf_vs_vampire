@@ -6,8 +6,9 @@
 	<children>
 		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
 			<components>
-				<item type_name="flame::cNode" />
+				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.892185,-0.451669,1.81608e-08,4.65661e-09" />
 				<item type_name="flame::cCamera" />
+				<item type_name="flame::cAudioListener" />
 			</components>
 		</item>
 		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Directional Light">
@@ -21,6 +22,13 @@
 				<item type_name="flame::cNode" />
 				<item type_name="flame::cMesh" mesh_name="standard_sphere" material_name="default" />
 				<item type_name="flame::cBpInstance" bp_name="static\game.bp" />
+				<item type_name="flame::cAudioSource" />
+			</components>
+		</item>
+		<item file_id="4dfa954932bcb5c3cc6d7ca2a75902b5" name="Sea">
+			<components>
+				<item type_name="flame::cNode" pos="-500,0,-500" scl="100,1,100" />
+				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="default" />
 			</components>
 		</item>
 	</children>
