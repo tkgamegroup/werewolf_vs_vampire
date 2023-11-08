@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<prefab file_id="4c54609cbd276673ea58160a189bc4ad">
+	<components>
+		<item type_name="flame::cNode" />
+		<item type_name="flame::cMesh" />
+		<item type_name="flame::cProcedureMesh" blueprint_name="procedural_mountain.bp" />
+	</components>
+</prefab>

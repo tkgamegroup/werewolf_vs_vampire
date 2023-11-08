@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<prefab file_id="46a048b934167a584fca56daf6094f82">
-	<components>
-		<item type_name="flame::cNode" scl="0.5,0.5,0.5" />
-		<item type_name="flame::cMesh" />
-		<item type_name="flame::cProcedureMesh" blueprint_path="procedural_rock.bp" />
-	</components>
-</prefab>

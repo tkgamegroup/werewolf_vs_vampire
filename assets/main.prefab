@@ -2,6 +2,7 @@
 <prefab file_id="4b61712a79ea1ca46b9e5d6b9c9841a9">
 	<components>
 		<item type_name="flame::cNode" />
+		<item type_name="flame::cRendererSettings" />
 	</components>
 	<children>
 		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
@@ -14,7 +15,7 @@
 		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Directional Light">
 			<components>
 				<item type_name="flame::cNode" qut="0.800103,-0.46194,0.331414,0.191342" />
-				<item type_name="flame::cDirectionalLight" />
+				<item type_name="flame::cDirectionalLight" color="3,3,3,1" cast_shadow="true" />
 			</components>
 		</item>
 		<item file_id="4bac5acec6966ef81e576484531d228a" name="Root">
@@ -28,7 +29,7 @@
 		<item file_id="4dfa954932bcb5c3cc6d7ca2a75902b5" name="Sea">
 			<components>
 				<item type_name="flame::cNode" pos="-500,0,-500" scl="100,1,100" />
-				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="default" />
+				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="materials\sea.fmat" />
 			</components>
 		</item>
 	</children>

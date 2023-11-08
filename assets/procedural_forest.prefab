@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<prefab file_id="453382649befb5cd8836289db78f8296" name="procedural_forest">
+	<components>
+		<item type_name="flame::cNode" />
+		<item type_name="flame::cBpInstance" bp_name="procedural_forest.bp" />
+	</components>
+</prefab>

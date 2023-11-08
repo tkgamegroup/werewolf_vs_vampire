@@ -176,8 +176,15 @@ void material_main(MaterialInfo material, vec4 color)
         vec3 world_pos = i_coordw;
         vec3 V = camera.coord - world_pos;
         vec3 wat = water(world_pos.xz, V);
-        o_color = vec4(wat, 1.0);
+        o_color = vec4(pow(wat, vec3(2.2)), 1.0);
     #endif
+}
+
+#else
+
+void material_main(MaterialInfo material, vec4 color)
+{
+    o_exp_depth = 0;
 }
 
 #endif // DEPTH_ONLY
