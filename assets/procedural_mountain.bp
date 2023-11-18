@@ -6,36 +6,36 @@
 				<output name="out" type="PU@flame::graphics::ControlMesh" />
 			</outputs>
 			<nodes>
-				<node object_id="5" name="Output" position="787,-14" />
-				<node object_id="7" name="Offset Control Mesh" position="499,15">
-					<inputs>
-						<input name="Offset" value="0.5,0.5,-0.5" />
-					</inputs>
-				</node>
-				<node object_id="11" name="Control Mesh: Cone" position="-125,40">
+				<node object_id="5" name="Output" position="1187,-12" />
+				<node object_id="15" name="Control Mesh: Cone" position="259,8">
 					<inputs>
 						<input name="Radius" value="1.2" />
 						<input name="Vertices" value="6" />
 					</inputs>
 				</node>
-				<node object_id="36" name="Random" position="-461,40">
+				<node object_id="11" name="Offset Control Mesh" position="899,15">
+					<inputs>
+						<input name="Offset" value="0.5,0.5,-0.5" />
+					</inputs>
+				</node>
+				<node object_id="29" name="Random" position="-95,33">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="236" />
 						<input name="Max" value="260" />
 					</inputs>
 				</node>
-				<node object_id="17" name="Scale Control Mesh" position="51,47">
+				<node object_id="21" name="Scale Control Mesh" position="451,47">
 					<inputs>
 						<input name="Scale" value="1.5" />
 					</inputs>
 				</node>
-				<node object_id="21" name="Rotate Control Mesh" position="211,48">
+				<node object_id="25" name="Rotate Control Mesh" position="611,48">
 					<inputs>
 						<input name="Rotation" value="22.5,0,0" />
 					</inputs>
 				</node>
-				<node object_id="25" name="HSV Color" position="-285,128">
+				<node object_id="49" name="HSV Color" position="81,120">
 					<inputs>
 						<input name="S" value="0.3" />
 						<input name="V" value="0.57" />
@@ -43,12 +43,12 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="41" from_node="36" from_slot="3212106847" to_node="25" to_slot="2248290871" />
-				<link object_id="31" from_node="25" from_slot="4279192732" to_node="11" to_slot="2476530840" />
-				<link object_id="32" from_node="11" from_slot="3835792028" to_node="17" to_slot="3835792028" />
-				<link object_id="33" from_node="17" from_slot="3835792028" to_node="21" to_slot="3835792028" />
-				<link object_id="34" from_node="21" from_slot="3835792028" to_node="7" to_slot="3835792028" />
-				<link object_id="35" from_node="7" from_slot="3835792028" to_node="5" to_slot="565956607" />
+				<link object_id="58" from_node="29" from_slot="3212106847" to_node="49" to_slot="2248290871" />
+				<link object_id="61" from_node="49" from_slot="4279192732" to_node="15" to_slot="2476530840" />
+				<link object_id="68" from_node="15" from_slot="3835792028" to_node="21" to_slot="3835792028" />
+				<link object_id="64" from_node="21" from_slot="3835792028" to_node="25" to_slot="3835792028" />
+				<link object_id="65" from_node="25" from_slot="3835792028" to_node="11" to_slot="3835792028" />
+				<link object_id="66" from_node="11" from_slot="3835792028" to_node="5" to_slot="565956607" />
 			</links>
 		</group>
 	</groups>

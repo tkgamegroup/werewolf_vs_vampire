@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" />
+	</variables>
+	<groups>
+		<group object_id="1" name="start">
+			<nodes>
+				<node object_id="100" name="Loop" position="-107,-47">
+					<inputs>
+						<input name="Execute" value="1" />
+						<input name="Times" value="100" />
+					</inputs>
+				</node>
+				<node object_id="104" parent_id="100" name="Loop Index" position="-172,64" />
+				<node object_id="110" parent_id="100" name="Variable" position="52,64">
+					<inputs>
+						<input name="Name" value="3557266103" />
+					</inputs>
+				</node>
+				<node object_id="106" parent_id="100" name="Spawn Cube" position="247,80" />
+				<node object_id="145" parent_id="100" name="Set Name" position="437,93">
+					<inputs>
+						<input name="Name" value="Cube" />
+					</inputs>
+				</node>
+				<node object_id="115" parent_id="100" name="Integer Divide" position="-157,156">
+					<inputs>
+						<input name="B" value="10" />
+					</inputs>
+				</node>
+				<node object_id="121" parent_id="100" name="Multiply" position="18,190">
+					<inputs>
+						<input name="B" value="2" />
+					</inputs>
+				</node>
+				<node object_id="131" parent_id="100" name="Vec3" position="169,217">
+					<inputs>
+						<input name="Y" value="0" />
+					</inputs>
+				</node>
+				<node object_id="126" parent_id="100" name="Multiply" position="28,294">
+					<inputs>
+						<input name="B" value="2" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="114" from_node="110" from_slot="2248293481" to_node="106" to_slot="3414185277" />
+				<link object_id="120" from_node="104" from_slot="2248293481" to_node="115" to_slot="2248286956" />
+				<link object_id="125" from_node="115" from_slot="1076657328" to_node="121" to_slot="2248286956" />
+				<link object_id="130" from_node="115" from_slot="1832044879" to_node="126" to_slot="2248286956" />
+				<link object_id="136" from_node="121" from_slot="3212106847" to_node="131" to_slot="2248297831" />
+				<link object_id="137" from_node="126" from_slot="3212106847" to_node="131" to_slot="2248298701" />
+				<link object_id="138" from_node="131" from_slot="3212106847" to_node="106" to_slot="1483901482" />
+				<link object_id="148" from_node="106" from_slot="1220590042" to_node="145" to_slot="1220590042" />
+			</links>
+		</group>
+		<group object_id="48" name="update">
+			<nodes>
+				<node object_id="139" name="For Each Entity" position="-82,57">
+					<inputs>
+						<input name="Execute" value="1" />
+					</inputs>
+				</node>
+				<node object_id="143" parent_id="139" name="Loop Var Entity" position="-108,128" />
+				<node object_id="149" parent_id="139" name="Get Name" position="32,137" />
+				<node object_id="153" parent_id="139" name="String Equal" position="203,141">
+					<inputs>
+						<input name="B" value="Cube" />
+					</inputs>
+				</node>
+				<node object_id="158" parent_id="139" name="If True" position="-77,208">
+					<inputs>
+						<input name="Execute" value="1" />
+					</inputs>
+				</node>
+				<node object_id="173" parent_id="158" name="Random" position="-269,264">
+					<inputs>
+						<input name="Seed" value="0" />
+						<input name="Min" value="-0.1" />
+						<input name="Max" value="0.1" />
+					</inputs>
+				</node>
+				<node object_id="163" parent_id="158" name="Add Pos" position="51,319" />
+				<node object_id="167" parent_id="158" name="Vec3" position="-99,381" />
+				<node object_id="179" parent_id="158" name="Random" position="-258,433">
+					<inputs>
+						<input name="Seed" value="0" />
+						<input name="Min" value="-0.1" />
+						<input name="Max" value="0.1" />
+					</inputs>
+				</node>
+				<node object_id="185" parent_id="158" name="Random" position="-253,600">
+					<inputs>
+						<input name="Seed" value="0" />
+						<input name="Min" value="-0.1" />
+						<input name="Max" value="0.1" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="152" from_node="143" from_slot="2248293481" to_node="149" to_slot="1220590042" />
+				<link object_id="166" from_node="143" from_slot="2248293481" to_node="163" to_slot="1220590042" />
+				<link object_id="178" from_node="173" from_slot="3212106847" to_node="167" to_slot="2248297831" />
+				<link object_id="184" from_node="179" from_slot="3212106847" to_node="167" to_slot="2248297396" />
+				<link object_id="190" from_node="185" from_slot="3212106847" to_node="167" to_slot="2248298701" />
+				<link object_id="157" from_node="149" from_slot="2412895334" to_node="153" to_slot="2248286956" />
+				<link object_id="172" from_node="167" from_slot="3212106847" to_node="163" to_slot="4094070217" />
+				<link object_id="162" from_node="153" from_slot="2248293481" to_node="158" to_slot="1944756926" />
+			</links>
+		</group>
+	</groups>
+</blueprint>

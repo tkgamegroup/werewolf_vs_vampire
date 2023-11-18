@@ -172,11 +172,15 @@ vec3 water(vec2 uv, vec3 cdir)
 
 void material_main(MaterialInfo material, vec4 color)
 {
+    vec3 V = camera.coord - i_coordw;
+    vec3 wat = water(i_coordw.xz, V);
     #ifndef GBUFFER_PASS
-        vec3 world_pos = i_coordw;
-        vec3 V = camera.coord - world_pos;
-        vec3 wat = water(world_pos.xz, V);
-        o_color = vec4(pow(wat, vec3(2.2)), 1.0);
+		o_color = vec4(shading(i_coordw, i_normal, 0, wat, vec3(0.04), 0.5, 1.0, vec3(0), false), 1.0);
+	#else
+		o_gbufferA = vec4(wat, 0.0);
+		o_gbufferB = vec4(i_normal * 0.5 + 0.5, 0.0);
+		o_gbufferC = vec4(0, 1, 0, 0);
+		o_gbufferD = vec4(vec3(0), 0.0);
     #endif
 }
 
@@ -184,7 +188,7 @@ void material_main(MaterialInfo material, vec4 color)
 
 void material_main(MaterialInfo material, vec4 color)
 {
-    o_exp_depth = 0;
+	#include <esm_value.glsl>
 }
 
 #endif // DEPTH_ONLY

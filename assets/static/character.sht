@@ -12,12 +12,11 @@
 		<column type="D@std::filesystem::path" name="attack_projectile_prefab" />
 		<column type="D@float" name="attack_projectile_speed" />
 		<column type="D@std::filesystem::path" name="attack_sfx" />
-		<column type="D@uint" name="interest_tile" />
 	</columns>
 	<rows>
-		<row name="Archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" hp_max="100" flying="false" attack_range="5" attack_damage="23" attack_interval="2" attack_projectile_prefab="assets\extra\characters\ELF_arrow.prefab" attack_projectile_speed="0.1" attack_sfx="assets\sfx\shoot.ogg" interest_tile="0" />
-		<row name="Infantry" prefab="assets\extra\characters\ELF_SM_heavy_infantry_A.prefab" description="" hp_max="100" flying="false" attack_range="1" attack_damage="28" attack_interval="1.5" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\Socapex - new_hits.wav" interest_tile="0" />
-		<row name="Worker" prefab="assets\extra\characters\ELF_SM_worker_A.prefab" description="" hp_max="5" flying="false" attack_range="0" attack_damage="0" attack_interval="0" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="" interest_tile="256" />
-		<row name="Bat" prefab="assets\extra\characters\bat_v5.prefab" description="" hp_max="20" flying="true" attack_range="1" attack_damage="5" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\crunch.4.ogg" interest_tile="0" />
+		<row name="Archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" hp_max="100" flying="false" attack_range="5" attack_damage="23" attack_interval="2" attack_projectile_prefab="assets\extra\characters\ELF_arrow.prefab" attack_projectile_speed="0.1" attack_sfx="assets\sfx\shoot.ogg" />
+		<row name="Infantry" prefab="assets\extra\characters\ELF_SM_heavy_infantry_A.prefab" description="" hp_max="100" flying="false" attack_range="1" attack_damage="28" attack_interval="1.5" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\Socapex - new_hits.wav" />
+		<row name="Worker" prefab="assets\extra\characters\ELF_SM_worker_A.prefab" description="" hp_max="5" flying="false" attack_range="0" attack_damage="0" attack_interval="0" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="" />
+		<row name="Bat" prefab="assets\extra\characters\bat_v5.prefab" description="" hp_max="20" flying="true" attack_range="1" attack_damage="5" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\crunch.4.ogg" />
 	</rows>
 </sheet>

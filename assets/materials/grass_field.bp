@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<blueprint>
+	<groups>
+		<group object_id="1" name="main">
+			<inputs>
+				<input name="i_mat_id" type="D@uint" />
+				<input name="i_uv" type="D@glm::vec2" />
+				<input name="i_color" type="D@glm::vec4" />
+				<input name="i_normal" type="D@glm::vec3" />
+				<input name="i_coordw" type="D@glm::vec3" />
+			</inputs>
+			<outputs>
+				<output name="o_color" type="D@glm::vec4" />
+				<output name="o_normal" type="D@glm::vec3" />
+				<output name="o_metallic" type="D@float" />
+				<output name="o_roughness" type="D@float" />
+				<output name="o_emissive" type="D@glm::vec3" />
+				<output name="o_ao" type="D@float" />
+			</outputs>
+			<nodes>
+				<node object_id="52" name="Perlin" position="451,-207" />
+				<node object_id="55" name="Vec2" position="45,-175" />
+				<node object_id="59" name="Divide" position="570,-175">
+					<inputs>
+						<input name="B" value="6" />
+					</inputs>
+				</node>
+				<node object_id="63" name="Multiply" position="298,-159">
+					<inputs>
+						<input name="B" value="2" />
+					</inputs>
+				</node>
+				<node object_id="67" name="Add" position="739,-111">
+					<inputs>
+						<input name="B" value="0.2" />
+					</inputs>
+				</node>
+				<node object_id="71" name="Decompose" position="-51,-94" />
+				<node object_id="77" name="Add" position="259,-48">
+					<inputs>
+						<input type="D@glm::vec2" name="B" value="152.445,76.6" />
+					</inputs>
+				</node>
+				<node object_id="81" name="Multiply" position="83,-47">
+					<inputs>
+						<input name="B" value="0.7" />
+					</inputs>
+				</node>
+				<node object_id="19" name="Input" position="-134,0" />
+				<node object_id="85" name="HSV Color" position="532,0" />
+				<node object_id="91" name="Multiply" position="851,0" />
+				<node object_id="45" name="Output" position="1011,28" />
+				<node object_id="95" name="Color To Vec4" position="685,32" />
+				<node object_id="98" name="Perlin" position="99,96" />
+				<node object_id="101" name="Multiply" position="218,96">
+					<inputs>
+						<input name="B" value="0.4" />
+					</inputs>
+				</node>
+				<node object_id="105" name="Add" position="371,96">
+					<inputs>
+						<input name="B" value="0.6" />
+					</inputs>
+				</node>
+				<node object_id="109" name="Scalar" position="842,127">
+					<inputs>
+						<input name="V" value="0" />
+					</inputs>
+				</node>
+				<node object_id="112" name="Multiply" position="51,207">
+					<inputs>
+						<input name="B" value="0.98" />
+					</inputs>
+				</node>
+				<node object_id="116" name="Scalar" position="842,208">
+					<inputs>
+						<input name="V" value="0.9" />
+					</inputs>
+				</node>
+				<node object_id="119" name="Add" position="250,223">
+					<inputs>
+						<input type="D@glm::vec2" name="B" value="67.9,178.67" />
+					</inputs>
+				</node>
+				<node object_id="123" name="Vec3" position="842,287">
+					<inputs>
+						<input name="X" value="0" />
+						<input name="Y" value="0" />
+						<input name="Z" value="0" />
+					</inputs>
+				</node>
+				<node object_id="128" name="Perlin" position="102,320" />
+				<node object_id="131" name="Multiply" position="249,344">
+					<inputs>
+						<input name="B" value="0.5" />
+					</inputs>
+				</node>
+				<node object_id="135" name="Add" position="419,367">
+					<inputs>
+						<input name="B" value="0.5" />
+					</inputs>
+				</node>
+				<node object_id="139" name="Scalar" position="842,447">
+					<inputs>
+						<input name="V" value="1" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="142" from_node="109" from_slot="3212106847" to_node="45" to_slot="1831719266" />
+				<link object_id="143" from_node="116" from_slot="3212106847" to_node="45" to_slot="1081357319" />
+				<link object_id="144" from_node="123" from_slot="3212106847" to_node="45" to_slot="2693383848" />
+				<link object_id="145" from_node="139" from_slot="3212106847" to_node="45" to_slot="3203022843" />
+				<link object_id="146" from_node="19" from_slot="3529811630" to_node="45" to_slot="1356140124" />
+				<link object_id="147" from_node="19" from_slot="1262320759" to_node="71" to_slot="2248293481" />
+				<link object_id="148" from_node="19" from_slot="4046399204" to_node="91" to_slot="2248286956" />
+				<link object_id="149" from_node="71" from_slot="2248297831" to_node="55" to_slot="2248297831" />
+				<link object_id="150" from_node="71" from_slot="2248298701" to_node="55" to_slot="2248297396" />
+				<link object_id="151" from_node="55" from_slot="3212106847" to_node="63" to_slot="2248286956" />
+				<link object_id="152" from_node="55" from_slot="3212106847" to_node="81" to_slot="2248286956" />
+				<link object_id="153" from_node="55" from_slot="3212106847" to_node="112" to_slot="2248286956" />
+				<link object_id="154" from_node="63" from_slot="3212106847" to_node="52" to_slot="3049488178" />
+				<link object_id="155" from_node="81" from_slot="3212106847" to_node="77" to_slot="2248286956" />
+				<link object_id="156" from_node="112" from_slot="3212106847" to_node="119" to_slot="2248286956" />
+				<link object_id="157" from_node="52" from_slot="3212106847" to_node="59" to_slot="2248286956" />
+				<link object_id="158" from_node="77" from_slot="3212106847" to_node="98" to_slot="3049488178" />
+				<link object_id="159" from_node="119" from_slot="3212106847" to_node="128" to_slot="3049488178" />
+				<link object_id="160" from_node="59" from_slot="3212106847" to_node="67" to_slot="2248286956" />
+				<link object_id="161" from_node="98" from_slot="3212106847" to_node="101" to_slot="2248286956" />
+				<link object_id="162" from_node="128" from_slot="3212106847" to_node="131" to_slot="2248286956" />
+				<link object_id="163" from_node="101" from_slot="3212106847" to_node="105" to_slot="2248286956" />
+				<link object_id="164" from_node="67" from_slot="3212106847" to_node="85" to_slot="2248290871" />
+				<link object_id="165" from_node="131" from_slot="3212106847" to_node="135" to_slot="2248286956" />
+				<link object_id="166" from_node="105" from_slot="3212106847" to_node="85" to_slot="2248294786" />
+				<link object_id="167" from_node="135" from_slot="3212106847" to_node="85" to_slot="2248293481" />
+				<link object_id="168" from_node="85" from_slot="4279192732" to_node="95" to_slot="2248293481" />
+				<link object_id="169" from_node="95" from_slot="3212106847" to_node="91" to_slot="2248288261" />
+				<link object_id="170" from_node="91" from_slot="3212106847" to_node="45" to_slot="2062793330" />
+			</links>
+		</group>
+	</groups>
+</blueprint>
