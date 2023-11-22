@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<sheet name="">
+	<columns>
+		<column type="D@std::wstring" name="character" />
+		<column type="D@uint" name="number" />
+		<column type="D@int" name="character_index" />
+	</columns>
+	<rows>
+		<row character="Archer" number="8" character_index="1" />
+		<row character="Archer" number="8" character_index="0" />
+		<row character="Archer" number="8" character_index="0" />
+	</rows>
+</sheet>
