@@ -26,11 +26,28 @@
 				<item type_name="flame::cBpInstance" bp_name="static\game.bp" />
 				<item type_name="flame::cAudioSource" />
 			</components>
+			<children>
+				<item filename="hexagon_select.prefab">
+					<modifications>
+						<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select" />
+					</modifications>
+				</item>
+			</children>
 		</item>
 		<item file_id="4dfa954932bcb5c3cc6d7ca2a75902b5" name="Sea">
 			<components>
 				<item type_name="flame::cNode" pos="-500,0,-500" scl="100,1,100" />
 				<item type_name="flame::cMesh" mesh_name="standard_plane" material_name="materials\sea.fmat" cast_shadow="false" />
+			</components>
+		</item>
+		<item file_id="4dd9aa274891ae58601bc9ea70a1f8a8" name="UI">
+			<components>
+				<item type_name="flame::cBpInstance" bp_name="ui.bp" />
+			</components>
+		</item>
+		<item file_id="45774f1d5841b89c92c7882945b1e5ad" name="Picker">
+			<components>
+				<item type_name="flame::cBpInstance" bp_name="picker.bp" />
 			</components>
 		</item>
 	</children>
