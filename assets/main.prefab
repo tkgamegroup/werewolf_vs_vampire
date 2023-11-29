@@ -27,11 +27,6 @@
 				<item type_name="flame::cBpInstance" bp_name="static\game.bp" />
 				<item type_name="flame::cAudioSource" />
 			</components>
-			<children>
-				<item filename="hexagon_select.prefab">
-					<modifications />
-				</item>
-			</children>
 		</item>
 		<item file_id="4dfa954932bcb5c3cc6d7ca2a75902b5" name="Sea">
 			<components>
