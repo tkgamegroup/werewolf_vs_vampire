@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <sheet name="building">
 	<columns>
-		<column type="D@std::wstring" name="name" />
-		<column type="D@std::string" name="icon_name" />
-		<column type="D@std::filesystem::path" name="prefab" />
-		<column type="D@float" name="radius" />
-		<column type="D@float" name="height" />
-		<column type="D@uint" name="cost_gold" />
-		<column type="D@std::wstring" name="description" />
-		<column type="D@std::wstring" name="effect_text" />
-		<column type="D@bool" name="can_construct" />
-		<column type="D@std::wstring" name="next_level" />
-		<column type="D@std::wstring" name="require_building" />
-		<column type="D@int" name="next_level_index" />
-		<column type="D@int" name="require_building_index" />
-		<column type="D@uint" name="hp_max" />
-		<column type="D@std::wstring" name="spawn_character" />
-		<column type="D@uint" name="troop_max_number" />
-		<column type="D@float" name="attack_range" />
-		<column type="D@uint" name="attack_damage" />
-		<column type="D@float" name="attack_interval" />
-		<column type="D@std::filesystem::path" name="attack_projectile_prefab" />
-		<column type="D@float" name="attack_projectile_speed" />
-		<column type="D@std::filesystem::path" name="attack_sfx" />
-		<column type="D@int" name="spawn_character_index" />
-		<column type="D@uint" name="gold_production" />
-		<column type="D@uint" name="gather_resource_type" />
-		<column type="D@uint" name="icon_hash" />
+		<column type="D@std::wstring" name="name" width="5523" />
+		<column type="D@std::string" name="icon_name" width="5523" />
+		<column type="D@std::filesystem::path" name="prefab" width="5523" />
+		<column type="D@float" name="radius" width="5523" />
+		<column type="D@float" name="height" width="5523" />
+		<column type="D@uint" name="cost_gold" width="5523" />
+		<column type="D@std::wstring" name="description" width="5523" />
+		<column type="D@std::wstring" name="effect_text" width="5523" />
+		<column type="D@bool" name="can_construct" width="5523" />
+		<column type="D@std::wstring" name="next_level" width="5523" />
+		<column type="D@std::wstring" name="require_building" width="5523" />
+		<column type="D@int" name="next_level_index" width="5523" />
+		<column type="D@int" name="require_building_index" width="5523" />
+		<column type="D@uint" name="hp_max" width="5523" />
+		<column type="D@std::wstring" name="spawn_character" width="5523" />
+		<column type="D@uint" name="troop_max_number" width="5523" />
+		<column type="D@float" name="attack_range" width="5523" />
+		<column type="D@uint" name="attack_damage" width="5523" />
+		<column type="D@float" name="attack_interval" width="5523" />
+		<column type="D@std::filesystem::path" name="attack_projectile_prefab" width="5523" />
+		<column type="D@float" name="attack_projectile_speed" width="5523" />
+		<column type="D@std::filesystem::path" name="attack_sfx" width="5523" />
+		<column type="D@int" name="spawn_character_index" width="5523" />
+		<column type="D@uint" name="gold_production" width="5523" />
+		<column type="D@uint" name="gather_resource_type" width="5523" />
+		<column type="D@uint" name="icon_hash" width="5523" />
 	</columns>
 	<rows>
 		<row name="Castle" icon_name="castle" prefab="assets\extra\buildings\Human_Village_Building_02.prefab" radius="1.5" height="2" cost_gold="300" description="Town center. Upgrade to unlock more buildings." effect_text="" can_construct="true" next_level="" require_building="" next_level_index="-1" require_building_index="-1" hp_max="100" spawn_character="" troop_max_number="0" attack_range="0" attack_damage="0" attack_interval="0" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="" spawn_character_index="-1" gold_production="0" gather_resource_type="0" icon_hash="1502191865" />

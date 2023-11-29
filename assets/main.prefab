@@ -3,11 +3,12 @@
 	<components>
 		<item type_name="flame::cNode" />
 		<item type_name="flame::cRendererSettings" shadow_darkening="0.1" />
+		<item type_name="cEditor" show_outline="false" show_axis="false" use_gizmos="false" />
 	</components>
 	<children>
 		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
 			<components>
-				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.892185,-0.451669,1.81608e-08,4.65661e-09" />
+				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.92388,-0.382683,1.53634e-08,3.26545e-09" />
 				<item type_name="flame::cCamera" />
 				<item type_name="flame::cAudioListener" />
 			</components>
@@ -28,9 +29,7 @@
 			</components>
 			<children>
 				<item filename="hexagon_select.prefab">
-					<modifications>
-						<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select" />
-					</modifications>
+					<modifications />
 				</item>
 			</children>
 		</item>
@@ -49,6 +48,16 @@
 			<components>
 				<item type_name="flame::cBpInstance" bp_name="picker.bp" />
 			</components>
+		</item>
+		<item filename="hexagon_hovered_efx.prefab">
+			<modifications>
+				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_hovered_efx" />
+			</modifications>
+		</item>
+		<item filename="hexagon_select_efx.prefab">
+			<modifications>
+				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select_efx" />
+			</modifications>
 		</item>
 	</children>
 </prefab>
