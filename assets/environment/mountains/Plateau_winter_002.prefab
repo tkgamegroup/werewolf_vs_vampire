@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="4fdb638ab2d287114273a0ca64fc5792" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="42b97f5437f6a2a4f8d7185dd99695a2" name="Plateau_winter_002">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+				<item type_name="flame::cMesh" mesh_name="models\Plateau_winter_002.fmod#mesh0" material_name="materials\Material__25.008.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<prefab file_id="461432843a81e74cdebe64a0790afb87" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="4fd142a1c25fa0b9366a132c54506482" name="tree02">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="42010422f6df9a7449377e0d1943c4af" name="leaf">
+					<components>
+						<item type_name="flame::cNode" pos="-212.481,422.13,-108.57" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree02.fmod#mesh0" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+				<item file_id="4ac60037f9625f31abe943c001d69ca2" name="leaf_2">
+					<components>
+						<item type_name="flame::cNode" pos="161.448,342.296,16.8823" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree02.fmod#mesh1" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+				<item file_id="49b25eed9c75394b16e33a615e170d9d" name="leaf_3">
+					<components>
+						<item type_name="flame::cNode" pos="176.299,422.395,123.735" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree02.fmod#mesh2" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+				<item file_id="4b53d654991d76a6ec1212ab6bb3c493" name="leaf_4">
+					<components>
+						<item type_name="flame::cNode" pos="-5.46808,529.497,-2.84217e-14" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree02.fmod#mesh3" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+				<item file_id="4982f93614dfa7e3487bba2f0b49b1b0" name="bark">
+					<components>
+						<item type_name="flame::cNode" pos="0,0,-2.84217e-14" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree02.fmod#mesh4" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>

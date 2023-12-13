@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<prefab file_id="42ba74db376891877f6ced84cd04818d" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="403908f2c1cd0dc5ee25315d8fb3d396" name="tree07">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="40d4043fb5db4bc9fea5e26ea6d3f783" name="bark">
+					<components>
+						<item type_name="flame::cNode" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_tree07.fmod#mesh0" material_name="materials\treeRound.fmat" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>

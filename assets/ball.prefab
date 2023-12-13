@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<prefab file_id="4cee6394745ba4cdfd9bb07282c5b6b8">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="491ada077475d14a0b1acf583ca791a8" name="entity">
+			<components>
+				<item type_name="flame::cNode" pos="0,-0.5,0" />
+				<item type_name="flame::cMesh" mesh_name="standard_sphere" material_name="default" />
+				<item type_name="flame::cBpInstance" bp_name="trail.bp" />
+			</components>
+		</item>
+	</children>
+</prefab>

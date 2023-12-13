@@ -8,19 +8,21 @@
 		<column type="D@float" name="radius" width="59" />
 		<column type="D@uint" name="hp_max" width="64" />
 		<column type="D@float" name="height" width="46" />
-		<column type="D@bool" name="flying" width="110" />
+		<column type="D@bool" name="flying" width="43" />
 		<column type="D@float" name="movemonet_speed" width="87" />
 		<column type="D@float" name="attack_range" width="89" />
 		<column type="D@uint" name="attack_damage" width="102" />
-		<column type="D@float" name="attack_interval" width="173" />
+		<column type="D@float" name="attack_interval" width="103" />
 		<column type="D@std::filesystem::path" name="attack_projectile_prefab" width="163" />
-		<column type="D@float" name="attack_projectile_speed" width="200" />
+		<column type="D@float" name="attack_projectile_speed" width="164" />
+		<column type="D@bool" name="attack_projectile_parabolic" width="80" />
+		<column type="D@float" name="attack_projectile_hit_radius" width="80" />
 		<column type="D@std::filesystem::path" name="attack_sfx" width="80" />
 	</columns>
 	<rows>
-		<row name="Archer" icon_name="archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" radius="0" hp_max="100" height="0" flying="false" movemonet_speed="5" attack_range="5" attack_damage="3" attack_interval="1" attack_projectile_prefab="assets\extra\characters\ELF_arrow.prefab" attack_projectile_speed="0.1" attack_sfx="assets\sfx\shoot.ogg" />
-		<row name="Infantry" icon_name="infantry" prefab="assets\extra\characters\ELF_SM_heavy_infantry_A.prefab" description="" radius="0" hp_max="100" height="0" flying="false" movemonet_speed="5" attack_range="1" attack_damage="3" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\Socapex - new_hits.wav" />
-		<row name="Cavalry" icon_name="cavalry" prefab="assets\extra\characters\ELF_SM_light_cavalry_A.prefab" description="" radius="0" hp_max="150" height="0" flying="false" movemonet_speed="10" attack_range="1" attack_damage="3" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="" />
-		<row name="Bat" icon_name="" prefab="assets\extra\characters\bat_v5.prefab" description="" radius="0" hp_max="20" height="0" flying="true" movemonet_speed="5" attack_range="1" attack_damage="5" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_sfx="assets\sfx\crunch.4.ogg" />
+		<row name="Archer" icon_name="archer" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" radius="0.2" hp_max="100" height="1.8" flying="false" movemonet_speed="5" attack_range="5" attack_damage="3" attack_interval="1" attack_projectile_prefab="assets\extra\characters\ELF_arrow.prefab" attack_projectile_speed="6" attack_projectile_parabolic="false" attack_projectile_hit_radius="0" attack_sfx="assets\sfx\shoot.ogg" />
+		<row name="Infantry" icon_name="infantry" prefab="assets\extra\characters\ELF_SM_heavy_infantry_A.prefab" description="" radius="0.2" hp_max="100" height="1.8" flying="false" movemonet_speed="5" attack_range="1" attack_damage="3" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_projectile_parabolic="false" attack_projectile_hit_radius="0" attack_sfx="assets\sfx\Socapex - new_hits.wav" />
+		<row name="Cavalry" icon_name="cavalry" prefab="assets\extra\characters\ELF_SM_light_cavalry_A.prefab" description="" radius="0.2" hp_max="150" height="1.8" flying="false" movemonet_speed="10" attack_range="1" attack_damage="3" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_projectile_parabolic="false" attack_projectile_hit_radius="0" attack_sfx="" />
+		<row name="Bat" icon_name="" prefab="assets\extra\characters\bat_v5.prefab" description="" radius="0.2" hp_max="20" height="1" flying="true" movemonet_speed="5" attack_range="1" attack_damage="5" attack_interval="1" attack_projectile_prefab="" attack_projectile_speed="0" attack_projectile_parabolic="false" attack_projectile_hit_radius="0" attack_sfx="assets\sfx\crunch.4.ogg" />
 	</rows>
 </sheet>

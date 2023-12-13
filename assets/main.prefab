@@ -2,7 +2,7 @@
 <prefab file_id="4b61712a79ea1ca46b9e5d6b9c9841a9">
 	<components>
 		<item type_name="flame::cNode" />
-		<item type_name="flame::cRendererSettings" shadow_darkening="0.1" />
+		<item type_name="flame::cWorldSettings" filename="world_settings.xml" />
 		<item type_name="cEditor" show_outline="false" show_axis="false" use_gizmos="false" />
 	</components>
 	<children>
@@ -13,10 +13,10 @@
 				<item type_name="flame::cAudioListener" />
 			</components>
 		</item>
-		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Directional Light">
+		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Sun">
 			<components>
 				<item type_name="flame::cNode" qut="0.853553,-0.353553,0.353554,0.146447" />
-				<item type_name="flame::cDirectionalLight" color="3,3,3,1" cast_shadow="true" />
+				<item type_name="flame::cDirectionalLight" color="0.77,0.945,0.941,1" cast_shadow="true" />
 			</components>
 		</item>
 		<item file_id="4bac5acec6966ef81e576484531d228a" name="Root">
@@ -53,6 +53,12 @@
 			<modifications>
 				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select_efx" />
 			</modifications>
+		</item>
+		<item file_id="40ef0d713b583a63e798cc6e09c5fca8" name="Birds Spawner">
+			<components>
+				<item type_name="flame::cNode" pos="0,30,0" />
+				<item type_name="flame::cParticleSystem" particle_size="0.5,0.5" particle_alpha_over_lifetime="true" particle_alpha_curve="(0.00533844,1.00363),(0.849463,1.01057),(0.995923,0.0146459)" emitt_type="Pie" emitt_duration="2" emitt_num="3" render_type="HorizontalBillboard" material_name="environment\birds\5a228731b8cc50.8721059615122122737569.fmat" />
+			</components>
 		</item>
 	</children>
 </prefab>

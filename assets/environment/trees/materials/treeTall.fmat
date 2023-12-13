@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<material color_map="0">
+	<textures>
+		<item filename="assets\environment\trees\textures\treeTall0.png" />
+	</textures>
+</material>

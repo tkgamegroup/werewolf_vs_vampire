@@ -21,6 +21,6 @@
 		<column type="D@uint" name="BuildingCreepCamp" />
 	</columns>
 	<rows>
-		<row TagHexTile="4" TagBuilding="8" TagCharacter="16" TagFriendly="32" TagHostile="64" TagMountainTile="128" TagForestTile="256" TileEmpty="0" TileConstructible="1" TileMountain="2" TileForest="3" TileFriendlyBuilding="4" TileHostileBuilding="5" BuildingCastle="0" BuildingHouse="1" BuildingBarracks="2" BuildingDefenseTower="3" BuildingCreepCamp="4" />
+		<row TagHexTile="8" TagBuilding="16" TagCharacter="32" TagFriendly="64" TagHostile="128" TagMountainTile="256" TagForestTile="512" TileEmpty="0" TileConstructible="1" TileMountain="2" TileForest="3" TileFriendlyBuilding="4" TileHostileBuilding="5" BuildingCastle="0" BuildingHouse="1" BuildingBarracks="2" BuildingDefenseTower="3" BuildingCreepCamp="4" />
 	</rows>
 </sheet>

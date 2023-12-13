@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="4431521929d5bb763c3048a2547672a7" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="49537a1f295a3f89319770fbfbfee088" name="fence23">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+				<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_fence23.fmod#mesh0" material_name="default" />
+			</components>
+		</item>
+	</children>
+</prefab>

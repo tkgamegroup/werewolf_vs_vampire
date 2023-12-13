@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<prefab file_id="48055b34e0537f3eb034d52d4c9299ad" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="43f970b0d63c6ab55b4013327b95e5b7" name="treeRoundTop10Snow">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="417e4bbecfe3505d8cf68b93313d0886" name="snow">
+					<components>
+						<item type_name="flame::cNode" pos="4.16369,271.033,-8.83669" qut="0.998331,0,0,-0.0577505" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeRoundTop10Snow.fmod#mesh0" material_name="default" />
+					</components>
+				</item>
+				<item file_id="407787840daee33b51c3492fab81cea0" name="bark">
+					<components>
+						<item type_name="flame::cNode" pos="0,-181.702,0" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeRoundTop10Snow.fmod#mesh1" material_name="default" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>

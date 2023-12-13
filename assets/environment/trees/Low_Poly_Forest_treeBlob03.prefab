@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<prefab file_id="4385c462ec37606725a1cdd2c67a48b0" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="45a39333ed28c13602ade6381f5df19a" name="treeBlob03">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="4d44df00db314d5faec07ddb550b399f" name="leaf">
+					<components>
+						<item type_name="flame::cNode" pos="-38.1617,565.472,163.343" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh0" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+				<item file_id="472714577049c88447d57532902966af" name="leaf_2">
+					<components>
+						<item type_name="flame::cNode" pos="-31.266,535.054,-146.994" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh1" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+				<item file_id="4b64f772e23718773e5f58aea5425bb8" name="leaf_3">
+					<components>
+						<item type_name="flame::cNode" pos="-153.658,548.508,-152.2" qut="0.656881,-0.753995,-3.27565e-08,-2.85375e-08" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh2" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+				<item file_id="4958eaeae52efa0da6d3e7723412a0b6" name="leaf_4">
+					<components>
+						<item type_name="flame::cNode" pos="108.464,577.274,194.27" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh3" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+				<item file_id="419c5509e9d2cbd2c52de96dc0864789" name="leaf_5">
+					<components>
+						<item type_name="flame::cNode" pos="-13.7825,700.011,0" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh4" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+				<item file_id="43656a52cbfff3b407a2548dc7a067a0" name="bark">
+					<components>
+						<item type_name="flame::cNode" />
+						<item type_name="flame::cMesh" mesh_name="models\Low_Poly_Forest_treeBlob03.fmod#mesh5" material_name="materials\treeBlob.fmat" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>
