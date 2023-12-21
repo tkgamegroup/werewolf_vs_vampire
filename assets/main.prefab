@@ -8,8 +8,8 @@
 	<children>
 		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
 			<components>
-				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.92388,-0.382683,1.53634e-08,3.26545e-09" />
-				<item type_name="flame::cCamera" />
+				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.866025,-0.5,1.19433e-08,5.24285e-09" />
+				<item type_name="flame::cCamera" fovy="40" zNear="50" zFar="200" />
 				<item type_name="flame::cAudioListener" />
 			</components>
 		</item>

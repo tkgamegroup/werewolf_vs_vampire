@@ -48,7 +48,7 @@
 				<node object_id="20" parent_id="5" name="Variable" position="12,-575">
 					<inputs>
 						<input name="Name" value="323322183" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 				<node object_id="24" parent_id="5" name="Set Enable" position="-164,-543">
@@ -70,7 +70,7 @@
 				<node object_id="36" parent_id="5" name="Variable" position="-260,-270">
 					<inputs>
 						<input name="Name" value="3742889666" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
 				<node object_id="40" parent_id="5" name="Audio Source Play" position="-157,-207">
@@ -93,7 +93,7 @@
 				<node object_id="53" parent_id="5" name="Variable" position="-252,-1">
 					<inputs>
 						<input name="Name" value="3742889666" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
 				<node object_id="57" parent_id="5" name="Array Get Item" position="-417,64">
@@ -183,7 +183,7 @@
 				<node object_id="137" name="Variable" position="401,-159">
 					<inputs>
 						<input name="Name" value="1819585352" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 			</nodes>
@@ -281,7 +281,7 @@
 				<node object_id="240" parent_id="187" name="Variable" position="351,-374">
 					<inputs>
 						<input name="Name" value="1819585352" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 				<node object_id="244" parent_id="163" name="In Range" position="497,-952">
@@ -539,7 +539,7 @@
 				<node object_id="505" parent_id="475" name="Variable" position="-60,-1199">
 					<inputs>
 						<input name="Name" value="1819585352" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 				<node object_id="509" parent_id="387" name="Variable" position="-44,-1407">
@@ -616,7 +616,7 @@
 				<node object_id="590" parent_id="561" name="Variable" position="596,-128">
 					<inputs>
 						<input name="Name" value="1819585352" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 				<node object_id="594" parent_id="561" name="Variable" position="884,-128">

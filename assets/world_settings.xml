@@ -2,6 +2,6 @@
 <world>
 	<system name="flame::sScene" />
 	<system name="flame::sInput" />
-	<system name="flame::sRenderer" cel_shading_levels="15" fog_type="HeightExp2" fog_start="1" fog_end="300" fog_base_height="-1" fog_max_height="0.55" fog_color="0.5,0.945,0.955" shadow_distance="150" csm_levels="1" outline_pp_enable="true" outline_pp_depth_scale="0.01" outline_pp_normal_scale="0.2" outline_pp_color="0,0.1,0.1" />
+	<system name="flame::sRenderer" cel_shading_levels="15" fog_type="HeightExp2" fog_start="1" fog_end="300" fog_base_height="-1" fog_max_height="0.55" fog_color="0.5,0.945,0.955" shadow_distance="86" csm_levels="1" outline_pp_enable="true" outline_pp_depth_scale="0.01" outline_pp_normal_scale="0.2" outline_pp_color="0,0.1,0.1" dof_enable="true" dof_focus_point="73.4" dof_focus_scale="45" />
 	<system name="flame::sAudio" />
 </world>

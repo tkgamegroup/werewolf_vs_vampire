@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <blueprint>
+	<dependencies>
+		<dependency v="G:\werewolf_vs_vampire\assets\static\game.bp" />
+	</dependencies>
 	<groups>
 		<group object_id="1" name="update">
 			<nodes>
@@ -59,7 +62,7 @@
 				</node>
 				<node object_id="58" parent_id="46" name="Add" position="323,576">
 					<inputs>
-						<input type="D@glm::vec3" name="B" value="0,64,64" />
+						<input type="D@glm::vec3" name="B" value="0,64,36" />
 					</inputs>
 				</node>
 				<node object_id="62" parent_id="46" name="Set Variable" position="595,592">
@@ -82,7 +85,7 @@
 				<node object_id="74" name="Variable" position="-164,241">
 					<inputs>
 						<input name="Name" value="2062730728" />
-						<input name="Location" value="1335010281" />
+						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
 				<node object_id="78" name="Set Pos" position="3,656">

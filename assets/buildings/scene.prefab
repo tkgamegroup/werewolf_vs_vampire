@@ -2,6 +2,7 @@
 <prefab file_id="442cca7370cd296f8d0d9f3f439d3aae">
 	<components>
 		<item type_name="flame::cNode" />
+		<item type_name="flame::cCollider" any_filter="32" />
 	</components>
 	<children>
 		<item file_id="44d11573fafb695252a2431cb35b9cba" name="Sketchfab_model">
