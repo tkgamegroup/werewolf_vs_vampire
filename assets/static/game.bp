@@ -2,35 +2,53 @@
 <blueprint>
 	<enums>
 		<enum name="flame::TagFlags">
-			<item name="TagHexTile" value="8" />
-			<item name="TagBuilding" value="16" />
-			<item name="TagCharacter" value="32" />
-			<item name="TagFriendly" value="64" />
-			<item name="TagHostile" value="128" />
-			<item name="TagMountainTile" value="256" />
-			<item name="TagForestTile" value="512" />
+			<items>
+				<item name="TagHexTile" value="8" />
+				<item name="TagBuilding" value="16" />
+				<item name="TagCharacter" value="32" />
+				<item name="TagFriendly" value="64" />
+				<item name="TagHostile" value="128" />
+				<item name="TagMountainTile" value="256" />
+				<item name="TagForestTile" value="512" />
+			</items>
 		</enum>
 		<enum name="TileType">
-			<item name="TileEmpty" value="0" />
-			<item name="TileConstructible" value="1" />
-			<item name="TileMountain" value="2" />
-			<item name="TileForest" value="3" />
-			<item name="TileFriendlyBuilding" value="4" />
-			<item name="TileHostileBuilding" value="5" />
+			<items>
+				<item name="TileEmpty" value="0" />
+				<item name="TileConstructible" value="1" />
+				<item name="TileMountain" value="2" />
+				<item name="TileForest" value="3" />
+				<item name="TileFriendlyBuilding" value="4" />
+				<item name="TileHostileBuilding" value="5" />
+			</items>
 		</enum>
 		<enum name="BuildingType">
-			<item name="BuildingCastle" value="0" />
-			<item name="BuildingHouse" value="1" />
-			<item name="BuildingBarracks" value="2" />
-			<item name="BuildingDefenseTower" value="3" />
-			<item name="BuildingCreepCamp" value="4" />
+			<items>
+				<item name="BuildingCastle" value="0" />
+				<item name="BuildingHouse" value="1" />
+				<item name="BuildingBarracks" value="2" />
+				<item name="BuildingDefenseTower" value="3" />
+				<item name="BuildingCreepCamp" value="4" />
+			</items>
 		</enum>
 		<enum name="FactionFlags">
-			<item name="FactionCreep" value="1" />
-			<item name="FactionParty2" value="4" />
-			<item name="FactionParty1" value="2" />
+			<items>
+				<item name="FactionNone" value="0" />
+				<item name="FactionCreep" value="1" />
+				<item name="FactionParty1" value="2" />
+				<item name="FactionParty2" value="4" />
+			</items>
 		</enum>
 	</enums>
+	<structs>
+		<struct name="Tile">
+			<variables>
+				<variable name="type" type="D@uint" default_value="" />
+				<variable name="entity" type="PU@flame::Entity" default_value="" />
+				<variable name="faction" type="D@uint" default_value="" />
+			</variables>
+		</struct>
+	</structs>
 	<variables>
 		<variable name="self" type="PU@flame::Entity" />
 		<variable name="tiles" type="VD@uint" />
