@@ -255,14 +255,14 @@
 				</node>
 				<node object_id="195" name="Sheet Rows Count" position="382,144" />
 				<node object_id="198" name="Loop" position="309,225" />
-				<node object_id="202" parent_id="198" name="Get SHT bool" position="46,287">
+				<node object_id="202" parent_id="198" name="Get SHT V#b" position="46,287">
 					<inputs>
 						<input name="Name_hash" value="can_construct" />
 					</inputs>
 				</node>
 				<node object_id="207" parent_id="198" name="Loop Index" position="-68,320" />
 				<node object_id="209" parent_id="198" name="If True" position="247,320" />
-				<node object_id="213" parent_id="209" name="Get SHT int" position="232,423">
+				<node object_id="213" parent_id="209" name="Get SHT V#i" position="232,423">
 					<inputs>
 						<input name="Name_hash" value="require_building_index" />
 					</inputs>
@@ -614,7 +614,7 @@
 						<input name="Name_hash" value="character" />
 					</inputs>
 				</node>
-				<node object_id="603" name="Get SHT std::filesystem::path" position="451,84">
+				<node object_id="603" name="Get SHT V#p" position="451,84">
 					<inputs>
 						<input name="Name_hash" value="prefab" />
 					</inputs>
@@ -660,7 +660,7 @@
 						<input name="Name_hash" value="flame::cNavAgent" />
 					</inputs>
 				</node>
-				<node object_id="652" name="Get SHT bool" position="739,591">
+				<node object_id="652" name="Get SHT V#b" position="739,591">
 					<inputs>
 						<input name="Name_hash" value="flying" />
 					</inputs>
@@ -671,7 +671,7 @@
 						<input name="Name_hash" value="flame::cAudioSource" />
 					</inputs>
 				</node>
-				<node object_id="664" name="Get SHT std::filesystem::path" position="659,743">
+				<node object_id="664" name="Get SHT V#p" position="659,743">
 					<inputs>
 						<input name="Name_hash" value="attack_sfx" />
 					</inputs>
@@ -1113,7 +1113,7 @@
 						<input name="Name_hash" value="building" />
 					</inputs>
 				</node>
-				<node object_id="1095" parent_id="1074" name="Get SHT uint" position="339,160">
+				<node object_id="1095" parent_id="1074" name="Get SHT V#u" position="339,160">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -1873,13 +1873,13 @@
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="1837" parent_id="1828" name="Get SHT int" position="1105,2495">
+				<node object_id="1837" parent_id="1828" name="Get SHT V#i" position="1105,2495">
 					<inputs>
 						<input name="Name_hash" value="character_index" />
 					</inputs>
 				</node>
 				<node object_id="1842" parent_id="1828" name="Image Atlas Item" position="1464,2542" />
-				<node object_id="1846" parent_id="1828" name="Get SHT uint" position="1296,2559">
+				<node object_id="1846" parent_id="1828" name="Get SHT V#u" position="1296,2559">
 					<inputs>
 						<input name="Name_hash" value="icon_hash" />
 					</inputs>
@@ -1891,7 +1891,7 @@
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="1858" parent_id="1828" name="Get SHT uint" position="1166,2702">
+				<node object_id="1858" parent_id="1828" name="Get SHT V#u" position="1166,2702">
 					<inputs>
 						<input name="Name_hash" value="number" />
 					</inputs>
@@ -2081,7 +2081,7 @@
 				<node object_id="2019" name="If True" position="-1479,1907" />
 				<node object_id="2023" parent_id="2019" name="Loop" position="-1682,2010" />
 				<node object_id="2027" parent_id="2023" name="Loop Index" position="-1973,2083" />
-				<node object_id="2029" parent_id="2023" name="Get SHT int" position="-1865,2106">
+				<node object_id="2029" parent_id="2023" name="Get SHT V#i" position="-1865,2106">
 					<inputs>
 						<input name="Name_hash" value="character_index" />
 					</inputs>
@@ -2098,7 +2098,7 @@
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="2047" parent_id="2034" name="Get SHT uint" position="-1801,2362">
+				<node object_id="2047" parent_id="2034" name="Get SHT V#u" position="-1801,2362">
 					<inputs>
 						<input name="Name_hash" value="number" />
 					</inputs>
@@ -2295,7 +2295,7 @@
 					</inputs>
 				</node>
 				<node object_id="2241" parent_id="2228" name="Conditional Operator" position="595,238" />
-				<node object_id="2246" parent_id="2228" name="Get SHT std::filesystem::path" position="48,336">
+				<node object_id="2246" parent_id="2228" name="Get SHT V#p" position="48,336">
 					<inputs>
 						<input name="Name_hash" value="prefab" />
 					</inputs>
@@ -2314,7 +2314,7 @@
 					</inputs>
 				</node>
 				<node object_id="2267" parent_id="2228" name="Conditional Operator" position="771,446" />
-				<node object_id="2272" parent_id="2228" name="Get SHT std::filesystem::path" position="147,624">
+				<node object_id="2272" parent_id="2228" name="Get SHT V#p" position="147,624">
 					<inputs>
 						<input name="Name_hash" value="attack_sfx" />
 					</inputs>
@@ -2978,7 +2978,7 @@
 				</node>
 				<node object_id="2897" parent_id="2814" name="Loop" position="-127,464" />
 				<node object_id="2901" parent_id="2897" name="Loop Index" position="-367,528" />
-				<node object_id="2903" parent_id="2897" name="Set SHT int" position="131,566">
+				<node object_id="2903" parent_id="2897" name="Set SHT V#i" position="131,566">
 					<inputs>
 						<input name="Name_hash" value="next_level_index" />
 					</inputs>
@@ -2988,13 +2988,13 @@
 						<input type="D@int" name="A" value="-1" />
 					</inputs>
 				</node>
-				<node object_id="2913" parent_id="2897" name="Get SHT std::wstring" position="-392,599">
+				<node object_id="2913" parent_id="2897" name="Get SHT V#w" position="-392,599">
 					<inputs>
 						<input name="Name_hash" value="next_level" />
 					</inputs>
 				</node>
 				<node object_id="2918" parent_id="2897" name="String Empty" position="-179,599" />
-				<node object_id="2921" parent_id="2897" name="Find std::wstring Item In Sheet" position="-193,694">
+				<node object_id="2921" parent_id="2897" name="Find Item In Sheet#w" position="-193,694">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
@@ -3008,7 +3008,7 @@
 				</node>
 				<node object_id="2933" parent_id="2814" name="Loop" position="-109,870" />
 				<node object_id="2937" parent_id="2933" name="Loop Index" position="-349,934" />
-				<node object_id="2939" parent_id="2933" name="Set SHT int" position="148,972">
+				<node object_id="2939" parent_id="2933" name="Set SHT V#i" position="148,972">
 					<inputs>
 						<input name="Name_hash" value="require_building_index" />
 					</inputs>
@@ -3019,12 +3019,12 @@
 					</inputs>
 				</node>
 				<node object_id="2949" parent_id="2933" name="String Empty" position="-163,999" />
-				<node object_id="2952" parent_id="2933" name="Get SHT std::wstring" position="-373,1021">
+				<node object_id="2952" parent_id="2933" name="Get SHT V#w" position="-373,1021">
 					<inputs>
 						<input name="Name_hash" value="require_building" />
 					</inputs>
 				</node>
-				<node object_id="2957" parent_id="2933" name="Find std::wstring Item In Sheet" position="-175,1100">
+				<node object_id="2957" parent_id="2933" name="Find Item In Sheet#w" position="-175,1100">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
@@ -3038,7 +3038,7 @@
 				</node>
 				<node object_id="2969" parent_id="2814" name="Loop" position="-86,1247" />
 				<node object_id="2973" parent_id="2969" name="Loop Index" position="-326,1311" />
-				<node object_id="2975" parent_id="2969" name="Set SHT int" position="171,1349">
+				<node object_id="2975" parent_id="2969" name="Set SHT V#i" position="171,1349">
 					<inputs>
 						<input name="Name_hash" value="spawn_character_index" />
 					</inputs>
@@ -3049,12 +3049,12 @@
 					</inputs>
 				</node>
 				<node object_id="2985" parent_id="2969" name="String Empty" position="-136,1367" />
-				<node object_id="2988" parent_id="2969" name="Get SHT std::wstring" position="-350,1398">
+				<node object_id="2988" parent_id="2969" name="Get SHT V#w" position="-350,1398">
 					<inputs>
 						<input name="Name_hash" value="spawn_character" />
 					</inputs>
 				</node>
-				<node object_id="2993" parent_id="2969" name="Find std::wstring Item In Sheet" position="-152,1477">
+				<node object_id="2993" parent_id="2969" name="Find Item In Sheet#w" position="-152,1477">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
@@ -3068,7 +3068,7 @@
 				</node>
 				<node object_id="3005" parent_id="2814" name="Loop" position="-114,1679" />
 				<node object_id="3009" parent_id="3005" name="Loop Index" position="-342,1758" />
-				<node object_id="3011" parent_id="3005" name="Set SHT uint" position="201,1773">
+				<node object_id="3011" parent_id="3005" name="Set SHT V#u" position="201,1773">
 					<inputs>
 						<input name="Name_hash" value="icon_hash" />
 					</inputs>
@@ -3079,7 +3079,7 @@
 					</inputs>
 				</node>
 				<node object_id="3021" parent_id="3005" name="String Empty" position="-164,1799" />
-				<node object_id="3024" parent_id="3005" name="Get SHT std::string" position="-362,1838">
+				<node object_id="3024" parent_id="3005" name="Get SHT V#s" position="-362,1838">
 					<inputs>
 						<input name="Name_hash" value="icon_name" />
 					</inputs>
@@ -3094,7 +3094,7 @@
 				</node>
 				<node object_id="3039" parent_id="2814" name="Loop" position="-86,2087" />
 				<node object_id="3043" parent_id="3039" name="Loop Index" position="-314,2166" />
-				<node object_id="3045" parent_id="3039" name="Set SHT uint" position="229,2181">
+				<node object_id="3045" parent_id="3039" name="Set SHT V#u" position="229,2181">
 					<inputs>
 						<input name="Name_hash" value="icon_hash" />
 					</inputs>
@@ -3105,7 +3105,7 @@
 					</inputs>
 				</node>
 				<node object_id="3055" parent_id="3039" name="String Empty" position="-136,2207" />
-				<node object_id="3058" parent_id="3039" name="Get SHT std::string" position="-334,2246">
+				<node object_id="3058" parent_id="3039" name="Get SHT V#s" position="-334,2246">
 					<inputs>
 						<input name="Name_hash" value="icon_name" />
 					</inputs>
@@ -3128,7 +3128,7 @@
 				</node>
 				<node object_id="3087" parent_id="3079" name="Loop" position="-30,2790" />
 				<node object_id="3091" parent_id="3087" name="Loop Index" position="-270,2854" />
-				<node object_id="3093" parent_id="3087" name="Set SHT int" position="274,2885">
+				<node object_id="3093" parent_id="3087" name="Set SHT V#i" position="274,2885">
 					<inputs>
 						<input name="Name_hash" value="character_index" />
 					</inputs>
@@ -3139,12 +3139,12 @@
 					</inputs>
 				</node>
 				<node object_id="3103" parent_id="3087" name="String Empty" position="-80,2910" />
-				<node object_id="3106" parent_id="3087" name="Get SHT std::wstring" position="-294,2941">
+				<node object_id="3106" parent_id="3087" name="Get SHT V#w" position="-294,2941">
 					<inputs>
 						<input name="Name_hash" value="character" />
 					</inputs>
 				</node>
-				<node object_id="3111" parent_id="3087" name="Find std::wstring Item In Sheet" position="-96,3020">
+				<node object_id="3111" parent_id="3087" name="Find Item In Sheet#w" position="-96,3020">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>

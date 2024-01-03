@@ -18,7 +18,7 @@
 						<input name="Name_hash" value="building" />
 					</inputs>
 				</node>
-				<node object_id="10" name="Get SHT std::wstring" position="348,105">
+				<node object_id="10" name="Get SHT V#w" position="348,105">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
@@ -29,7 +29,7 @@
 						<input name="Col" value="255,255,206,255" />
 					</inputs>
 				</node>
-				<node object_id="19" name="Get SHT std::wstring" position="348,252">
+				<node object_id="19" name="Get SHT V#w" position="348,252">
 					<inputs>
 						<input name="Name_hash" value="description" />
 					</inputs>
@@ -40,7 +40,7 @@
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="28" name="Get SHT uint" position="355,391">
+				<node object_id="28" name="Get SHT V#u" position="355,391">
 					<inputs>
 						<input name="Name_hash" value="gold_production" />
 					</inputs>
@@ -61,7 +61,7 @@
 						<input name="Fmt" value="Provide Gold Each Round: {}" />
 					</inputs>
 				</node>
-				<node object_id="46" name="Get SHT float" position="320,663">
+				<node object_id="46" name="Get SHT V#f" position="320,663">
 					<inputs>
 						<input name="Name_hash" value="attack_range" />
 					</inputs>
@@ -71,7 +71,7 @@
 						<input name="B" value="0" />
 					</inputs>
 				</node>
-				<node object_id="85" parent_id="51" name="Get SHT uint" position="227,799">
+				<node object_id="85" parent_id="51" name="Get SHT V#u" position="227,799">
 					<inputs>
 						<input name="Name_hash" value="attack_damage" />
 					</inputs>
@@ -92,7 +92,7 @@
 						<input name="Fmt" value="Attack Speed: {}" />
 					</inputs>
 				</node>
-				<node object_id="68" parent_id="51" name="Get SHT float" position="259,959">
+				<node object_id="68" parent_id="51" name="Get SHT V#f" position="259,959">
 					<inputs>
 						<input name="Name_hash" value="attack_interval" />
 					</inputs>
@@ -234,7 +234,7 @@
 						<input name="Location" value="70329639" />
 					</inputs>
 				</node>
-				<node object_id="238" parent_id="219" name="Get SHT uint" position="1073,1538">
+				<node object_id="238" parent_id="219" name="Get SHT V#u" position="1073,1538">
 					<inputs>
 						<input name="Name_hash" value="icon_hash" />
 					</inputs>
@@ -286,7 +286,7 @@
 					</inputs>
 				</node>
 				<node object_id="299" parent_id="265" name="Greater Or Equal" position="1889,1967" />
-				<node object_id="303" parent_id="265" name="Get SHT uint" position="1678,2054">
+				<node object_id="303" parent_id="265" name="Get SHT V#u" position="1678,2054">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -348,7 +348,7 @@
 						<input name="Name_hash" value="building" />
 					</inputs>
 				</node>
-				<node object_id="361" parent_id="341" name="Get SHT uint" position="3115,1423">
+				<node object_id="361" parent_id="341" name="Get SHT V#u" position="3115,1423">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -358,7 +358,7 @@
 						<input name="B" value="2" />
 					</inputs>
 				</node>
-				<node object_id="371" parent_id="341" name="Get SHT int" position="2975,1542">
+				<node object_id="371" parent_id="341" name="Get SHT V#i" position="2975,1542">
 					<inputs>
 						<input name="Name_hash" value="next_level_index" />
 					</inputs>
@@ -393,7 +393,7 @@
 						<input name="Volumn" value="1" />
 					</inputs>
 				</node>
-				<node object_id="408" parent_id="380" name="Get SHT uint" position="2914,1686">
+				<node object_id="408" parent_id="380" name="Get SHT V#u" position="2914,1686">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -524,7 +524,7 @@
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="547" parent_id="539" name="Get SHT uint" position="1959,4458">
+				<node object_id="547" parent_id="539" name="Get SHT V#u" position="1959,4458">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -586,7 +586,7 @@
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="608" parent_id="600" name="Get SHT uint" position="2041,5301">
+				<node object_id="608" parent_id="600" name="Get SHT V#u" position="2041,5301">
 					<inputs>
 						<input name="Name_hash" value="cost_gold" />
 					</inputs>
@@ -619,7 +619,7 @@
 						<input name="Name_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="641" parent_id="624" name="Get SHT std::wstring" position="2070,5905">
+				<node object_id="641" parent_id="624" name="Get SHT V#w" position="2070,5905">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
@@ -635,7 +635,7 @@
 						<input name="Col" value="251,255,255,206" />
 					</inputs>
 				</node>
-				<node object_id="653" parent_id="624" name="Get SHT std::wstring" position="2067,6020">
+				<node object_id="653" parent_id="624" name="Get SHT V#w" position="2067,6020">
 					<inputs>
 						<input name="Name_hash" value="description" />
 					</inputs>
