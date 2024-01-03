@@ -465,7 +465,7 @@
 				</node>
 				<node object_id="418" name="If True" position="51,240" />
 				<node object_id="422" parent_id="418" name="Array Get Random Samples" position="103,336" />
-				<node object_id="429" parent_id="422" name="Loop Var uint" position="52,448" />
+				<node object_id="429" parent_id="422" name="Loop Var#u" position="52,448" />
 				<node object_id="431" parent_id="422" name="If Equal" position="202,462" />
 				<node object_id="436" parent_id="431" name="Loop" position="99,576" />
 				<node object_id="440" parent_id="436" name="And" position="333,655" />
@@ -488,7 +488,7 @@
 				</node>
 				<node object_id="474" parent_id="459" name="Get Pos" position="179,928" />
 				<node object_id="477" parent_id="459" name="If True" position="606,968" />
-				<node object_id="481" parent_id="477" name="Return bool" position="475,992">
+				<node object_id="481" parent_id="477" name="Return#b" position="475,992">
 					<inputs>
 						<input name="V" value="true" />
 						<input name="Levels" value="5" />
@@ -516,7 +516,7 @@
 				</node>
 				<node object_id="500" parent_id="422" name="Loop Index" position="-44,464" />
 				<node object_id="502" parent_id="418" name="Foreach" position="595,383" />
-				<node object_id="506" parent_id="502" name="Loop Var uint" position="436,448" />
+				<node object_id="506" parent_id="502" name="Loop Var#u" position="436,448" />
 				<node object_id="508" parent_id="502" name="Get Pos" position="746,464" />
 				<node object_id="511" parent_id="502" name="Add" position="906,480" />
 				<node object_id="515" parent_id="502" name="Array Add Item" position="1011,480">
@@ -1210,7 +1210,7 @@
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1197" parent_id="1189" name="Return bool" position="515,360">
+				<node object_id="1197" parent_id="1189" name="Return#b" position="515,360">
 					<inputs>
 						<input name="V" value="true" />
 						<input name="Levels" value="2" />
@@ -1266,7 +1266,7 @@
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1264" parent_id="1256" name="Return bool" position="525,1172">
+				<node object_id="1264" parent_id="1256" name="Return#b" position="525,1172">
 					<inputs>
 						<input name="V" value="true" />
 						<input name="Levels" value="2" />
@@ -1647,7 +1647,7 @@
 			</nodes>
 			<links>
 				<link object_id="3487" from_node="1590" from_slot="target" to_node="3483" to_slot="Entity" />
-				<link object_id="3489" from_node="1590" from_slot="damage" to_node="1593" to_slot="Input0" />
+				<link object_id="3489" from_node="1590" from_slot="damage" to_node="1593" to_slot="Input 1" />
 				<link object_id="3488" from_node="3483" from_slot="Instance" to_node="1593" to_slot="Instance" />
 			</links>
 		</group>
@@ -1801,7 +1801,7 @@
 				<link object_id="1751" from_node="1669" from_slot="Out" to_node="1665" to_slot="B" />
 				<link object_id="1752" from_node="1606" from_slot="attacker" to_node="1626" to_slot="Entity" />
 				<link object_id="1753" from_node="1606" from_slot="target" to_node="1737" to_slot="Entity" />
-				<link object_id="3490" from_node="1606" from_slot="damage" to_node="1618" to_slot="Input0" />
+				<link object_id="3490" from_node="1606" from_slot="damage" to_node="1618" to_slot="Input 1" />
 				<link object_id="1754" from_node="1662" from_slot="Pos" to_node="1665" to_slot="A" />
 				<link object_id="1755" from_node="1719" from_slot="Result" to_node="1723" to_slot="Condition" />
 				<link object_id="1758" from_node="1626" from_slot="Instance" to_node="1674" to_slot="Instance" />
@@ -2533,7 +2533,7 @@
 					</inputs>
 				</node>
 				<node object_id="2483" parent_id="2476" name="Add Tag" position="3043,176" />
-				<node object_id="2486" parent_id="2476" name="Ramp Branch 5" position="2661,254">
+				<node object_id="2486" parent_id="2476" name="Ramp Branch#5" position="2661,254">
 					<inputs>
 						<input name="Stop 1" value="0.2" />
 						<input name="Stop 2" value="0.5" />
@@ -2631,7 +2631,7 @@
 						<input name="Max" value="0.12" />
 					</inputs>
 				</node>
-				<node object_id="2578" parent_id="2473" name="Ramp Branch 2" position="2263,315">
+				<node object_id="2578" parent_id="2473" name="Ramp Branch#2" position="2263,315">
 					<inputs>
 						<input name="Stop 1" value="0.1" />
 						<input name="Stop 2" value="0.3" />
@@ -2670,7 +2670,7 @@
 					</inputs>
 				</node>
 				<node object_id="2618" parent_id="2600" name="Loop Index" position="2665,1455" />
-				<node object_id="2620" parent_id="2600" name="Ramp Branch 5" position="2792,1470">
+				<node object_id="2620" parent_id="2600" name="Ramp Branch#5" position="2792,1470">
 					<inputs>
 						<input name="Stop 1" value="0.3" />
 						<input name="Stop 2" value="0.6" />
@@ -3118,7 +3118,7 @@
 					</inputs>
 				</node>
 				<node object_id="3074" parent_id="3069" name="Get Sheet" position="-39,2598" />
-				<node object_id="3077" parent_id="3069" name="Loop Var std::filesystem::path" position="-333,2614" />
+				<node object_id="3077" parent_id="3069" name="Loop Var#p" position="-333,2614" />
 				<node object_id="3079" parent_id="3069" name="If True" position="-94,2677" />
 				<node object_id="3083" parent_id="3079" name="Sheet Insert Column" position="142,2741">
 					<inputs>
@@ -3207,9 +3207,9 @@
 					</inputs>
 				</node>
 				<node object_id="3162" parent_id="3125" name="Array Random Sample" position="3870,812" />
-				<node object_id="3169" parent_id="3162" name="Loop Var uint" position="3775,893" />
+				<node object_id="3169" parent_id="3162" name="Loop Var#u" position="3775,893" />
 				<node object_id="3171" parent_id="3162" name="Equal" position="3910,908" />
-				<node object_id="3175" parent_id="3162" name="Return bool" position="4030,924">
+				<node object_id="3175" parent_id="3162" name="Return#b" position="4030,924">
 					<inputs>
 						<input name="Levels" value="1" />
 					</inputs>
