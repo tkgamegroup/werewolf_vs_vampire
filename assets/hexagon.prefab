@@ -6,7 +6,7 @@
 	<children>
 		<item file_id="47871d84965d59d1a8dd05bcaa11b68b" name="Hexagon">
 			<components>
-				<item type_name="flame::cNode" pos="0.5,3.72529e-10,-0.5" qut="0.683013,-0.683013,0.183013,0.183013" />
+				<item type_name="flame::cNode" pos="0,3.72529e-10,0" qut="0.683013,-0.683013,0.183013,0.183013" />
 				<item type_name="flame::cMesh" mesh_name="models\hexagon.fmod#mesh0" material_name="materials\grass_field.fmat" cast_shadow="false" />
 			</components>
 		</item>
