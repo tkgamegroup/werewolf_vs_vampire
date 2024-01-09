@@ -149,7 +149,7 @@
 			<nodes>
 				<node object_id="122" name="Print" position="288,64">
 					<inputs>
-						<input name="String" value="give you 100 gold" />
+						<input name="V" value="give you 100 gold" />
 					</inputs>
 				</node>
 			</nodes>
@@ -168,7 +168,7 @@
 						<input type="D@uint" name="B" value="0" />
 					</inputs>
 				</node>
-				<node object_id="141" parent_id="136" name="String To Int" position="1613,51" />
+				<node object_id="141" parent_id="136" name="Stoi" position="1613,51" />
 				<node object_id="144" parent_id="136" name="Get Name" position="1465,51" />
 				<node object_id="147" parent_id="136" name="If True" position="1910,99" />
 				<node object_id="151" parent_id="147" name="Get Pos" position="1683,208" />
@@ -1057,9 +1057,9 @@
 				<link object_id="1021" from_node="845" from_slot="V" to_node="849" to_slot="A" />
 				<link object_id="1022" from_node="683" from_slot="V" to_node="679" to_slot="B" />
 				<link object_id="1023" from_node="128" from_slot="Atlas" to_node="334" to_slot="Atlas" />
-				<link object_id="1024" from_node="315" from_slot="Reminder" to_node="320" to_slot="A" />
+				<link object_id="1024" from_node="315" from_slot="R" to_node="320" to_slot="A" />
 				<link object_id="1025" from_node="128" from_slot="Atlas" to_node="330" to_slot="Atlas" />
-				<link object_id="1026" from_node="144" from_slot="Name" to_node="141" to_slot="String" />
+				<link object_id="1026" from_node="144" from_slot="Name" to_node="141" to_slot="V" />
 				<link object_id="1028" from_node="228" from_slot="V" to_node="233" to_slot="Row" />
 				<link object_id="1029" from_node="564" from_slot="V" to_node="534" to_slot="Cond" />
 				<link object_id="1030" from_node="128" from_slot="Atlas" to_node="925" to_slot="Atlas" />
@@ -1102,7 +1102,7 @@
 				<link object_id="1068" from_node="925" from_slot="Item" to_node="545" to_slot="Image" />
 				<link object_id="1069" from_node="884" from_slot="V" to_node="888" to_slot="V" />
 				<link object_id="1070" from_node="725" from_slot="V" to_node="715" to_slot="Arg2" />
-				<link object_id="1071" from_node="728" from_slot="Reminder" to_node="715" to_slot="Arg3" />
+				<link object_id="1071" from_node="728" from_slot="R" to_node="715" to_slot="Arg3" />
 				<link object_id="1072" from_node="792" from_slot="Item" to_node="197" to_slot="Image" />
 				<link object_id="1073" from_node="613" from_slot="V" to_node="623" to_slot="Arg1" />
 				<link object_id="1074" from_node="550" from_slot="V" to_node="560" to_slot="Arg1" />
@@ -1148,7 +1148,7 @@
 				<link object_id="1114" from_node="860" from_slot="V" to_node="864" to_slot="V" />
 				<link object_id="1115" from_node="426" from_slot="V" to_node="409" to_slot="Row" />
 				<link object_id="1116" from_node="898" from_slot="V" to_node="895" to_slot="V" />
-				<link object_id="1117" from_node="365" from_slot="Quotient" to_node="454" to_slot="Arg1" />
+				<link object_id="1117" from_node="365" from_slot="Q" to_node="454" to_slot="Arg1" />
 				<link object_id="1118" from_node="376" from_slot="V" to_node="380" to_slot="Cond" />
 				<link object_id="1119" from_node="864" from_slot="V" to_node="867" to_slot="A" />
 				<link object_id="1120" from_node="895" from_slot="V" to_node="902" to_slot="A" />
