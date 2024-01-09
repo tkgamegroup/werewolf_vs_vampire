@@ -1,5 +1,17 @@
 <?xml version="1.0"?>
 <blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" />
+		<variable name="range" type="D@float" value="0" />
+		<variable name="damage" type="D@uint" value="0" />
+		<variable name="interval" type="D@float" value="0" />
+		<variable name="projectile_prefab" type="D@std::filesystem::path" value="" />
+		<variable name="projectile_speed" type="D@float" value="0" />
+		<variable name="projectile_parabolic" type="D@bool" value="false" />
+		<variable name="projectile_hit_radius" type="D@float" value="0" />
+		<variable name="target" type="PU@flame::Entity" />
+		<variable name="timer" type="D@float" value="0" />
+	</variables>
 	<groups>
 		<group object_id="1" name="main">
 			<nodes />

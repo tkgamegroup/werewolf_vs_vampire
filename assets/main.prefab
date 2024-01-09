@@ -54,7 +54,7 @@
 				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select_efx" />
 			</modifications>
 		</item>
-		<item file_id="40ef0d713b583a63e798cc6e09c5fca8" name="Birds Spawner">
+		<item file_id="40ef0d713b583a63e798cc6e09c5fca8" name="Birds Spawner" enable="false">
 			<components>
 				<item type_name="flame::cNode" pos="0,30,0" />
 				<item type_name="flame::cParticleSystem" particle_size="0.5,0.5" particle_alpha_over_lifetime="true" particle_alpha_curve="(0.00533844,1.00363),(0.849463,1.01057),(0.995923,0.0146459)" emitt_type="Pie" emitt_duration="2" emitt_num="3" render_type="HorizontalBillboard" material_name="environment\birds\5a228731b8cc50.8721059615122122737569.fmat" />

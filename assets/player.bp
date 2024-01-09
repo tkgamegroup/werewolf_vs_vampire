@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<blueprint>
+	<groups>
+		<group object_id="1" name="main">
+			<nodes />
+			<links />
+		</group>
+	</groups>
+</blueprint>
