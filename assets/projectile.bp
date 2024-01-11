@@ -318,7 +318,7 @@
 						<input name="Parent Search Times" value="3" />
 					</inputs>
 				</node>
-				<node object_id="342" parent_id="331" name="Loop Var Entity" position="3460,1680" />
+				<node object_id="342" parent_id="331" name="Loop Var#e" position="3460,1680" />
 				<node object_id="344" parent_id="331" name="If Equal" position="3759,1696" />
 				<node object_id="349" parent_id="344" name="ECall#u|v" position="3747,1825">
 					<inputs>
