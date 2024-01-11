@@ -128,7 +128,7 @@
 					</inputs>
 				</node>
 				<node object_id="77" parent_id="67" name="If Equal" position="724,575" />
-				<node object_id="82" parent_id="77" name="EGet Entity" position="336,716">
+				<node object_id="82" parent_id="77" name="EGet V#e" position="336,716">
 					<inputs>
 						<input name="Name_hash" value="tile_lt" />
 					</inputs>
@@ -150,7 +150,7 @@
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="110" parent_id="77" name="EGet Entity" position="848,718">
+				<node object_id="110" parent_id="77" name="EGet V#e" position="848,718">
 					<inputs>
 						<input name="Name_hash" value="tile_rt" />
 					</inputs>
@@ -172,7 +172,7 @@
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="138" parent_id="77" name="EGet Entity" position="175,1022">
+				<node object_id="138" parent_id="77" name="EGet V#e" position="175,1022">
 					<inputs>
 						<input name="Name_hash" value="tile_l" />
 					</inputs>
@@ -194,7 +194,7 @@
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="166" parent_id="77" name="EGet Entity" position="864,1038">
+				<node object_id="166" parent_id="77" name="EGet V#e" position="864,1038">
 					<inputs>
 						<input name="Name_hash" value="tile_r" />
 					</inputs>
@@ -216,7 +216,7 @@
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="194" parent_id="77" name="EGet Entity" position="303,1373">
+				<node object_id="194" parent_id="77" name="EGet V#e" position="303,1373">
 					<inputs>
 						<input name="Name_hash" value="tile_lb" />
 					</inputs>
@@ -238,7 +238,7 @@
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="222" parent_id="77" name="EGet Entity" position="864,1405">
+				<node object_id="222" parent_id="77" name="EGet V#e" position="864,1405">
 					<inputs>
 						<input name="Name_hash" value="tile_rb" />
 					</inputs>
@@ -298,7 +298,7 @@
 						<input name="A" value="2" />
 					</inputs>
 				</node>
-				<node object_id="291" parent_id="282" name="EGet Entity" position="1205,2079">
+				<node object_id="291" parent_id="282" name="EGet V#e" position="1205,2079">
 					<inputs>
 						<input name="Name_hash" value="tile_rt" />
 					</inputs>
@@ -326,7 +326,7 @@
 						<input name="A" value="-30" />
 					</inputs>
 				</node>
-				<node object_id="326" parent_id="282" name="EGet Entity" position="565,2114">
+				<node object_id="326" parent_id="282" name="EGet V#e" position="565,2114">
 					<inputs>
 						<input name="Name_hash" value="tile_lt" />
 					</inputs>
@@ -354,12 +354,12 @@
 						<input name="A" value="-90" />
 					</inputs>
 				</node>
-				<node object_id="361" parent_id="282" name="EGet Entity" position="1237,2513">
+				<node object_id="361" parent_id="282" name="EGet V#e" position="1237,2513">
 					<inputs>
 						<input name="Name_hash" value="tile_r" />
 					</inputs>
 				</node>
-				<node object_id="365" parent_id="282" name="EGet Entity" position="565,2525">
+				<node object_id="365" parent_id="282" name="EGet V#e" position="565,2525">
 					<inputs>
 						<input name="Name_hash" value="tile_l" />
 					</inputs>
@@ -410,12 +410,12 @@
 						<input name="A" value="-150" />
 					</inputs>
 				</node>
-				<node object_id="431" parent_id="282" name="EGet Entity" position="1242,2947">
+				<node object_id="431" parent_id="282" name="EGet V#e" position="1242,2947">
 					<inputs>
 						<input name="Name_hash" value="tile_rb" />
 					</inputs>
 				</node>
-				<node object_id="435" parent_id="282" name="EGet Entity" position="554,2957">
+				<node object_id="435" parent_id="282" name="EGet V#e" position="554,2957">
 					<inputs>
 						<input name="Name_hash" value="tile_lb" />
 					</inputs>
@@ -1735,7 +1735,7 @@
 						<input name="Path" value="assets\projectile.bp" />
 					</inputs>
 				</node>
-				<node object_id="1772" parent_id="1759" name="Set BP Entity" position="2021,131">
+				<node object_id="1772" parent_id="1759" name="Set BP V#e" position="2021,131">
 					<inputs>
 						<input name="Name_hash" value="target" />
 					</inputs>
@@ -1780,7 +1780,7 @@
 					</inputs>
 				</node>
 				<node object_id="1814" parent_id="1759" name="If True" position="2056,531" />
-				<node object_id="1818" parent_id="1814" name="Set BP Entity" position="2131,639">
+				<node object_id="1818" parent_id="1814" name="Set BP V#e" position="2131,639">
 					<inputs>
 						<input name="Name_hash" value="target" />
 						<input name="V" value="cdcdcdcdcdcdcdcd" />
@@ -2546,7 +2546,7 @@
 						<input name="Name" value="destroyed" />
 					</inputs>
 				</node>
-				<node object_id="2602" parent_id="2563" name="ESet Entity" position="554,496">
+				<node object_id="2602" parent_id="2563" name="ESet V#e" position="554,496">
 					<inputs>
 						<input name="Name_hash" value="tile" />
 					</inputs>
@@ -3366,7 +3366,7 @@
 				<node object_id="3441" parent_id="3418" name="If" position="5098,335" />
 				<node object_id="3445" parent_id="3418" name="Block" position="5686,358" />
 				<node object_id="4140" parent_id="3445" name="If Not Equal" position="5988,447" />
-				<node object_id="3448" parent_id="4140" name="ESet Entity" position="6122,559">
+				<node object_id="3448" parent_id="4140" name="ESet V#e" position="6122,559">
 					<inputs>
 						<input name="Name_hash" value="tile_rt" />
 					</inputs>
@@ -3374,7 +3374,7 @@
 				<node object_id="3452" parent_id="4140" name="Find Entity" position="5978,575" />
 				<node object_id="3472" parent_id="4140" name="Str" position="5908,600" />
 				<node object_id="4122" parent_id="3445" name="If Not DE" position="5524,447" />
-				<node object_id="3460" parent_id="4122" name="ESet Entity" position="5611,568">
+				<node object_id="3460" parent_id="4122" name="ESet V#e" position="5611,568">
 					<inputs>
 						<input name="Name_hash" value="tile_lt" />
 					</inputs>
@@ -3402,13 +3402,13 @@
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="3482" parent_id="3445" name="ESet Entity" position="6194,675">
+				<node object_id="3482" parent_id="3445" name="ESet V#e" position="6194,675">
 					<inputs>
 						<input name="Name_hash" value="tile_r" />
 					</inputs>
 				</node>
 				<node object_id="3490" parent_id="3445" name="Find Entity" position="6050,691" />
-				<node object_id="3486" parent_id="3445" name="ESet Entity" position="5666,697">
+				<node object_id="3486" parent_id="3445" name="ESet V#e" position="5666,697">
 					<inputs>
 						<input name="Name_hash" value="tile_l" />
 					</inputs>
@@ -3419,7 +3419,7 @@
 				<node object_id="3506" parent_id="3445" name="Str" position="5989,723" />
 				<node object_id="3509" parent_id="3445" name="Str" position="5461,745" />
 				<node object_id="3536" parent_id="3445" name="If Not DE" position="5956,817" />
-				<node object_id="3541" parent_id="3536" name="ESet Entity" position="6138,936">
+				<node object_id="3541" parent_id="3536" name="ESet V#e" position="6138,936">
 					<inputs>
 						<input name="Name_hash" value="tile_rb" />
 					</inputs>
@@ -3438,7 +3438,7 @@
 				</node>
 				<node object_id="3516" parent_id="3445" name="Subtract" position="5429,861" />
 				<node object_id="3520" parent_id="3445" name="If Not DE" position="5588,862" />
-				<node object_id="3525" parent_id="3520" name="ESet Entity" position="5658,981">
+				<node object_id="3525" parent_id="3520" name="ESet V#e" position="5658,981">
 					<inputs>
 						<input name="Name_hash" value="tile_lb" />
 					</inputs>
@@ -3446,12 +3446,12 @@
 				<node object_id="3529" parent_id="3520" name="Find Entity" position="5514,997" />
 				<node object_id="3533" parent_id="3520" name="Str" position="5453,1029" />
 				<node object_id="3556" parent_id="3418" name="Block" position="4580,385" />
-				<node object_id="3559" parent_id="3556" name="ESet Entity" position="4466,455">
+				<node object_id="3559" parent_id="3556" name="ESet V#e" position="4466,455">
 					<inputs>
 						<input name="Name_hash" value="tile_lt" />
 					</inputs>
 				</node>
-				<node object_id="3563" parent_id="3556" name="ESet Entity" position="5035,455">
+				<node object_id="3563" parent_id="3556" name="ESet V#e" position="5035,455">
 					<inputs>
 						<input name="Name_hash" value="tile_rt" />
 					</inputs>
@@ -3471,12 +3471,12 @@
 				<node object_id="3583" parent_id="3556" name="Find Entity" position="4891,471" />
 				<node object_id="3587" parent_id="3556" name="Str" position="4821,496" />
 				<node object_id="3590" parent_id="3556" name="Str" position="4261,503" />
-				<node object_id="3593" parent_id="3556" name="ESet Entity" position="4964,576">
+				<node object_id="3593" parent_id="3556" name="ESet V#e" position="4964,576">
 					<inputs>
 						<input name="Name_hash" value="tile_r" />
 					</inputs>
 				</node>
-				<node object_id="3597" parent_id="3556" name="ESet Entity" position="4467,583">
+				<node object_id="3597" parent_id="3556" name="ESet V#e" position="4467,583">
 					<inputs>
 						<input name="Name_hash" value="tile_l" />
 					</inputs>
@@ -3486,7 +3486,7 @@
 				<node object_id="3609" parent_id="3556" name="Str" position="4759,624" />
 				<node object_id="3612" parent_id="3556" name="Str" position="4262,631" />
 				<node object_id="3615" parent_id="3556" name="If Not DE" position="4835,704" />
-				<node object_id="3620" parent_id="3615" name="ESet Entity" position="4931,823">
+				<node object_id="3620" parent_id="3615" name="ESet V#e" position="4931,823">
 					<inputs>
 						<input name="Name_hash" value="tile_rb" />
 					</inputs>
@@ -3500,7 +3500,7 @@
 					</inputs>
 				</node>
 				<node object_id="3647" parent_id="3556" name="If Not DE" position="4275,719" />
-				<node object_id="3652" parent_id="3647" name="ESet Entity" position="4378,856">
+				<node object_id="3652" parent_id="3647" name="ESet V#e" position="4378,856">
 					<inputs>
 						<input name="Name_hash" value="tile_lb" />
 					</inputs>
