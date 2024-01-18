@@ -2,33 +2,25 @@
 <sheet name="building">
 	<columns>
 		<column type="D@std::wstring" name="name" width="103" />
-		<column type="D@std::string" name="icon_name" width="73" />
+		<column type="U@flame::StrAndHash" name="icon_name" width="73" />
 		<column type="D@std::filesystem::path" name="prefab" width="205" />
 		<column type="D@float" name="radius" width="55" />
 		<column type="D@float" name="height" width="59" />
 		<column type="D@uint" name="cost_gold" width="65" />
 		<column type="D@std::wstring" name="description" width="200" />
 		<column type="D@bool" name="can_construct" width="96" />
-		<column type="D@std::wstring" name="next_level" width="73" />
-		<column type="D@std::wstring" name="require_building" width="122" />
-		<column type="D@int" name="next_level_index" width="31" />
-		<column type="D@int" name="require_building_index" width="35" />
-		<column type="D@uint" name="hp_max" width="54" />
-		<column type="D@std::string" name="abilities" width="264" />
-		<column type="D@std::wstring" name="spawn_character" width="112" />
-		<column type="D@uint" name="troop_max_number" width="87" />
-		<column type="D@int" name="spawn_character_index" width="76" />
-		<column type="D@uint" name="gold_production" width="80" />
-		<column type="D@uint" name="icon_hash" width="80" />
+		<column type="D@uint" name="hp_max" width="73" />
+		<column type="D@std::string" name="abilities" width="122" />
 	</columns>
 	<rows>
-		<row name="Town Center" icon_name="town_center" prefab="assets\buildings\castle_bran.prefab" radius="1.5" height="2" cost_gold="300" description="Upgrade to unlock more buildings." can_construct="true" next_level="" require_building="" next_level_index="-1" require_building_index="-1" hp_max="100" abilities="" spawn_character="" troop_max_number="0" spawn_character_index="-1" gold_production="0" icon_hash="1166834851" />
-		<row name="House" icon_name="house" prefab="assets\extra\buildings\Human_Village_Building_08.prefab" radius="1.5" height="2" cost_gold="200" description="Give you some gold at the end of rounds." can_construct="true" next_level="Farm" require_building="" next_level_index="5" require_building_index="-1" hp_max="20" abilities="" spawn_character="" troop_max_number="0" spawn_character_index="-1" gold_production="100" icon_hash="1314243355" />
-		<row name="Barracks" icon_name="barracks" prefab="assets\extra\buildings\Human_Village_Building_03.prefab" radius="1.5" height="2" cost_gold="400" description="Training soldiers to defense or attack enemies." can_construct="true" next_level="" require_building="House" next_level_index="-1" require_building_index="1" hp_max="30" abilities="" spawn_character="Infantry" troop_max_number="4" spawn_character_index="1" gold_production="0" icon_hash="1419857598" />
-		<row name="Arrow Tower" icon_name="tower" prefab="assets\extra\buildings\Human_Village_Building_01.prefab" radius="1.5" height="3.7" cost_gold="300" description="Defense your town by shooting arrows to enemies." can_construct="true" next_level="" require_building="Town Center" next_level_index="-1" require_building_index="0" hp_max="100" abilities="assets\abilities\attack.bp&#10;range=20&#10;damage=20&#10;interval=1&#10;projectile_prefab=assets\extra\characters\ELF_arrow.prefab&#10;projectile_speed=18&#10;sfx=assets\sfx\shoot.ogg" spawn_character="" troop_max_number="0" spawn_character_index="-1" gold_production="0" icon_hash="1696842114" />
-		<row name="Creep Camp" icon_name="" prefab="assets\house.prefab" radius="1.5" height="2" cost_gold="0" description="Monsters comes from here and will attak your town!" can_construct="false" next_level="" require_building="" next_level_index="-1" require_building_index="-1" hp_max="100" abilities="" spawn_character="Bat" troop_max_number="4" spawn_character_index="3" gold_production="0" icon_hash="0" />
-		<row name="Farm" icon_name="" prefab="assets\house.prefab" radius="1.5" height="2" cost_gold="300" description="Give you some gold at the end of rounds." can_construct="false" next_level="" require_building="" next_level_index="-1" require_building_index="-1" hp_max="30" abilities="" spawn_character="" troop_max_number="0" spawn_character_index="-1" gold_production="200" icon_hash="0" />
-		<row name="Sawmill" icon_name="sawmill" prefab="assets\extra\buildings\Human_Village_Building_05.prefab" radius="1.5" height="2" cost_gold="200" description="" can_construct="true" next_level="" require_building="House" next_level_index="-1" require_building_index="1" hp_max="100" abilities="" spawn_character="" troop_max_number="1" spawn_character_index="-1" gold_production="0" icon_hash="2210157148" />
-		<row name="Cannon Tower" icon_name="tower" prefab="assets\extra\buildings\Human_Village_Building_01.prefab" radius="1.5" height="3.7" cost_gold="300" description="Defense your town by firing rocks to enemies." can_construct="true" next_level="" require_building="Town Center" next_level_index="-1" require_building_index="0" hp_max="100" abilities="assets\abilities\attack.bp&#10;range=20&#10;damage=30&#10;interval=1&#10;projectile_prefab=assets\ball.prefab&#10;projectile_speed=18&#10;projectile_parabolic=true&#10;projectile_hit_radius=1" spawn_character="" troop_max_number="0" spawn_character_index="-1" gold_production="0" icon_hash="1696842114" />
+		<row name="Town Hall" icon_name=",0" prefab="assets\buildings\blank_building.prefab" radius="0" height="0" cost_gold="0" description="" can_construct="false" hp_max="100" abilities="" />
+		<row name="Barracks" icon_name="barracks,1419857598" prefab="assets\extra\buildings\Human_Village_Building_03.prefab" radius="1.5" height="2" cost_gold="400" description="Training soldiers to defense or attack enemies." can_construct="false" hp_max="30" abilities="assets\abilities\spawn_units.bp&#10;character=Infantry&#10;number=4" />
+		<row name="House" icon_name="house,1314243355" prefab="assets\extra\buildings\Human_Village_Building_08.prefab" radius="1.5" height="2" cost_gold="200" description="Give you some gold at the end of rounds." can_construct="false" hp_max="20" abilities="assets\abilities\resource_production.bp&#10;gold=100" />
+		<row name="Arrow Tower" icon_name="tower,1696842114" prefab="assets\extra\buildings\Human_Village_Building_01.prefab" radius="1.5" height="3.7" cost_gold="300" description="Defense your town by shooting arrows to enemies." can_construct="false" hp_max="100" abilities="assets\abilities\attack.bp&#10;range=20&#10;damage=20&#10;interval=1&#10;projectile_prefab=assets\extra\characters\ELF_arrow.prefab&#10;projectile_speed=18&#10;sfx=assets\sfx\shoot.ogg" />
+		<row name="Creep Camp" icon_name=",0" prefab="assets\house.prefab" radius="1.5" height="2" cost_gold="0" description="Monsters comes from here and will attak your town!" can_construct="false" hp_max="100" abilities="assets\abilities\spawn_units.bp&#10;character=Bat&#10;number=3" />
+		<row name="Farm" icon_name=",0" prefab="assets\house.prefab" radius="1.5" height="2" cost_gold="300" description="Give you some gold at the end of rounds." can_construct="false" hp_max="30" abilities="assets\abilities\resource_production.bp&#10;gold=200" />
+		<row name="Sawmill" icon_name="sawmill,2210157148" prefab="assets\extra\buildings\Human_Village_Building_05.prefab" radius="1.5" height="2" cost_gold="200" description="" can_construct="false" hp_max="100" abilities="" />
+		<row name="Cannon Tower" icon_name="tower,1696842114" prefab="assets\extra\buildings\Human_Village_Building_01.prefab" radius="1.5" height="3.7" cost_gold="300" description="Defense your town by firing rocks to enemies." can_construct="false" hp_max="100" abilities="assets\abilities\attack.bp&#10;range=20&#10;damage=30&#10;interval=1&#10;projectile_prefab=assets\ball.prefab&#10;projectile_speed=18&#10;projectile_parabolic=true&#10;projectile_hit_radius=1" />
+		<row name="Castle Bran" icon_name="town_center,1166834851" prefab="assets\buildings\castle_bran.prefab" radius="1.5" height="2" cost_gold="0" description="Upgrade to unlock more buildings." can_construct="false" hp_max="100" abilities="" />
 	</rows>
 </sheet>
