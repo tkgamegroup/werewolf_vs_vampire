@@ -45,7 +45,7 @@
 						<input name="Name_hash" value="gold_production" />
 					</inputs>
 				</node>
-				<node object_id="36" name="If Greater" position="535,400">
+				<node object_id="36" name="If#G" position="535,400">
 					<inputs>
 						<input type="D@uint" name="B" value="0" />
 					</inputs>
@@ -66,7 +66,7 @@
 						<input name="Name_hash" value="attack_range" />
 					</inputs>
 				</node>
-				<node object_id="54" name="If Greater" position="535,672">
+				<node object_id="54" name="If#G" position="535,672">
 					<inputs>
 						<input name="B" value="0" />
 					</inputs>
@@ -167,14 +167,14 @@
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="145" parent_id="136" name="If True" position="1866,-128" />
+				<node object_id="145" parent_id="136" name="If#EL" position="1866,-128" />
 				<node object_id="149" parent_id="145" name="EGet V#u" position="1834,-30">
 					<inputs>
 						<input name="Name_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="154" parent_id="145" name="If Equal" position="2022,-18" />
-				<node object_id="159" parent_id="154" name="If Equal" position="2020,110" />
+				<node object_id="154" parent_id="145" name="If#E" position="2022,-18" />
+				<node object_id="159" parent_id="154" name="If#E" position="2020,110" />
 				<node object_id="164" parent_id="159" name="Foreach" position="1926,240">
 					<inputs>
 						<input name="Vector" value="cdcdcdcdcdcdcdcd" />
