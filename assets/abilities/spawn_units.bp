@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" />
+	</variables>
+	<groups>
+		<group object_id="1" name="update">
+			<nodes />
+			<links />
+		</group>
+	</groups>
+</blueprint>
