@@ -159,7 +159,7 @@
 			<nodes>
 				<node object_id="123" name="Hud Screen Size" position="218,-560" />
 				<node object_id="125" name="Decompose" position="356,-560" />
-				<node object_id="131" name="Hud" position="1837,-448">
+				<node object_id="131" name="Hud" position="1613,-511">
 					<inputs>
 						<input name="Pos" value="0,-1" />
 						<input name="Col" value="200,200,200,154" />
@@ -167,37 +167,37 @@
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="138" parent_id="131" name="If" position="1850,-150" />
-				<node object_id="140" parent_id="138" name="EGet V#u" position="1818,-52">
+				<node object_id="138" parent_id="131" name="If" position="1626,-213" />
+				<node object_id="140" parent_id="138" name="EGet V#u" position="1594,-115">
 					<inputs>
 						<input name="Name_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="145" parent_id="138" name="If#E" position="2006,-40" />
-				<node object_id="149" parent_id="145" name="If#E" position="2004,88" />
-				<node object_id="153" parent_id="149" name="Foreach" position="1910,218">
+				<node object_id="145" parent_id="138" name="If#E" position="1782,-103" />
+				<node object_id="149" parent_id="145" name="If#E" position="1780,25" />
+				<node object_id="153" parent_id="149" name="Foreach" position="1686,155">
 					<inputs>
 						<input name="Vector" value="cdcdcdcdcdcdcdcd" />
 					</inputs>
 				</node>
-				<node object_id="155" parent_id="153" name="Hud Button" position="2072,285">
+				<node object_id="155" parent_id="153" name="Hud Button" position="1848,222">
 					<inputs>
 						<input name="Font Size" value="24" />
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="161" parent_id="153" name="Get SHT V#w" position="1889,288">
+				<node object_id="161" parent_id="153" name="Get SHT V#w" position="1665,225">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
 				</node>
-				<node object_id="167" parent_id="153" name="Loop Var#u" position="1755,295" />
-				<node object_id="170" parent_id="138" name="EGet V#u" position="1818,76">
+				<node object_id="167" parent_id="153" name="Loop Var#u" position="1531,232" />
+				<node object_id="170" parent_id="138" name="EGet V#u" position="1594,13">
 					<inputs>
 						<input name="Name_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="175" name="Hud" position="1126,-416">
+				<node object_id="175" name="Hud" position="902,-479">
 					<inputs>
 						<input name="Pos" value="0,0" />
 						<input name="Col" value="128,128,128,128" />
@@ -205,54 +205,54 @@
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="182" parent_id="175" name="Hud Horizontal" position="1149,-105" />
-				<node object_id="183" parent_id="182" name="Hud Image" position="950,-48">
+				<node object_id="182" parent_id="175" name="Hud Horizontal" position="925,-168" />
+				<node object_id="183" parent_id="182" name="Hud Image" position="726,-111">
 					<inputs>
 						<input name="Size" value="32,32" />
 						<input name="Image Scale" value="1" />
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="188" parent_id="182" name="Hud Text" position="1334,-34">
+				<node object_id="188" parent_id="182" name="Hud Text" position="1110,-97">
 					<inputs>
 						<input name="Font Size" value="32" />
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="192" parent_id="182" name="WFormat" position="1166,-33">
+				<node object_id="192" parent_id="182" name="WFormat" position="942,-96">
 					<inputs>
 						<input name="Fmt" value="{}" />
 					</inputs>
 				</node>
-				<node object_id="196" parent_id="182" name="Image Atlas Item" position="755,15">
+				<node object_id="196" parent_id="182" name="Image Atlas Item" position="531,-48">
 					<inputs>
 						<input name="Name_hash" value="gold" />
 					</inputs>
 				</node>
-				<node object_id="200" parent_id="182" name="If#E" position="772,130">
+				<node object_id="200" parent_id="182" name="If#E" position="548,67">
 					<inputs>
 						<input type="D@uint" name="B" value="0" />
 					</inputs>
 				</node>
-				<node object_id="204" parent_id="200" name="Hud Button" position="886,147">
+				<node object_id="204" parent_id="200" name="Hud Button" position="662,84">
 					<inputs>
 						<input name="Label" value="Start Battle" />
 						<input name="Font Size" value="24" />
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="210" parent_id="204" name="Start Coroutine" position="1030,232">
+				<node object_id="210" parent_id="204" name="Start Coroutine" position="806,169">
 					<inputs>
 						<input name="Name_hash" value="start_battle" />
 						<input name="Delay" value="0" />
 					</inputs>
 				</node>
-				<node object_id="214" name="Vec2" position="1748,-369">
+				<node object_id="214" name="Vec2" position="1524,-432">
 					<inputs>
 						<input name="Y" value="150" />
 					</inputs>
 				</node>
-				<node object_id="218" name="Vec2" position="1053,-330">
+				<node object_id="218" name="Vec2" position="829,-393">
 					<inputs>
 						<input name="Y" value="36" />
 					</inputs>
