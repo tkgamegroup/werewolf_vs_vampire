@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="452db0fde28c02097fbf45f6460b138e" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="47874596202d94202fd06d52f8d9ef89" name="Cylinder.004">
+			<components>
+				<item type_name="flame::cNode" pos="0,-3.725e-09,4.657e-10" qut="0.6779,-0.7352,0,0" scl="0.03851,0.03882,0.1405" />
+				<item type_name="flame::cMesh" mesh_name="models\default_character.fmod#mesh0" material_name="default" />
+			</components>
+		</item>
+	</children>
+</prefab>
