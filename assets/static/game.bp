@@ -343,11 +343,11 @@
 				<link object_id="217" from_node="163" from_slot="V" to_node="174" to_slot="A" />
 			</links>
 		</group>
-		<group object_id="375" name="on_gui">
+		<group object_id="218" name="on_gui">
 			<nodes />
 			<links />
 		</group>
-		<group object_id="378" name="hostile_faction">
+		<group object_id="221" name="hostile_faction">
 			<variables>
 				<variable name="ret" type="D@uint" value="0" />
 			</variables>
@@ -358,273 +358,273 @@
 				<output name="faction" type="D@uint" />
 			</outputs>
 			<nodes>
-				<node object_id="381" name="Input" position="-38,32" />
-				<node object_id="383" name="Output" position="143,848" />
-				<node object_id="385" name="Set Variable" position="115,-32">
+				<node object_id="224" name="Input" position="-38,32" />
+				<node object_id="226" name="Output" position="143,848" />
+				<node object_id="228" name="Set Variable" position="115,-32">
 					<inputs>
 						<input name="Name" value="1626646252" />
 						<input name="Location" value="0" />
 						<input name="V" value="0" />
 					</inputs>
 				</node>
-				<node object_id="389" name="Variable" position="0,0">
+				<node object_id="232" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="1626646252" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="393" name="If#E" position="115,47" />
-				<node object_id="397" parent_id="393" name="Set Variable" position="211,176">
+				<node object_id="236" name="If#E" position="115,47" />
+				<node object_id="240" parent_id="236" name="Set Variable" position="211,176">
 					<inputs>
 						<input name="Name" value="1626646252" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="401" parent_id="393" name="Bit Or" position="42,176" />
-				<node object_id="405" name="Variable" position="0,100">
+				<node object_id="244" parent_id="236" name="Bit Or" position="42,176" />
+				<node object_id="248" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="2892286884" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="409" name="Variable" position="0,200">
+				<node object_id="252" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="2867139108" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="413" name="Variable" position="0,300">
+				<node object_id="256" name="Variable" position="0,300">
 					<inputs>
 						<input name="Name" value="2867140413" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="417" name="If#E" position="131,320" />
-				<node object_id="421" parent_id="417" name="Set Variable" position="227,448">
+				<node object_id="260" name="If#E" position="131,320" />
+				<node object_id="264" parent_id="260" name="Set Variable" position="227,448">
 					<inputs>
 						<input name="Name" value="1626646252" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="425" parent_id="417" name="Bit Or" position="58,448" />
-				<node object_id="429" name="If#E" position="147,576" />
-				<node object_id="433" parent_id="429" name="Set Variable" position="243,704">
+				<node object_id="268" parent_id="260" name="Bit Or" position="58,448" />
+				<node object_id="272" name="If#E" position="147,576" />
+				<node object_id="276" parent_id="272" name="Set Variable" position="243,704">
 					<inputs>
 						<input name="Name" value="1626646252" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="437" parent_id="429" name="Bit Or" position="74,704" />
+				<node object_id="280" parent_id="272" name="Bit Or" position="74,704" />
 			</nodes>
 			<links>
-				<link object_id="441" from_node="389" from_slot="V" to_node="383" to_slot="faction" />
-				<link object_id="442" from_node="381" from_slot="faction" to_node="393" to_slot="A" />
-				<link object_id="443" from_node="405" from_slot="V" to_node="393" to_slot="B" />
-				<link object_id="444" from_node="409" from_slot="V" to_node="401" to_slot="A" />
-				<link object_id="445" from_node="413" from_slot="V" to_node="401" to_slot="B" />
-				<link object_id="446" from_node="381" from_slot="faction" to_node="417" to_slot="A" />
-				<link object_id="447" from_node="381" from_slot="faction" to_node="429" to_slot="A" />
-				<link object_id="448" from_node="409" from_slot="V" to_node="417" to_slot="B" />
-				<link object_id="449" from_node="413" from_slot="V" to_node="429" to_slot="B" />
-				<link object_id="450" from_node="405" from_slot="V" to_node="425" to_slot="A" />
-				<link object_id="451" from_node="413" from_slot="V" to_node="425" to_slot="B" />
-				<link object_id="452" from_node="405" from_slot="V" to_node="437" to_slot="A" />
-				<link object_id="453" from_node="409" from_slot="V" to_node="437" to_slot="B" />
-				<link object_id="454" from_node="401" from_slot="V" to_node="397" to_slot="V" />
-				<link object_id="455" from_node="425" from_slot="V" to_node="421" to_slot="V" />
-				<link object_id="456" from_node="437" from_slot="V" to_node="433" to_slot="V" />
+				<link object_id="284" from_node="232" from_slot="V" to_node="226" to_slot="faction" />
+				<link object_id="285" from_node="224" from_slot="faction" to_node="236" to_slot="A" />
+				<link object_id="286" from_node="248" from_slot="V" to_node="236" to_slot="B" />
+				<link object_id="287" from_node="252" from_slot="V" to_node="244" to_slot="A" />
+				<link object_id="288" from_node="256" from_slot="V" to_node="244" to_slot="B" />
+				<link object_id="289" from_node="224" from_slot="faction" to_node="260" to_slot="A" />
+				<link object_id="290" from_node="224" from_slot="faction" to_node="272" to_slot="A" />
+				<link object_id="291" from_node="252" from_slot="V" to_node="260" to_slot="B" />
+				<link object_id="292" from_node="256" from_slot="V" to_node="272" to_slot="B" />
+				<link object_id="293" from_node="248" from_slot="V" to_node="268" to_slot="A" />
+				<link object_id="294" from_node="256" from_slot="V" to_node="268" to_slot="B" />
+				<link object_id="295" from_node="248" from_slot="V" to_node="280" to_slot="A" />
+				<link object_id="296" from_node="252" from_slot="V" to_node="280" to_slot="B" />
+				<link object_id="297" from_node="244" from_slot="V" to_node="240" to_slot="V" />
+				<link object_id="298" from_node="268" from_slot="V" to_node="264" to_slot="V" />
+				<link object_id="299" from_node="280" from_slot="V" to_node="276" to_slot="V" />
 			</links>
 		</group>
-		<group object_id="457" name="add_player">
+		<group object_id="300" name="add_player">
 			<inputs>
 				<input name="tile" type="PU@flame::Entity" />
 				<input name="faction" type="D@uint" />
 			</inputs>
 			<nodes>
-				<node object_id="462" name="Input" position="319,24" />
-				<node object_id="465" name="Variable" position="0,0">
+				<node object_id="305" name="Input" position="319,24" />
+				<node object_id="308" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="2252728178" />
 						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
-				<node object_id="469" name="ESet V#u,u" position="419,33">
+				<node object_id="312" name="ESet V#u,u" position="419,33">
 					<inputs>
 						<input name="Name0_hash" value="type" />
 						<input name="Name1_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="477" name="Variable" position="0,100">
+				<node object_id="319" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="2867139108" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="481" name="Variable" position="0,200">
+				<node object_id="323" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="3308856741" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="485" name="Get Child" position="384,231">
+				<node object_id="327" name="Get Child" position="384,231">
 					<inputs>
 						<input name="Index" value="0" />
 					</inputs>
 				</node>
-				<node object_id="489" name="Set BP" position="506,231">
+				<node object_id="331" name="Set BP" position="506,231">
 					<inputs>
 						<input name="Path" value="assets\lord.bp" />
 					</inputs>
 				</node>
-				<node object_id="493" name="Variable" position="0,300">
+				<node object_id="335" name="Variable" position="0,300">
 					<inputs>
 						<input name="Name" value="2867140413" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="497" name="If#E" position="788,313">
+				<node object_id="339" name="If#E" position="788,313">
 					<inputs>
 						<input type="D@uint" name="B" value="0" />
 					</inputs>
 				</node>
-				<node object_id="501" parent_id="497" name="Set Variable" position="740,432">
+				<node object_id="343" parent_id="339" name="Set Variable" position="740,432">
 					<inputs>
 						<input name="Name" value="1619401744" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="505" name="Array Size" position="660,329">
+				<node object_id="347" name="Array Size" position="660,329">
 					<inputs>
 						<input name="Name" value="408259369" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="509" name="ESet V#u" position="506,329">
+				<node object_id="351" name="ESet V#u" position="506,329">
 					<inputs>
-						<input name="Name_hash" value="faction" />
+						<input name="Name0_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="514" name="Array Add Item" position="740,496">
+				<node object_id="356" name="Array Add Item" position="740,496">
 					<inputs>
 						<input name="Name" value="408259369" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="518" name="Equal" position="463,585" />
-				<node object_id="522" name="If#EL" position="644,620" />
-				<node object_id="525" parent_id="522" name="ECall#e,u|v" position="714,698">
+				<node object_id="360" name="Equal" position="463,585" />
+				<node object_id="364" name="If#EL" position="644,620" />
+				<node object_id="367" parent_id="364" name="ECall#e,u|v" position="714,698">
 					<inputs>
 						<input name="Name_hash" value="build_tile" />
 					</inputs>
 				</node>
-				<node object_id="530" parent_id="522" name="Find Item In Sheet#w" position="502,738">
+				<node object_id="372" parent_id="364" name="Find Item In Sheet#w" position="502,738">
 					<inputs>
 						<input name="Name_hash" value="name" />
 						<input name="Value" value="Castle Bran" />
 					</inputs>
 				</node>
-				<node object_id="536" name="Block" position="625,930" />
-				<node object_id="538" parent_id="536" name="ECall#e,u|v" position="748,962">
+				<node object_id="378" name="Block" position="625,930" />
+				<node object_id="380" parent_id="378" name="ECall#e,u|v" position="748,962">
 					<inputs>
 						<input name="Name_hash" value="build_tile" />
 					</inputs>
 				</node>
-				<node object_id="543" parent_id="536" name="Find Item In Sheet#w" position="543,1019">
+				<node object_id="385" parent_id="378" name="Find Item In Sheet#w" position="543,1019">
 					<inputs>
 						<input name="Name_hash" value="name" />
 						<input name="Value" value="Town Hall" />
 					</inputs>
 				</node>
-				<node object_id="549" name="Select#2,u,c4" position="519,1203">
+				<node object_id="391" name="Select#2,u,c4" position="519,1203">
 					<inputs>
 						<input name="Opt 1" value="196,69,68,255" />
 						<input name="Opt 2" value="68,162,90,255" />
 					</inputs>
 				</node>
-				<node object_id="560" name="ESet V#c4" position="757,1226">
+				<node object_id="402" name="ESet V#c4" position="757,1226">
 					<inputs>
-						<input name="Name_hash" value="color" />
+						<input name="Name0_hash" value="color" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="565" from_node="462" from_slot="tile" to_node="469" to_slot="Entity" />
-				<link object_id="566" from_node="462" from_slot="faction" to_node="469" to_slot="V1" />
-				<link object_id="567" from_node="465" from_slot="V" to_node="469" to_slot="V0" />
-				<link object_id="568" from_node="462" from_slot="tile" to_node="485" to_slot="Parent" />
-				<link object_id="569" from_node="462" from_slot="faction" to_node="518" to_slot="A" />
-				<link object_id="570" from_node="477" from_slot="V" to_node="518" to_slot="B" />
-				<link object_id="571" from_node="462" from_slot="tile" to_node="525" to_slot="Input 1" />
-				<link object_id="572" from_node="462" from_slot="faction" to_node="509" to_slot="V" />
-				<link object_id="573" from_node="462" from_slot="tile" to_node="538" to_slot="Input 1" />
-				<link object_id="574" from_node="505" from_slot="V" to_node="497" to_slot="A" />
-				<link object_id="575" from_node="481" from_slot="V" to_node="530" to_slot="Sheet" />
-				<link object_id="576" from_node="481" from_slot="V" to_node="543" to_slot="Sheet" />
-				<link object_id="577" from_node="462" from_slot="faction" to_node="549" to_slot="V" />
-				<link object_id="578" from_node="477" from_slot="V" to_node="549" to_slot="Case 1" />
-				<link object_id="579" from_node="493" from_slot="V" to_node="549" to_slot="Case 2" />
-				<link object_id="580" from_node="485" from_slot="Child" to_node="489" to_slot="Entity" />
-				<link object_id="581" from_node="518" from_slot="V" to_node="522" to_slot="Cond" />
-				<link object_id="582" from_node="485" from_slot="Child" to_node="525" to_slot="Entity" />
-				<link object_id="583" from_node="485" from_slot="Child" to_node="509" to_slot="Entity" />
-				<link object_id="584" from_node="530" from_slot="Index" to_node="525" to_slot="Input 2" />
-				<link object_id="585" from_node="543" from_slot="Index" to_node="538" to_slot="Input 2" />
-				<link object_id="586" from_node="485" from_slot="Child" to_node="538" to_slot="Entity" />
-				<link object_id="587" from_node="485" from_slot="Child" to_node="514" to_slot="V" />
-				<link object_id="588" from_node="485" from_slot="Child" to_node="501" to_slot="V" />
-				<link object_id="589" from_node="485" from_slot="Child" to_node="560" to_slot="Entity" />
-				<link object_id="590" from_node="549" from_slot="V" to_node="560" to_slot="V" />
-				<link object_id="591" from_node="522" from_slot="Else" to_node="536" to_slot="Execute" />
+				<link object_id="407" from_node="305" from_slot="tile" to_node="312" to_slot="Entity" />
+				<link object_id="408" from_node="305" from_slot="faction" to_node="312" to_slot="V1" />
+				<link object_id="409" from_node="308" from_slot="V" to_node="312" to_slot="V0" />
+				<link object_id="410" from_node="305" from_slot="tile" to_node="327" to_slot="Parent" />
+				<link object_id="411" from_node="305" from_slot="faction" to_node="360" to_slot="A" />
+				<link object_id="412" from_node="319" from_slot="V" to_node="360" to_slot="B" />
+				<link object_id="413" from_node="305" from_slot="tile" to_node="367" to_slot="Input 1" />
+				<link object_id="414" from_node="305" from_slot="tile" to_node="380" to_slot="Input 1" />
+				<link object_id="415" from_node="347" from_slot="V" to_node="339" to_slot="A" />
+				<link object_id="416" from_node="323" from_slot="V" to_node="372" to_slot="Sheet" />
+				<link object_id="417" from_node="323" from_slot="V" to_node="385" to_slot="Sheet" />
+				<link object_id="418" from_node="305" from_slot="faction" to_node="391" to_slot="V" />
+				<link object_id="419" from_node="319" from_slot="V" to_node="391" to_slot="Case 1" />
+				<link object_id="420" from_node="335" from_slot="V" to_node="391" to_slot="Case 2" />
+				<link object_id="1613" from_node="305" from_slot="faction" to_node="351" to_slot="V0" />
+				<link object_id="421" from_node="327" from_slot="Child" to_node="331" to_slot="Entity" />
+				<link object_id="422" from_node="360" from_slot="V" to_node="364" to_slot="Cond" />
+				<link object_id="423" from_node="327" from_slot="Child" to_node="367" to_slot="Entity" />
+				<link object_id="424" from_node="327" from_slot="Child" to_node="351" to_slot="Entity" />
+				<link object_id="425" from_node="372" from_slot="Index" to_node="367" to_slot="Input 2" />
+				<link object_id="426" from_node="385" from_slot="Index" to_node="380" to_slot="Input 2" />
+				<link object_id="427" from_node="327" from_slot="Child" to_node="380" to_slot="Entity" />
+				<link object_id="428" from_node="327" from_slot="Child" to_node="356" to_slot="V" />
+				<link object_id="429" from_node="327" from_slot="Child" to_node="343" to_slot="V" />
+				<link object_id="430" from_node="327" from_slot="Child" to_node="402" to_slot="Entity" />
+				<link object_id="1614" from_node="391" from_slot="V" to_node="402" to_slot="V0" />
+				<link object_id="431" from_node="364" from_slot="Else" to_node="378" to_slot="Execute" />
 			</links>
 		</group>
-		<group object_id="592" name="start_battle">
+		<group object_id="432" name="start_battle">
 			<nodes>
-				<node object_id="595" name="Variable" position="0,100">
+				<node object_id="435" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="599" name="Variable" position="0,200">
+				<node object_id="439" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="3667056573" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="603" name="Variable" position="0,200">
+				<node object_id="443" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="408259369" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="607" name="Audio Source Play" position="308,279">
+				<node object_id="447" name="Audio Source Play" position="308,279">
 					<inputs>
 						<input name="Name_hash" value="click" />
 						<input name="Volumn" value="1" />
 					</inputs>
 				</node>
-				<node object_id="611" name="Set Variable" position="468,336">
+				<node object_id="451" name="Set Variable" position="468,336">
 					<inputs>
 						<input name="Name" value="2895760295" />
 						<input name="Location" value="0" />
 						<input name="V" value="-1" />
 					</inputs>
 				</node>
-				<node object_id="615" name="Set Variable" position="404,464">
+				<node object_id="455" name="Set Variable" position="404,464">
 					<inputs>
 						<input name="Name" value="1169273110" />
 						<input name="Location" value="0" />
 						<input name="V" value="1" />
 					</inputs>
 				</node>
-				<node object_id="619" name="Co Loop" position="410,560">
+				<node object_id="459" name="Co Loop" position="410,560">
 					<inputs>
 						<input name="Time" value="1" />
 						<input name="t" value="0" />
 					</inputs>
 				</node>
-				<node object_id="622" parent_id="619" name="Hud Screen Size" position="177,672" />
-				<node object_id="624" parent_id="619" name="Hud" position="381,672">
+				<node object_id="462" parent_id="459" name="Hud Screen Size" position="177,672" />
+				<node object_id="464" parent_id="459" name="Hud" position="381,672">
 					<inputs>
 						<input name="Size" value="0,0" />
 						<input name="Col" value="82,200,200,255" />
@@ -632,112 +632,112 @@
 						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="631" parent_id="624" name="Hud Text" position="385,960">
+				<node object_id="471" parent_id="464" name="Hud Text" position="385,960">
 					<inputs>
 						<input name="Text" value="Battle Started" />
 						<input name="Font Size" value="32" />
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="635" parent_id="619" name="Divide" position="315,672">
+				<node object_id="475" parent_id="459" name="Divide" position="315,672">
 					<inputs>
 						<input name="B" value="2" />
 					</inputs>
 				</node>
-				<node object_id="639" name="Foreach" position="435,1152" />
-				<node object_id="641" parent_id="639" name="Loop Var#e" position="324,1241" />
-				<node object_id="644" parent_id="639" name="ECall" position="442,1241">
+				<node object_id="479" name="Foreach" position="435,1152" />
+				<node object_id="481" parent_id="479" name="Loop Var#e" position="324,1241" />
+				<node object_id="484" parent_id="479" name="ECall" position="442,1241">
 					<inputs>
 						<input name="Name_hash" value="on_battle_begin" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="647" from_node="595" from_slot="V" to_node="607" to_slot="Entity" />
-				<link object_id="648" from_node="622" from_slot="Size" to_node="635" to_slot="A" />
-				<link object_id="649" from_node="641" from_slot="V" to_node="644" to_slot="Entity" />
-				<link object_id="650" from_node="603" from_slot="V" to_node="639" to_slot="Vector" />
-				<link object_id="651" from_node="635" from_slot="V" to_node="624" to_slot="Pos" />
+				<link object_id="487" from_node="435" from_slot="V" to_node="447" to_slot="Entity" />
+				<link object_id="488" from_node="462" from_slot="Size" to_node="475" to_slot="A" />
+				<link object_id="489" from_node="481" from_slot="V" to_node="484" to_slot="Entity" />
+				<link object_id="490" from_node="443" from_slot="V" to_node="479" to_slot="Vector" />
+				<link object_id="491" from_node="475" from_slot="V" to_node="464" to_slot="Pos" />
 			</links>
 		</group>
-		<group object_id="652" name="load_abilities">
+		<group object_id="492" name="load_abilities">
 			<inputs>
 				<input name="target" type="PU@flame::Entity" />
 				<input name="sheet" type="PU@flame::Sheet" />
 				<input name="row" type="D@uint" />
 			</inputs>
 			<nodes>
-				<node object_id="660" name="Input" position="0,0" />
-				<node object_id="664" name="ESet V#e" position="483,-53">
+				<node object_id="500" name="Input" position="0,0" />
+				<node object_id="504" name="ESet V#e" position="483,-53">
 					<inputs>
-						<input name="Name_hash" value="abilities" />
+						<input name="Name0_hash" value="abilities" />
 					</inputs>
 				</node>
-				<node object_id="669" name="Create Entity" position="316,-47">
+				<node object_id="509" name="Create Entity" position="316,-47">
 					<inputs>
 						<input name="Name" value="abilities" />
 					</inputs>
 				</node>
-				<node object_id="673" name="Get SHT V#s" position="134,26">
+				<node object_id="513" name="Get SHT V#s" position="134,26">
 					<inputs>
 						<input name="Name_hash" value="abilities" />
 					</inputs>
 				</node>
-				<node object_id="679" name="Foreach Line" position="339,48" />
-				<node object_id="682" parent_id="679" name="Regex Search#2" position="351,121">
+				<node object_id="519" name="Foreach Line" position="339,48" />
+				<node object_id="522" parent_id="519" name="Regex Search#2" position="351,121">
 					<inputs>
 						<input name="Regex" value="([\w]+)=([\w\.]+)" />
 					</inputs>
 				</node>
-				<node object_id="688" parent_id="679" name="Loop Var#s" position="237,169" />
-				<node object_id="691" parent_id="679" name="If#EL" position="358,230" />
-				<node object_id="694" parent_id="691" name="EUnserialize" position="530,313" />
-				<node object_id="698" parent_id="691" name="Get Last Child" position="395,329" />
-				<node object_id="701" parent_id="679" name="Block" position="367,401" />
-				<node object_id="703" parent_id="701" name="To Path" position="291,479" />
-				<node object_id="706" parent_id="701" name="Get File Name" position="367,479" />
-				<node object_id="709" parent_id="701" name="Create Entity" position="491,494" />
-				<node object_id="713" parent_id="701" name="Set BP" position="627,495" />
-				<node object_id="717" parent_id="701" name="ESet V#e" position="502,569">
+				<node object_id="528" parent_id="519" name="Loop Var#s" position="237,169" />
+				<node object_id="531" parent_id="519" name="If#EL" position="358,230" />
+				<node object_id="534" parent_id="531" name="EUnserialize" position="530,313" />
+				<node object_id="538" parent_id="531" name="Get Last Child" position="395,329" />
+				<node object_id="541" parent_id="519" name="Block" position="367,401" />
+				<node object_id="543" parent_id="541" name="To Path" position="291,479" />
+				<node object_id="546" parent_id="541" name="Get File Name" position="367,479" />
+				<node object_id="549" parent_id="541" name="Create Entity" position="491,494" />
+				<node object_id="553" parent_id="541" name="Set BP" position="627,495" />
+				<node object_id="557" parent_id="541" name="ESet V#e" position="502,569">
 					<inputs>
-						<input name="Name_hash" value="self" />
+						<input name="Name0_hash" value="self" />
 					</inputs>
 				</node>
-				<node object_id="722" name="Foreach Child" position="475,711" />
-				<node object_id="725" parent_id="722" name="Loop Var#e" position="380,784" />
-				<node object_id="728" parent_id="722" name="ECall" position="507,801">
+				<node object_id="562" name="Foreach Child" position="475,711" />
+				<node object_id="565" parent_id="562" name="Loop Var#e" position="380,784" />
+				<node object_id="568" parent_id="562" name="ECall" position="507,801">
 					<inputs>
 						<input name="Name_hash" value="on_gain" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="731" from_node="688" from_slot="V" to_node="682" to_slot="Text" />
-				<link object_id="732" from_node="688" from_slot="V" to_node="703" to_slot="In" />
-				<link object_id="733" from_node="725" from_slot="V" to_node="728" to_slot="Entity" />
-				<link object_id="734" from_node="660" from_slot="sheet" to_node="673" to_slot="Sheet" />
-				<link object_id="735" from_node="660" from_slot="row" to_node="673" to_slot="Row" />
-				<link object_id="736" from_node="660" from_slot="target" to_node="669" to_slot="Parent" />
-				<link object_id="737" from_node="660" from_slot="target" to_node="664" to_slot="Entity" />
-				<link object_id="738" from_node="660" from_slot="target" to_node="717" to_slot="V" />
-				<link object_id="739" from_node="673" from_slot="V" to_node="679" to_slot="Text" />
-				<link object_id="740" from_node="682" from_slot="Matched" to_node="691" to_slot="Cond" />
-				<link object_id="741" from_node="703" from_slot="V" to_node="706" to_slot="V" />
-				<link object_id="742" from_node="703" from_slot="V" to_node="713" to_slot="Path" />
-				<link object_id="743" from_node="682" from_slot="Capture 1" to_node="694" to_slot="Value" />
-				<link object_id="744" from_node="682" from_slot="Capture 0" to_node="694" to_slot="Name" />
-				<link object_id="745" from_node="669" from_slot="Entity" to_node="664" to_slot="V" />
-				<link object_id="746" from_node="669" from_slot="Entity" to_node="709" to_slot="Parent" />
-				<link object_id="747" from_node="669" from_slot="Entity" to_node="698" to_slot="Parent" />
-				<link object_id="748" from_node="669" from_slot="Entity" to_node="722" to_slot="Parent" />
-				<link object_id="749" from_node="698" from_slot="Child" to_node="694" to_slot="Entity" />
-				<link object_id="750" from_node="691" from_slot="Else" to_node="701" to_slot="Execute" />
-				<link object_id="751" from_node="706" from_slot="V" to_node="709" to_slot="Name" />
-				<link object_id="752" from_node="709" from_slot="Entity" to_node="713" to_slot="Entity" />
-				<link object_id="753" from_node="709" from_slot="Entity" to_node="717" to_slot="Entity" />
+				<link object_id="571" from_node="528" from_slot="V" to_node="522" to_slot="Text" />
+				<link object_id="572" from_node="528" from_slot="V" to_node="543" to_slot="In" />
+				<link object_id="573" from_node="565" from_slot="V" to_node="568" to_slot="Entity" />
+				<link object_id="574" from_node="500" from_slot="sheet" to_node="513" to_slot="Sheet" />
+				<link object_id="575" from_node="500" from_slot="row" to_node="513" to_slot="Row" />
+				<link object_id="576" from_node="500" from_slot="target" to_node="509" to_slot="Parent" />
+				<link object_id="577" from_node="500" from_slot="target" to_node="504" to_slot="Entity" />
+				<link object_id="1615" from_node="500" from_slot="target" to_node="557" to_slot="V0" />
+				<link object_id="578" from_node="513" from_slot="V" to_node="519" to_slot="Text" />
+				<link object_id="579" from_node="522" from_slot="Matched" to_node="531" to_slot="Cond" />
+				<link object_id="580" from_node="543" from_slot="V" to_node="546" to_slot="V" />
+				<link object_id="581" from_node="543" from_slot="V" to_node="553" to_slot="Path" />
+				<link object_id="582" from_node="522" from_slot="Capture 1" to_node="534" to_slot="Value" />
+				<link object_id="583" from_node="522" from_slot="Capture 0" to_node="534" to_slot="Name" />
+				<link object_id="584" from_node="509" from_slot="Entity" to_node="549" to_slot="Parent" />
+				<link object_id="585" from_node="509" from_slot="Entity" to_node="538" to_slot="Parent" />
+				<link object_id="586" from_node="509" from_slot="Entity" to_node="562" to_slot="Parent" />
+				<link object_id="1616" from_node="509" from_slot="Entity" to_node="504" to_slot="V0" />
+				<link object_id="587" from_node="538" from_slot="Child" to_node="534" to_slot="Entity" />
+				<link object_id="588" from_node="531" from_slot="Else" to_node="541" to_slot="Execute" />
+				<link object_id="589" from_node="546" from_slot="V" to_node="549" to_slot="Name" />
+				<link object_id="590" from_node="549" from_slot="Entity" to_node="553" to_slot="Entity" />
+				<link object_id="591" from_node="549" from_slot="Entity" to_node="557" to_slot="Entity" />
 			</links>
 		</group>
-		<group object_id="754" name="start">
+		<group object_id="592" name="start">
 			<variables>
 				<variable name="navmesh_nodes" type="VPU@flame::Entity" value="" />
 			</variables>
@@ -746,365 +746,365 @@
 				<split v="4017.09009" />
 			</splits>
 			<nodes>
-				<node object_id="757" name="Set Variable" position="1204,0">
+				<node object_id="595" name="Set Variable" position="1204,0">
 					<inputs>
 						<input name="Name" value="2189034641" />
 						<input name="Location" value="0" />
 						<input name="V" value="10" />
 					</inputs>
 				</node>
-				<node object_id="761" name="Set Variable" position="964,16">
+				<node object_id="599" name="Set Variable" position="964,16">
 					<inputs>
 						<input name="Name" value="3241409053" />
 						<input name="Location" value="0" />
 						<input name="V" value="cdcdcdcdcdcdcdcd" />
 					</inputs>
 				</node>
-				<node object_id="765" name="Set Variable" position="804,16">
+				<node object_id="603" name="Set Variable" position="804,16">
 					<inputs>
 						<input name="Name" value="4135605757" />
 						<input name="Location" value="0" />
 						<input name="V" value="cdcdcdcdcdcdcdcd" />
 					</inputs>
 				</node>
-				<node object_id="769" name="Set Variable" position="750,83">
+				<node object_id="607" name="Set Variable" position="750,83">
 					<inputs>
 						<input name="Name" value="1169273110" />
 						<input name="Location" value="0" />
 						<input name="V" value="0" />
 					</inputs>
 				</node>
-				<node object_id="773" name="Set Variable" position="862,83">
+				<node object_id="611" name="Set Variable" position="862,83">
 					<inputs>
 						<input name="Name" value="3667056573" />
 						<input name="Location" value="0" />
 						<input name="V" value="0" />
 					</inputs>
 				</node>
-				<node object_id="777" name="Set Variable" position="1006,83">
+				<node object_id="615" name="Set Variable" position="1006,83">
 					<inputs>
 						<input name="Name" value="2895760295" />
 						<input name="Location" value="0" />
 						<input name="V" value="-1" />
 					</inputs>
 				</node>
-				<node object_id="781" name="Set Variable" position="1214,84">
+				<node object_id="619" name="Set Variable" position="1214,84">
 					<inputs>
 						<input name="Name" value="1008179795" />
 						<input name="Location" value="0" />
 						<input name="V" value="3" />
 					</inputs>
 				</node>
-				<node object_id="785" name="Set Variable" position="1214,163">
+				<node object_id="623" name="Set Variable" position="1214,163">
 					<inputs>
 						<input name="Name" value="522824559" />
 						<input name="Location" value="0" />
 						<input name="V" value="1" />
 					</inputs>
 				</node>
-				<node object_id="789" name="Get Static Sheet" position="435,176">
+				<node object_id="627" name="Get Static Sheet" position="435,176">
 					<inputs>
 						<input name="Name_hash" value="building" />
 					</inputs>
 				</node>
-				<node object_id="792" name="Set Variable" position="580,176">
+				<node object_id="630" name="Set Variable" position="580,176">
 					<inputs>
 						<input name="Name" value="3308856741" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="796" name="Find Entity" position="846,178">
+				<node object_id="634" name="Find Entity" position="846,178">
 					<inputs>
 						<input name="Parent" value="cdcdcdcdcdcdcdcd" />
 						<input name="Name" value="hexagon_hovered_efx" />
 					</inputs>
 				</node>
-				<node object_id="800" name="Variable" position="0,200">
+				<node object_id="638" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="1008179795" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="804" name="Set Variable" position="1028,208">
+				<node object_id="642" name="Set Variable" position="1028,208">
 					<inputs>
 						<input name="Name" value="3792737001" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="808" name="Set Variable" position="1220,240">
+				<node object_id="646" name="Set Variable" position="1220,240">
 					<inputs>
 						<input name="Name" value="3677739162" />
 						<input name="Location" value="0" />
 						<input name="V" value="2" />
 					</inputs>
 				</node>
-				<node object_id="812" name="Find Entity" position="835,271">
+				<node object_id="650" name="Find Entity" position="835,271">
 					<inputs>
 						<input name="Parent" value="cdcdcdcdcdcdcdcd" />
 						<input name="Name" value="hexagon_select_efx" />
 					</inputs>
 				</node>
-				<node object_id="816" name="Get Static Sheet" position="435,272">
+				<node object_id="654" name="Get Static Sheet" position="435,272">
 					<inputs>
 						<input name="Name_hash" value="character" />
 					</inputs>
 				</node>
-				<node object_id="819" name="Set Variable" position="580,272">
+				<node object_id="657" name="Set Variable" position="580,272">
 					<inputs>
 						<input name="Name" value="2031974080" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="823" name="Set Variable" position="1028,304">
+				<node object_id="661" name="Set Variable" position="1028,304">
 					<inputs>
 						<input name="Name" value="3476234594" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="827" name="Multiply" position="1252,335">
+				<node object_id="665" name="Multiply" position="1252,335">
 					<inputs>
 						<input name="A" value="4" />
 					</inputs>
 				</node>
-				<node object_id="831" name="Set Scl" position="1427,335" />
-				<node object_id="834" name="Find Entity" position="835,367">
+				<node object_id="669" name="Set Scl" position="1427,335" />
+				<node object_id="672" name="Find Entity" position="835,367">
 					<inputs>
 						<input name="Parent" value="cdcdcdcdcdcdcdcd" />
 						<input name="Name" value="Camera" />
 					</inputs>
 				</node>
-				<node object_id="838" name="Set Variable" position="964,368">
+				<node object_id="676" name="Set Variable" position="964,368">
 					<inputs>
 						<input name="Name" value="1863407950" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="842" name="Set Scl" position="1427,432" />
-				<node object_id="845" name="Multiply" position="1252,448">
+				<node object_id="680" name="Set Scl" position="1427,432" />
+				<node object_id="683" name="Multiply" position="1252,448">
 					<inputs>
 						<input name="A" value="4" />
 					</inputs>
 				</node>
-				<node object_id="849" name="Variable" position="0,500">
+				<node object_id="687" name="Variable" position="0,500">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="853" name="Audio Source Add Buffer" position="915,608">
+				<node object_id="691" name="Audio Source Add Buffer" position="915,608">
 					<inputs>
 						<input name="Path" value="assets\sfx\UI_SFX_Set\mouseclick1.wav" />
 						<input name="Name" value="click" />
 					</inputs>
 				</node>
-				<node object_id="857" name="Audio Source Add Buffer" position="915,768">
+				<node object_id="695" name="Audio Source Add Buffer" position="915,768">
 					<inputs>
 						<input name="Path" value="assets\sfx\079_Buy_sell_01.wav" />
 						<input name="Name" value="buy" />
 					</inputs>
 				</node>
-				<node object_id="861" name="Variable" position="0,800">
+				<node object_id="699" name="Variable" position="0,800">
 					<inputs>
 						<input name="Name" value="2062730728" />
 						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
-				<node object_id="865" name="Variable" position="0,900">
+				<node object_id="703" name="Variable" position="0,900">
 					<inputs>
 						<input name="Name" value="2252728178" />
 						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
-				<node object_id="869" name="Hold Resource" position="915,936">
+				<node object_id="707" name="Hold Resource" position="915,936">
 					<inputs>
 						<input name="Path" value="assets\ui\pack1.png" />
 						<input name="Name_hash" value="ui_pack1" />
 					</inputs>
 				</node>
-				<node object_id="873" name="Variable" position="0,1000">
+				<node object_id="711" name="Variable" position="0,1000">
 					<inputs>
 						<input name="Name" value="2554225222" />
 						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
-				<node object_id="877" name="Variable" position="0,1100">
+				<node object_id="715" name="Variable" position="0,1100">
 					<inputs>
 						<input name="Name" value="3544219284" />
 						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
-				<node object_id="881" name="Get Image Atlas Resource" position="851,1111">
+				<node object_id="719" name="Get Image Atlas Resource" position="851,1111">
 					<inputs>
 						<input name="Name_hash" value="ui_pack1" />
 					</inputs>
 				</node>
-				<node object_id="885" name="Set Variable" position="1060,1112">
+				<node object_id="723" name="Set Variable" position="1060,1112">
 					<inputs>
 						<input name="Name" value="3888262312" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="889" name="Variable" position="0,1200">
+				<node object_id="727" name="Variable" position="0,1200">
 					<inputs>
 						<input name="Name" value="3742889666" />
 						<input name="Location" value="722666881" />
 					</inputs>
 				</node>
-				<node object_id="893" name="Hold Resource" position="906,1248">
+				<node object_id="731" name="Hold Resource" position="906,1248">
 					<inputs>
 						<input name="Path" value="assets\domain_line.fmat" />
 						<input name="Name_hash" value="domain_line_mat" />
 					</inputs>
 				</node>
-				<node object_id="897" name="Variable" position="0,1300">
+				<node object_id="735" name="Variable" position="0,1300">
 					<inputs>
 						<input name="Name" value="2867140413" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="901" name="Variable" position="0,1300">
+				<node object_id="739" name="Variable" position="0,1300">
 					<inputs>
 						<input name="Name" value="2189034641" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="905" name="Variable" position="0,1300">
+				<node object_id="743" name="Variable" position="0,1300">
 					<inputs>
 						<input name="Name" value="1911700617" />
 						<input name="Location" value="4184118045" />
 					</inputs>
 				</node>
-				<node object_id="909" name="Variable" position="0,1400">
+				<node object_id="747" name="Variable" position="0,1400">
 					<inputs>
 						<input name="Name" value="2867139108" />
 						<input name="Location" value="1910288018" />
 					</inputs>
 				</node>
-				<node object_id="913" name="Variable" position="0,1400">
+				<node object_id="751" name="Variable" position="0,1400">
 					<inputs>
 						<input name="Name" value="3308856741" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="917" name="Array Clear" position="912,1424">
+				<node object_id="755" name="Array Clear" position="912,1424">
 					<inputs>
 						<input name="Name" value="408259369" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="920" name="Set Variable" position="916,1472">
+				<node object_id="758" name="Set Variable" position="916,1472">
 					<inputs>
 						<input name="Name" value="1619401744" />
 						<input name="Location" value="0" />
 						<input name="V" value="cdcdcdcdcdcdcdcd" />
 					</inputs>
 				</node>
-				<node object_id="924" name="Variable" position="0,1500">
+				<node object_id="762" name="Variable" position="0,1500">
 					<inputs>
 						<input name="Name" value="2031974080" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="928" name="Variable" position="0,1500">
+				<node object_id="766" name="Variable" position="0,1500">
 					<inputs>
 						<input name="Name" value="408259369" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="932" name="Variable" position="4,1600">
+				<node object_id="770" name="Variable" position="4,1600">
 					<inputs>
 						<input name="Name" value="1579636033" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="936" name="Loop" position="2054,-32">
+				<node object_id="774" name="Loop" position="2054,-32">
 					<inputs>
 						<input name="Times" value="100" />
 					</inputs>
 				</node>
-				<node object_id="938" parent_id="936" name="Loop Index" position="2121,80" />
-				<node object_id="940" parent_id="936" name="Vec3" position="2652,95">
+				<node object_id="776" parent_id="774" name="Loop Index" position="2121,80" />
+				<node object_id="778" parent_id="774" name="Vec3" position="2652,95">
 					<inputs>
 						<input name="Y" value="0" />
 					</inputs>
 				</node>
-				<node object_id="945" parent_id="936" name="Multiply" position="2732,95">
+				<node object_id="783" parent_id="774" name="Multiply" position="2732,95">
 					<inputs>
 						<input name="B" value="3" />
 					</inputs>
 				</node>
-				<node object_id="949" parent_id="936" name="Add" position="2553,111" />
-				<node object_id="953" parent_id="936" name="Multiply" position="2395,111">
+				<node object_id="787" parent_id="774" name="Add" position="2553,111" />
+				<node object_id="791" parent_id="774" name="Multiply" position="2395,111">
 					<inputs>
 						<input name="B" value="3.464" />
 					</inputs>
 				</node>
-				<node object_id="957" parent_id="936" name="Integer Divide" position="2201,144" />
-				<node object_id="962" parent_id="936" name="Multiply" position="2588,191">
+				<node object_id="795" parent_id="774" name="Integer Divide" position="2201,144" />
+				<node object_id="800" parent_id="774" name="Multiply" position="2588,191">
 					<inputs>
 						<input name="B" value="3" />
 					</inputs>
 				</node>
-				<node object_id="966" parent_id="936" name="Integer Divide" position="2395,208">
+				<node object_id="804" parent_id="774" name="Integer Divide" position="2395,208">
 					<inputs>
 						<input name="B" value="2" />
 					</inputs>
 				</node>
-				<node object_id="971" parent_id="936" name="Multiply" position="2473,208">
+				<node object_id="809" parent_id="774" name="Multiply" position="2473,208">
 					<inputs>
 						<input name="B" value="1.732" />
 					</inputs>
 				</node>
-				<node object_id="975" parent_id="936" name="Vec2" position="2411,320" />
-				<node object_id="979" parent_id="936" name="If#EL" position="2730,336" />
-				<node object_id="982" parent_id="979" name="Spawn Prefab" position="2686,424">
+				<node object_id="813" parent_id="774" name="Vec2" position="2411,320" />
+				<node object_id="817" parent_id="774" name="If#EL" position="2730,336" />
+				<node object_id="820" parent_id="817" name="Spawn Prefab" position="2686,424">
 					<inputs>
 						<input name="Path" value="assets\hexagon.prefab" />
 						<input name="Snap NavMesh" value="false" />
 					</inputs>
 				</node>
-				<node object_id="988" parent_id="979" name="Add Tag" position="2941,464" />
-				<node object_id="991" parent_id="979" name="Set Name" position="2970,576" />
-				<node object_id="994" parent_id="979" name="Str" position="2915,590" />
-				<node object_id="997" parent_id="979" name="Set BP" position="2875,658">
+				<node object_id="826" parent_id="817" name="Add Tag" position="2941,464" />
+				<node object_id="829" parent_id="817" name="Set Name" position="2970,576" />
+				<node object_id="832" parent_id="817" name="Str" position="2915,590" />
+				<node object_id="835" parent_id="817" name="Set BP" position="2875,658">
 					<inputs>
 						<input name="Path" value="assets\tile.bp" />
 					</inputs>
 				</node>
-				<node object_id="1001" parent_id="979" name="Get Child" position="2595,659">
+				<node object_id="839" parent_id="817" name="Get Child" position="2595,659">
 					<inputs>
 						<input name="Index" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1005" parent_id="979" name="Update Transform" position="2711,674" />
-				<node object_id="1007" parent_id="979" name="Set Scl" position="2918,754" />
-				<node object_id="1010" parent_id="979" name="Random" position="2539,862">
+				<node object_id="843" parent_id="817" name="Update Transform" position="2711,674" />
+				<node object_id="845" parent_id="817" name="Set Scl" position="2918,754" />
+				<node object_id="848" parent_id="817" name="Random" position="2539,862">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0" />
 						<input name="Max" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1015" parent_id="979" name="Ramp Branch#2" position="2626,874">
+				<node object_id="853" parent_id="817" name="Ramp Branch#2" position="2626,874">
 					<inputs>
 						<input name="Stop 1" value="0.1" />
 						<input name="Stop 2" value="0.4" />
 					</inputs>
 				</node>
-				<node object_id="1022" parent_id="979" name="Block" position="2630,994" />
-				<node object_id="1024" parent_id="1022" name="ESet V#u" position="2813,1044">
+				<node object_id="860" parent_id="817" name="Block" position="2630,994" />
+				<node object_id="862" parent_id="860" name="ESet V#u" position="2813,1044">
 					<inputs>
-						<input name="Name_hash" value="type" />
+						<input name="Name0_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="1029" parent_id="1022" name="Random" position="2543,1152">
+				<node object_id="867" parent_id="860" name="Random" position="2543,1152">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0" />
 						<input name="Max" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1034" parent_id="1022" name="Ramp Select#6,p" position="2649,1189">
+				<node object_id="872" parent_id="860" name="Ramp Select#6,p" position="2649,1189">
 					<inputs>
 						<input name="Stop 1" value="0.2" />
 						<input name="Opt 1" value="assets\environment\mountains\Mountain_winter_001.prefab" />
@@ -1120,56 +1120,56 @@
 						<input name="Opt 6" value="assets\environment\mountains\Mountain_winter_006.prefab" />
 					</inputs>
 				</node>
-				<node object_id="1051" parent_id="1022" name="Spawn Prefab" position="2862,1220">
+				<node object_id="889" parent_id="860" name="Spawn Prefab" position="2862,1220">
 					<inputs>
 						<input name="Position" value="0,0,0" />
 						<input name="Snap NavMesh" value="false" />
 					</inputs>
 				</node>
-				<node object_id="1057" parent_id="1022" name="Set Eul" position="3060,1397" />
-				<node object_id="1060" parent_id="1022" name="Vec3" position="2996,1428">
+				<node object_id="895" parent_id="860" name="Set Eul" position="3060,1397" />
+				<node object_id="898" parent_id="860" name="Vec3" position="2996,1428">
 					<inputs>
 						<input name="Y" value="0" />
 						<input name="Z" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1065" parent_id="1022" name="Random" position="2904,1436">
+				<node object_id="903" parent_id="860" name="Random" position="2904,1436">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0" />
 						<input name="Max" value="360" />
 					</inputs>
 				</node>
-				<node object_id="1070" parent_id="1022" name="Set Scl" position="3076,1524" />
-				<node object_id="1073" parent_id="1022" name="Random" position="2986,1564">
+				<node object_id="908" parent_id="860" name="Set Scl" position="3076,1524" />
+				<node object_id="911" parent_id="860" name="Random" position="2986,1564">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0.1" />
 						<input name="Max" value="0.12" />
 					</inputs>
 				</node>
-				<node object_id="1078" parent_id="979" name="Block" position="2630,1778" />
-				<node object_id="1080" parent_id="1078" name="ESet V#u" position="2909,1826">
+				<node object_id="916" parent_id="817" name="Block" position="2630,1778" />
+				<node object_id="918" parent_id="916" name="ESet V#u" position="2909,1826">
 					<inputs>
-						<input name="Name_hash" value="type" />
+						<input name="Name0_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="1085" parent_id="1078" name="RandomInt" position="2537,1968">
+				<node object_id="923" parent_id="916" name="RandomInt" position="2537,1968">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="3" />
 						<input name="Max" value="6" />
 					</inputs>
 				</node>
-				<node object_id="1090" parent_id="1078" name="Loop" position="2704,1984" />
-				<node object_id="1092" parent_id="1090" name="Random" position="2795,1969">
+				<node object_id="928" parent_id="916" name="Loop" position="2704,1984" />
+				<node object_id="930" parent_id="928" name="Random" position="2795,1969">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0" />
 						<input name="Max" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1097" parent_id="1090" name="Ramp Select#6,p" position="2880,1979">
+				<node object_id="935" parent_id="928" name="Ramp Select#6,p" position="2880,1979">
 					<inputs>
 						<input name="Stop 1" value="0.3" />
 						<input name="Opt 1" value="assets\environment\trees\Low_Poly_Forest_tree01.prefab" />
@@ -1185,261 +1185,261 @@
 						<input name="Opt 6" value="assets\environment\trees\Low_Poly_Forest_tree06.prefab" />
 					</inputs>
 				</node>
-				<node object_id="1114" parent_id="1090" name="Loop Index" position="2654,2081" />
-				<node object_id="1116" parent_id="1090" name="Random" position="2693,2498">
+				<node object_id="952" parent_id="928" name="Loop Index" position="2654,2081" />
+				<node object_id="954" parent_id="928" name="Random" position="2693,2498">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0.8" />
 						<input name="Max" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1121" parent_id="1090" name="Arc Point" position="2990,2523">
+				<node object_id="959" parent_id="928" name="Arc Point" position="2990,2523">
 					<inputs>
 						<input name="C" value="0,0,0" />
 					</inputs>
 				</node>
-				<node object_id="1126" parent_id="1090" name="Divide" position="2785,2554">
+				<node object_id="964" parent_id="928" name="Divide" position="2785,2554">
 					<inputs>
 						<input name="A" value="360" />
 					</inputs>
 				</node>
-				<node object_id="1130" parent_id="1090" name="Multiply" position="2897,2569" />
-				<node object_id="1134" parent_id="1090" name="Spawn Prefab" position="3107,2569">
+				<node object_id="968" parent_id="928" name="Multiply" position="2897,2569" />
+				<node object_id="972" parent_id="928" name="Spawn Prefab" position="3107,2569">
 					<inputs>
 						<input name="Snap NavMesh" value="false" />
 					</inputs>
 				</node>
-				<node object_id="1140" parent_id="1090" name="Random" position="2839,2643">
+				<node object_id="978" parent_id="928" name="Random" position="2839,2643">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0" />
 						<input name="Max" value="360" />
 					</inputs>
 				</node>
-				<node object_id="1145" parent_id="1090" name="Set Scl" position="3309,2657" />
-				<node object_id="1148" parent_id="1090" name="Vec3" position="2929,2666">
+				<node object_id="983" parent_id="928" name="Set Scl" position="3309,2657" />
+				<node object_id="986" parent_id="928" name="Vec3" position="2929,2666">
 					<inputs>
 						<input name="Y" value="0" />
 						<input name="Z" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1153" parent_id="1090" name="Set Eul" position="3005,2682" />
-				<node object_id="1156" parent_id="1090" name="Random" position="3149,2721">
+				<node object_id="991" parent_id="928" name="Set Eul" position="3005,2682" />
+				<node object_id="994" parent_id="928" name="Random" position="3149,2721">
 					<inputs>
 						<input name="Seed" value="0" />
 						<input name="Min" value="0.15" />
 						<input name="Max" value="0.18" />
 					</inputs>
 				</node>
-				<node object_id="1161" parent_id="979" name="Block" position="2628,2969" />
-				<node object_id="1163" parent_id="1161" name="ESet V#u" position="2611,3065">
+				<node object_id="999" parent_id="817" name="Block" position="2628,2969" />
+				<node object_id="1001" parent_id="999" name="ESet V#u" position="2611,3065">
 					<inputs>
-						<input name="Name_hash" value="type" />
+						<input name="Name0_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="1168" parent_id="936" name="Greater" position="2617,336">
+				<node object_id="1006" parent_id="774" name="Greater" position="2617,336">
 					<inputs>
 						<input name="B" value="0.4" />
 					</inputs>
 				</node>
-				<node object_id="1172" parent_id="936" name="Divide" position="2473,352" />
-				<node object_id="1176" parent_id="936" name="Perlin" position="2539,352" />
-				<node object_id="1179" parent_id="936" name="Vec2" position="2347,384">
+				<node object_id="1010" parent_id="774" name="Divide" position="2473,352" />
+				<node object_id="1014" parent_id="774" name="Perlin" position="2539,352" />
+				<node object_id="1017" parent_id="774" name="Vec2" position="2347,384">
 					<inputs>
 						<input name="X" value="10" />
 						<input name="Y" value="10" />
 					</inputs>
 				</node>
-				<node object_id="1183" name="Foreach Child" position="5055,112" />
-				<node object_id="1186" parent_id="1183" name="Integer Divide" position="5172,205">
+				<node object_id="1021" name="Foreach Child" position="5055,112" />
+				<node object_id="1024" parent_id="1021" name="Integer Divide" position="5172,205">
 					<inputs>
 						<input name="B" value="2" />
 					</inputs>
 				</node>
-				<node object_id="1191" parent_id="1183" name="Equal" position="5239,208">
+				<node object_id="1029" parent_id="1021" name="Equal" position="5239,208">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1195" parent_id="1183" name="Loop Var#e" position="4884,217" />
-				<node object_id="1198" parent_id="1183" name="Get Name" position="4999,225" />
-				<node object_id="1201" parent_id="1183" name="Stoi" position="5111,225" />
-				<node object_id="1204" parent_id="1183" name="If#EL" position="5098,335" />
-				<node object_id="1207" parent_id="1204" name="ESet V#e" position="4466,455">
+				<node object_id="1033" parent_id="1021" name="Loop Var#e" position="4884,217" />
+				<node object_id="1036" parent_id="1021" name="Get Name" position="4999,225" />
+				<node object_id="1039" parent_id="1021" name="Stoi" position="5111,225" />
+				<node object_id="1042" parent_id="1021" name="If#EL" position="5098,335" />
+				<node object_id="1045" parent_id="1042" name="ESet V#e" position="4466,455">
 					<inputs>
-						<input name="Name_hash" value="tile_lt" />
+						<input name="Name0_hash" value="tile_lt" />
 					</inputs>
 				</node>
-				<node object_id="1212" parent_id="1204" name="ESet V#e" position="5035,455">
+				<node object_id="1050" parent_id="1042" name="ESet V#e" position="5035,455">
 					<inputs>
-						<input name="Name_hash" value="tile_rt" />
+						<input name="Name0_hash" value="tile_rt" />
 					</inputs>
 				</node>
-				<node object_id="1217" parent_id="1204" name="Subtract" position="4629,463">
-					<inputs>
-						<input type="D@int" name="B" value="1" />
-					</inputs>
-				</node>
-				<node object_id="1221" parent_id="1204" name="Add" position="4692,464" />
-				<node object_id="1225" parent_id="1204" name="Find Entity" position="4322,471" />
-				<node object_id="1229" parent_id="1204" name="Subtract" position="4188,471">
+				<node object_id="1055" parent_id="1042" name="Subtract" position="4629,463">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1233" parent_id="1204" name="Find Entity" position="4891,471" />
-				<node object_id="1237" parent_id="1204" name="Str" position="4821,496" />
-				<node object_id="1240" parent_id="1204" name="Str" position="4261,503" />
-				<node object_id="1243" parent_id="1204" name="ESet V#e" position="4964,576">
-					<inputs>
-						<input name="Name_hash" value="tile_r" />
-					</inputs>
-				</node>
-				<node object_id="1248" parent_id="1204" name="ESet V#e" position="4467,583">
-					<inputs>
-						<input name="Name_hash" value="tile_l" />
-					</inputs>
-				</node>
-				<node object_id="1253" parent_id="1204" name="Find Entity" position="4820,592" />
-				<node object_id="1257" parent_id="1204" name="Find Entity" position="4323,599" />
-				<node object_id="1261" parent_id="1204" name="Str" position="4759,624" />
-				<node object_id="1264" parent_id="1204" name="Str" position="4262,631" />
-				<node object_id="1267" parent_id="1204" name="If#NDE" position="4835,704" />
-				<node object_id="1271" parent_id="1267" name="ESet V#e" position="4931,823">
-					<inputs>
-						<input name="Name_hash" value="tile_rb" />
-					</inputs>
-				</node>
-				<node object_id="1276" parent_id="1267" name="Find Entity" position="4787,839" />
-				<node object_id="1280" parent_id="1267" name="Str" position="4726,871" />
-				<node object_id="1283" parent_id="1204" name="Add" position="4676,719" />
-				<node object_id="1287" parent_id="1204" name="If#NDE" position="4275,719" />
-				<node object_id="1291" parent_id="1287" name="ESet V#e" position="4394,849">
-					<inputs>
-						<input name="Name_hash" value="tile_lb" />
-					</inputs>
-				</node>
-				<node object_id="1296" parent_id="1287" name="Find Entity" position="4234,872" />
-				<node object_id="1300" parent_id="1287" name="Str" position="4173,904" />
-				<node object_id="1303" parent_id="1204" name="Add" position="4605,725">
+				<node object_id="1059" parent_id="1042" name="Add" position="4692,464" />
+				<node object_id="1063" parent_id="1042" name="Find Entity" position="4322,471" />
+				<node object_id="1067" parent_id="1042" name="Subtract" position="4188,471">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1307" parent_id="1204" name="Add" position="4196,752">
+				<node object_id="1071" parent_id="1042" name="Find Entity" position="4891,471" />
+				<node object_id="1075" parent_id="1042" name="Str" position="4821,496" />
+				<node object_id="1078" parent_id="1042" name="Str" position="4261,503" />
+				<node object_id="1081" parent_id="1042" name="ESet V#e" position="4964,576">
+					<inputs>
+						<input name="Name0_hash" value="tile_r" />
+					</inputs>
+				</node>
+				<node object_id="1086" parent_id="1042" name="ESet V#e" position="4467,583">
+					<inputs>
+						<input name="Name0_hash" value="tile_l" />
+					</inputs>
+				</node>
+				<node object_id="1091" parent_id="1042" name="Find Entity" position="4820,592" />
+				<node object_id="1095" parent_id="1042" name="Find Entity" position="4323,599" />
+				<node object_id="1099" parent_id="1042" name="Str" position="4759,624" />
+				<node object_id="1102" parent_id="1042" name="Str" position="4262,631" />
+				<node object_id="1105" parent_id="1042" name="If#NDE" position="4835,704" />
+				<node object_id="1109" parent_id="1105" name="ESet V#e" position="4931,823">
+					<inputs>
+						<input name="Name0_hash" value="tile_rb" />
+					</inputs>
+				</node>
+				<node object_id="1114" parent_id="1105" name="Find Entity" position="4787,839" />
+				<node object_id="1118" parent_id="1105" name="Str" position="4726,871" />
+				<node object_id="1121" parent_id="1042" name="Add" position="4676,719" />
+				<node object_id="1125" parent_id="1042" name="If#NDE" position="4275,719" />
+				<node object_id="1129" parent_id="1125" name="ESet V#e" position="4394,849">
+					<inputs>
+						<input name="Name0_hash" value="tile_lb" />
+					</inputs>
+				</node>
+				<node object_id="1134" parent_id="1125" name="Find Entity" position="4234,872" />
+				<node object_id="1138" parent_id="1125" name="Str" position="4173,904" />
+				<node object_id="1141" parent_id="1042" name="Add" position="4605,725">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1311" parent_id="1183" name="Block" position="5686,358" />
-				<node object_id="1313" parent_id="1311" name="If#NE" position="5988,447" />
-				<node object_id="1317" parent_id="1313" name="ESet V#e" position="6122,559">
-					<inputs>
-						<input name="Name_hash" value="tile_rt" />
-					</inputs>
-				</node>
-				<node object_id="1322" parent_id="1313" name="Find Entity" position="5978,575" />
-				<node object_id="1326" parent_id="1313" name="Str" position="5908,600" />
-				<node object_id="1329" parent_id="1311" name="If#NDE" position="5524,447" />
-				<node object_id="1333" parent_id="1329" name="ESet V#e" position="5611,568">
-					<inputs>
-						<input name="Name_hash" value="tile_lt" />
-					</inputs>
-				</node>
-				<node object_id="1338" parent_id="1329" name="Find Entity" position="5467,584" />
-				<node object_id="1342" parent_id="1329" name="Str" position="5406,616" />
-				<node object_id="1345" parent_id="1311" name="Subtract" position="5253,464">
+				<node object_id="1145" parent_id="1042" name="Add" position="4196,752">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1349" parent_id="1311" name="Subtract" position="5316,464" />
-				<node object_id="1353" parent_id="1311" name="Add" position="5461,464">
+				<node object_id="1149" parent_id="1021" name="Block" position="5686,358" />
+				<node object_id="1151" parent_id="1149" name="If#NE" position="5988,447" />
+				<node object_id="1155" parent_id="1151" name="ESet V#e" position="6122,559">
+					<inputs>
+						<input name="Name0_hash" value="tile_rt" />
+					</inputs>
+				</node>
+				<node object_id="1160" parent_id="1151" name="Find Entity" position="5978,575" />
+				<node object_id="1164" parent_id="1151" name="Str" position="5908,600" />
+				<node object_id="1167" parent_id="1149" name="If#NDE" position="5524,447" />
+				<node object_id="1171" parent_id="1167" name="ESet V#e" position="5611,568">
+					<inputs>
+						<input name="Name0_hash" value="tile_lt" />
+					</inputs>
+				</node>
+				<node object_id="1176" parent_id="1167" name="Find Entity" position="5467,584" />
+				<node object_id="1180" parent_id="1167" name="Str" position="5406,616" />
+				<node object_id="1183" parent_id="1149" name="Subtract" position="5253,464">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1357" parent_id="1311" name="Subtract" position="5815,479">
+				<node object_id="1187" parent_id="1149" name="Subtract" position="5316,464" />
+				<node object_id="1191" parent_id="1149" name="Add" position="5461,464">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1361" parent_id="1311" name="Add" position="5895,479">
+				<node object_id="1195" parent_id="1149" name="Subtract" position="5815,479">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1365" parent_id="1311" name="ESet V#e" position="6194,675">
-					<inputs>
-						<input name="Name_hash" value="tile_r" />
-					</inputs>
-				</node>
-				<node object_id="1370" parent_id="1311" name="Find Entity" position="6050,691" />
-				<node object_id="1374" parent_id="1311" name="ESet V#e" position="5666,697">
-					<inputs>
-						<input name="Name_hash" value="tile_l" />
-					</inputs>
-				</node>
-				<node object_id="1379" parent_id="1311" name="Add" position="5858,707" />
-				<node object_id="1383" parent_id="1311" name="Find Entity" position="5522,713" />
-				<node object_id="1387" parent_id="1311" name="Subtract" position="5330,721" />
-				<node object_id="1391" parent_id="1311" name="Str" position="5989,723" />
-				<node object_id="1394" parent_id="1311" name="Str" position="5461,745" />
-				<node object_id="1397" parent_id="1311" name="If#NDE" position="5956,817" />
-				<node object_id="1401" parent_id="1397" name="ESet V#e" position="6138,936">
-					<inputs>
-						<input name="Name_hash" value="tile_rb" />
-					</inputs>
-				</node>
-				<node object_id="1406" parent_id="1397" name="Find Entity" position="5991,945" />
-				<node object_id="1410" parent_id="1397" name="Str" position="5930,977" />
-				<node object_id="1413" parent_id="1311" name="Add" position="5867,825">
+				<node object_id="1199" parent_id="1149" name="Add" position="5895,479">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1417" parent_id="1311" name="Add" position="5368,861">
+				<node object_id="1203" parent_id="1149" name="ESet V#e" position="6194,675">
+					<inputs>
+						<input name="Name0_hash" value="tile_r" />
+					</inputs>
+				</node>
+				<node object_id="1208" parent_id="1149" name="Find Entity" position="6050,691" />
+				<node object_id="1212" parent_id="1149" name="ESet V#e" position="5666,697">
+					<inputs>
+						<input name="Name0_hash" value="tile_l" />
+					</inputs>
+				</node>
+				<node object_id="1217" parent_id="1149" name="Add" position="5858,707" />
+				<node object_id="1221" parent_id="1149" name="Find Entity" position="5522,713" />
+				<node object_id="1225" parent_id="1149" name="Subtract" position="5330,721" />
+				<node object_id="1229" parent_id="1149" name="Str" position="5989,723" />
+				<node object_id="1232" parent_id="1149" name="Str" position="5461,745" />
+				<node object_id="1235" parent_id="1149" name="If#NDE" position="5956,817" />
+				<node object_id="1239" parent_id="1235" name="ESet V#e" position="6138,936">
+					<inputs>
+						<input name="Name0_hash" value="tile_rb" />
+					</inputs>
+				</node>
+				<node object_id="1244" parent_id="1235" name="Find Entity" position="5991,945" />
+				<node object_id="1248" parent_id="1235" name="Str" position="5930,977" />
+				<node object_id="1251" parent_id="1149" name="Add" position="5867,825">
 					<inputs>
 						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1421" parent_id="1311" name="Subtract" position="5429,861" />
-				<node object_id="1425" parent_id="1311" name="If#NDE" position="5588,862" />
-				<node object_id="1429" parent_id="1425" name="ESet V#e" position="5658,981">
+				<node object_id="1255" parent_id="1149" name="Add" position="5368,861">
 					<inputs>
-						<input name="Name_hash" value="tile_lb" />
+						<input type="D@int" name="B" value="1" />
 					</inputs>
 				</node>
-				<node object_id="1434" parent_id="1425" name="Find Entity" position="5514,997" />
-				<node object_id="1438" parent_id="1425" name="Str" position="5453,1029" />
-				<node object_id="1441" parent_id="1183" name="Subtract" position="4131,607" />
-				<node object_id="1445" parent_id="1183" name="Add" position="4628,608" />
-				<node object_id="1449" name="Variable" position="5108,1120">
+				<node object_id="1259" parent_id="1149" name="Subtract" position="5429,861" />
+				<node object_id="1263" parent_id="1149" name="If#NDE" position="5588,862" />
+				<node object_id="1267" parent_id="1263" name="ESet V#e" position="5658,981">
+					<inputs>
+						<input name="Name0_hash" value="tile_lb" />
+					</inputs>
+				</node>
+				<node object_id="1272" parent_id="1263" name="Find Entity" position="5514,997" />
+				<node object_id="1276" parent_id="1263" name="Str" position="5453,1029" />
+				<node object_id="1279" parent_id="1021" name="Subtract" position="4131,607" />
+				<node object_id="1283" parent_id="1021" name="Add" position="4628,608" />
+				<node object_id="1287" name="Variable" position="5108,1120">
 					<inputs>
 						<input name="Name" value="851252846" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1453" name="Array Clear" position="5024,1232">
+				<node object_id="1291" name="Array Clear" position="5024,1232">
 					<inputs>
 						<input name="Name" value="1579636033" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1456" name="Foreach Child" position="5059,1279" />
-				<node object_id="1459" parent_id="1456" name="Loop Var#e" position="4916,1392" />
-				<node object_id="1462" parent_id="1456" name="Get Child" position="5052,1392">
+				<node object_id="1294" name="Foreach Child" position="5059,1279" />
+				<node object_id="1297" parent_id="1294" name="Loop Var#e" position="4916,1392" />
+				<node object_id="1300" parent_id="1294" name="Get Child" position="5052,1392">
 					<inputs>
 						<input name="Index" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1466" parent_id="1456" name="Array Add Item" position="5172,1392">
+				<node object_id="1304" parent_id="1294" name="Array Add Item" position="5172,1392">
 					<inputs>
 						<input name="Name" value="1579636033" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1470" name="Generate Navmesh" position="5026,1496">
+				<node object_id="1308" name="Generate Navmesh" position="5026,1496">
 					<inputs>
 						<input name="Agent Radius" value="0.5" />
 						<input name="Agent Height" value="1.8" />
@@ -1447,311 +1447,311 @@
 						<input name="Walkable Slope Angle" value="45" />
 					</inputs>
 				</node>
-				<node object_id="1476" name="Co Wait" position="5066,1744">
+				<node object_id="1314" name="Co Wait" position="5066,1744">
 					<inputs>
 						<input name="Time" value="0.5" />
 					</inputs>
 				</node>
-				<node object_id="1478" name="Array Clear" position="5056,1824">
+				<node object_id="1316" name="Array Clear" position="5056,1824">
 					<inputs>
 						<input name="Name" value="851252846" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1481" name="Foreach Child" position="5059,1872" />
-				<node object_id="1484" parent_id="1481" name="Loop Var#e" position="4965,1985" />
-				<node object_id="1487" parent_id="1481" name="Array Add Item" position="5092,1985">
+				<node object_id="1319" name="Foreach Child" position="5059,1872" />
+				<node object_id="1322" parent_id="1319" name="Loop Var#e" position="4965,1985" />
+				<node object_id="1325" parent_id="1319" name="Array Add Item" position="5092,1985">
 					<inputs>
 						<input name="Name" value="851252846" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1491" name="Array Random Sample" position="5030,2080" />
-				<node object_id="1496" parent_id="1491" name="Loop Var#e" position="4839,2173" />
-				<node object_id="1499" parent_id="1491" name="Equal" position="5060,2192" />
-				<node object_id="1503" parent_id="1491" name="EGet V#u" position="4947,2202">
+				<node object_id="1329" name="Array Random Sample" position="5030,2080" />
+				<node object_id="1334" parent_id="1329" name="Loop Var#e" position="4839,2173" />
+				<node object_id="1337" parent_id="1329" name="Equal" position="5060,2192" />
+				<node object_id="1341" parent_id="1329" name="EGet V#u" position="4947,2202">
 					<inputs>
-						<input name="Name_hash" value="type" />
+						<input name="Name0_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="1508" parent_id="1491" name="Return#b" position="5204,2202" />
-				<node object_id="1511" name="Call" position="5050,2320">
+				<node object_id="1346" parent_id="1329" name="Return#b" position="5204,2202" />
+				<node object_id="1349" name="Call" position="5050,2320">
 					<inputs>
 						<input name="Name" value="3990442140" />
 					</inputs>
 				</node>
-				<node object_id="1516" name="Array Get Item" position="4934,2320">
+				<node object_id="1354" name="Array Get Item" position="4934,2320">
 					<inputs>
 						<input name="Name" value="851252846" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1521" name="Array Random Sample" position="4995,2457" />
-				<node object_id="1526" parent_id="1521" name="Loop Var#e" position="4804,2550" />
-				<node object_id="1529" parent_id="1521" name="Equal" position="5025,2569" />
-				<node object_id="1533" parent_id="1521" name="EGet V#u" position="4912,2579">
+				<node object_id="1359" name="Array Random Sample" position="4995,2457" />
+				<node object_id="1364" parent_id="1359" name="Loop Var#e" position="4804,2550" />
+				<node object_id="1367" parent_id="1359" name="Equal" position="5025,2569" />
+				<node object_id="1371" parent_id="1359" name="EGet V#u" position="4912,2579">
 					<inputs>
-						<input name="Name_hash" value="type" />
+						<input name="Name0_hash" value="type" />
 					</inputs>
 				</node>
-				<node object_id="1538" parent_id="1521" name="Return#b" position="5169,2579" />
-				<node object_id="1541" name="Call" position="5015,2697">
+				<node object_id="1376" parent_id="1359" name="Return#b" position="5169,2579" />
+				<node object_id="1379" name="Call" position="5015,2697">
 					<inputs>
 						<input name="Name" value="3990442140" />
 					</inputs>
 				</node>
-				<node object_id="1546" name="Array Get Item" position="4897,2710">
+				<node object_id="1384" name="Array Get Item" position="4897,2710">
 					<inputs>
 						<input name="Name" value="851252846" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1551" name="Co Wait" position="5034,2816">
+				<node object_id="1389" name="Co Wait" position="5034,2816">
 					<inputs>
 						<input name="Time" value="0.1" />
 					</inputs>
 				</node>
-				<node object_id="1553" name="Update Transform" position="5011,2896" />
-				<node object_id="1555" name="Get Child" position="4883,2912">
+				<node object_id="1391" name="Update Transform" position="5011,2896" />
+				<node object_id="1393" name="Get Child" position="4883,2912">
 					<inputs>
 						<input name="Index" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1559" name="Add" position="5124,2959">
+				<node object_id="1397" name="Add" position="5124,2959">
 					<inputs>
 						<input type="D@glm::vec3" name="B" value="0,64,36" />
 					</inputs>
 				</node>
-				<node object_id="1563" name="Set Variable" position="5202,2960">
+				<node object_id="1401" name="Set Variable" position="5202,2960">
 					<inputs>
 						<input name="Name" value="3146873766" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="1567" name="Get Pos" position="5011,2960" />
-				<node object_id="1570" name="Foreach" position="5059,3136" />
-				<node object_id="1572" parent_id="1570" name="Loop Var#e" position="4948,3225" />
-				<node object_id="1575" parent_id="1570" name="ECall" position="5059,3226">
+				<node object_id="1405" name="Get Pos" position="5011,2960" />
+				<node object_id="1408" name="Foreach" position="5059,3136" />
+				<node object_id="1410" parent_id="1408" name="Loop Var#e" position="4948,3225" />
+				<node object_id="1413" parent_id="1408" name="ECall" position="5059,3226">
 					<inputs>
 						<input name="Name_hash" value="on_new_day" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="1578" from_node="849" from_slot="V" to_node="982" to_slot="Parent" />
-				<link object_id="1579" from_node="1179" from_slot="V" to_node="1172" to_slot="B" />
-				<link object_id="1580" from_node="1010" from_slot="V" to_node="1015" to_slot="V" />
-				<link object_id="1581" from_node="938" from_slot="V" to_node="957" to_slot="A" />
-				<link object_id="1582" from_node="834" from_slot="Entity" to_node="838" to_slot="V" />
-				<link object_id="1583" from_node="812" from_slot="Entity" to_node="823" to_slot="V" />
-				<link object_id="1584" from_node="796" from_slot="Entity" to_node="804" to_slot="V" />
-				<link object_id="1585" from_node="796" from_slot="Entity" to_node="831" to_slot="Entity" />
-				<link object_id="1586" from_node="812" from_slot="Entity" to_node="842" to_slot="Entity" />
-				<link object_id="1587" from_node="1156" from_slot="V" to_node="1145" to_slot="Scl" />
-				<link object_id="1588" from_node="1140" from_slot="V" to_node="1148" to_slot="X" />
-				<link object_id="1589" from_node="1114" from_slot="V" to_node="1130" to_slot="A" />
-				<link object_id="1590" from_node="1085" from_slot="V" to_node="1126" to_slot="B" />
-				<link object_id="1591" from_node="1065" from_slot="V" to_node="1060" to_slot="X" />
-				<link object_id="1592" from_node="1073" from_slot="V" to_node="1070" to_slot="Scl" />
-				<link object_id="1593" from_node="800" from_slot="V" to_node="1007" to_slot="Scl" />
-				<link object_id="1594" from_node="800" from_slot="V" to_node="827" to_slot="B" />
-				<link object_id="1595" from_node="800" from_slot="V" to_node="845" to_slot="B" />
-				<link object_id="1596" from_node="849" from_slot="V" to_node="853" to_slot="Entity" />
-				<link object_id="1597" from_node="849" from_slot="V" to_node="857" to_slot="Entity" />
-				<link object_id="1598" from_node="849" from_slot="V" to_node="869" to_slot="Entity" />
-				<link object_id="1599" from_node="861" from_slot="V" to_node="988" to_slot="Tag" />
-				<link object_id="1600" from_node="889" from_slot="V" to_node="1499" to_slot="B" />
-				<link object_id="1601" from_node="816" from_slot="Sheet" to_node="819" to_slot="V" />
-				<link object_id="1602" from_node="789" from_slot="Sheet" to_node="792" to_slot="V" />
-				<link object_id="1603" from_node="1085" from_slot="V" to_node="1090" to_slot="Times" />
-				<link object_id="1604" from_node="1449" from_slot="V" to_node="1491" to_slot="Array" />
-				<link object_id="1605" from_node="849" from_slot="V" to_node="1481" to_slot="Parent" />
-				<link object_id="1606" from_node="1496" from_slot="V" to_node="1503" to_slot="Entity" />
-				<link object_id="1607" from_node="938" from_slot="V" to_node="994" to_slot="V" />
-				<link object_id="1608" from_node="873" from_slot="V" to_node="1024" to_slot="V" />
-				<link object_id="1609" from_node="889" from_slot="V" to_node="1163" to_slot="V" />
-				<link object_id="1610" from_node="877" from_slot="V" to_node="1080" to_slot="V" />
-				<link object_id="1611" from_node="932" from_slot="V" to_node="1470" to_slot="Nodes" />
-				<link object_id="1612" from_node="849" from_slot="V" to_node="1456" to_slot="Parent" />
-				<link object_id="1613" from_node="1459" from_slot="V" to_node="1462" to_slot="Parent" />
-				<link object_id="1614" from_node="1484" from_slot="V" to_node="1487" to_slot="V" />
-				<link object_id="1615" from_node="1195" from_slot="V" to_node="1207" to_slot="Entity" />
-				<link object_id="1616" from_node="849" from_slot="V" to_node="1183" to_slot="Parent" />
-				<link object_id="1617" from_node="1195" from_slot="V" to_node="1198" to_slot="Entity" />
-				<link object_id="1618" from_node="849" from_slot="V" to_node="1225" to_slot="Parent" />
-				<link object_id="1619" from_node="901" from_slot="V" to_node="957" to_slot="B" />
-				<link object_id="1620" from_node="849" from_slot="V" to_node="1233" to_slot="Parent" />
-				<link object_id="1621" from_node="901" from_slot="V" to_node="1221" to_slot="B" />
-				<link object_id="1622" from_node="901" from_slot="V" to_node="1445" to_slot="B" />
-				<link object_id="1623" from_node="1195" from_slot="V" to_node="1291" to_slot="Entity" />
-				<link object_id="1624" from_node="849" from_slot="V" to_node="1296" to_slot="Parent" />
-				<link object_id="1625" from_node="1195" from_slot="V" to_node="1271" to_slot="Entity" />
-				<link object_id="1626" from_node="849" from_slot="V" to_node="1276" to_slot="Parent" />
-				<link object_id="1627" from_node="901" from_slot="V" to_node="1283" to_slot="B" />
-				<link object_id="1628" from_node="1195" from_slot="V" to_node="1333" to_slot="Entity" />
-				<link object_id="1629" from_node="849" from_slot="V" to_node="1338" to_slot="Parent" />
-				<link object_id="1630" from_node="849" from_slot="V" to_node="1322" to_slot="Parent" />
-				<link object_id="1631" from_node="849" from_slot="V" to_node="1383" to_slot="Parent" />
-				<link object_id="1632" from_node="849" from_slot="V" to_node="1434" to_slot="Parent" />
-				<link object_id="1633" from_node="1195" from_slot="V" to_node="1401" to_slot="Entity" />
-				<link object_id="1634" from_node="849" from_slot="V" to_node="1406" to_slot="Parent" />
-				<link object_id="1635" from_node="901" from_slot="V" to_node="1387" to_slot="B" />
-				<link object_id="1636" from_node="849" from_slot="V" to_node="1370" to_slot="Parent" />
-				<link object_id="1637" from_node="1195" from_slot="V" to_node="1429" to_slot="Entity" />
-				<link object_id="1638" from_node="901" from_slot="V" to_node="1349" to_slot="B" />
-				<link object_id="1639" from_node="1195" from_slot="V" to_node="1374" to_slot="Entity" />
-				<link object_id="1640" from_node="1195" from_slot="V" to_node="1365" to_slot="Entity" />
-				<link object_id="1641" from_node="1195" from_slot="V" to_node="1317" to_slot="Entity" />
-				<link object_id="1642" from_node="1195" from_slot="V" to_node="1212" to_slot="Entity" />
-				<link object_id="1643" from_node="1195" from_slot="V" to_node="1243" to_slot="Entity" />
-				<link object_id="1644" from_node="1195" from_slot="V" to_node="1248" to_slot="Entity" />
-				<link object_id="1645" from_node="901" from_slot="V" to_node="1379" to_slot="B" />
-				<link object_id="1646" from_node="849" from_slot="V" to_node="1257" to_slot="Parent" />
-				<link object_id="1647" from_node="901" from_slot="V" to_node="1441" to_slot="B" />
-				<link object_id="1648" from_node="849" from_slot="V" to_node="1253" to_slot="Parent" />
-				<link object_id="1649" from_node="901" from_slot="V" to_node="1421" to_slot="B" />
-				<link object_id="1650" from_node="849" from_slot="V" to_node="893" to_slot="Entity" />
-				<link object_id="1651" from_node="901" from_slot="V" to_node="1397" to_slot="B" />
-				<link object_id="1652" from_node="901" from_slot="V" to_node="1287" to_slot="B" />
-				<link object_id="1653" from_node="901" from_slot="V" to_node="1267" to_slot="B" />
-				<link object_id="1654" from_node="901" from_slot="V" to_node="1425" to_slot="B" />
-				<link object_id="1655" from_node="901" from_slot="V" to_node="1313" to_slot="B" />
-				<link object_id="1656" from_node="901" from_slot="V" to_node="1329" to_slot="B" />
-				<link object_id="1657" from_node="849" from_slot="V" to_node="881" to_slot="Entity" />
-				<link object_id="1658" from_node="1116" from_slot="V" to_node="1121" to_slot="R" />
-				<link object_id="1659" from_node="1029" from_slot="V" to_node="1034" to_slot="V" />
-				<link object_id="1660" from_node="1092" from_slot="V" to_node="1097" to_slot="V" />
-				<link object_id="1661" from_node="909" from_slot="V" to_node="1511" to_slot="faction" />
-				<link object_id="1662" from_node="897" from_slot="V" to_node="1541" to_slot="faction" />
-				<link object_id="1663" from_node="889" from_slot="V" to_node="1529" to_slot="B" />
-				<link object_id="1664" from_node="1526" from_slot="V" to_node="1533" to_slot="Entity" />
-				<link object_id="1665" from_node="1449" from_slot="V" to_node="1521" to_slot="Array" />
-				<link object_id="1666" from_node="928" from_slot="V" to_node="1570" to_slot="Vector" />
-				<link object_id="1667" from_node="1572" from_slot="V" to_node="1575" to_slot="Entity" />
-				<link object_id="1668" from_node="957" from_slot="R" to_node="962" to_slot="A" />
-				<link object_id="1669" from_node="957" from_slot="Q" to_node="975" to_slot="X" />
-				<link object_id="1670" from_node="1198" from_slot="Name" to_node="1201" to_slot="V" />
-				<link object_id="1671" from_node="957" from_slot="R" to_node="966" to_slot="A" />
-				<link object_id="1672" from_node="1126" from_slot="V" to_node="1130" to_slot="B" />
-				<link object_id="1673" from_node="1015" from_slot="Branch 1" to_node="1022" to_slot="Execute" />
-				<link object_id="1674" from_node="881" from_slot="Atlas" to_node="885" to_slot="V" />
-				<link object_id="1675" from_node="827" from_slot="V" to_node="831" to_slot="Scl" />
-				<link object_id="1676" from_node="957" from_slot="R" to_node="975" to_slot="Y" />
-				<link object_id="1677" from_node="845" from_slot="V" to_node="842" to_slot="Scl" />
-				<link object_id="1678" from_node="1148" from_slot="V" to_node="1153" to_slot="Eul" />
-				<link object_id="1679" from_node="1097" from_slot="V" to_node="1134" to_slot="Path" />
-				<link object_id="1680" from_node="1034" from_slot="V" to_node="1051" to_slot="Path" />
-				<link object_id="1681" from_node="1015" from_slot="Else" to_node="1161" to_slot="Execute" />
-				<link object_id="1682" from_node="1060" from_slot="V" to_node="1057" to_slot="Eul" />
-				<link object_id="1683" from_node="994" from_slot="V" to_node="991" to_slot="Name" />
-				<link object_id="1684" from_node="1015" from_slot="Branch 2" to_node="1078" to_slot="Execute" />
-				<link object_id="1685" from_node="957" from_slot="Q" to_node="953" to_slot="A" />
-				<link object_id="1686" from_node="1533" from_slot="V" to_node="1529" to_slot="A" />
-				<link object_id="1687" from_node="1462" from_slot="Child" to_node="1466" to_slot="V" />
-				<link object_id="1688" from_node="1521" from_slot="Index" to_node="1546" to_slot="Index" />
-				<link object_id="1689" from_node="1503" from_slot="V" to_node="1499" to_slot="A" />
-				<link object_id="1690" from_node="1491" from_slot="Index" to_node="1516" to_slot="Index" />
-				<link object_id="1691" from_node="1201" from_slot="V" to_node="1307" to_slot="A" />
-				<link object_id="1692" from_node="975" from_slot="V" to_node="1172" to_slot="A" />
-				<link object_id="1693" from_node="1201" from_slot="V" to_node="1445" to_slot="A" />
-				<link object_id="1694" from_node="1130" from_slot="V" to_node="1121" to_slot="A" />
-				<link object_id="1695" from_node="953" from_slot="V" to_node="949" to_slot="A" />
-				<link object_id="1696" from_node="1201" from_slot="V" to_node="1217" to_slot="A" />
-				<link object_id="1697" from_node="1201" from_slot="V" to_node="1441" to_slot="A" />
-				<link object_id="1698" from_node="1201" from_slot="V" to_node="1229" to_slot="A" />
-				<link object_id="1699" from_node="1201" from_slot="V" to_node="1186" to_slot="A" />
-				<link object_id="1700" from_node="1516" from_slot="V" to_node="1555" to_slot="Parent" />
-				<link object_id="1701" from_node="966" from_slot="R" to_node="971" to_slot="A" />
-				<link object_id="1702" from_node="1516" from_slot="V" to_node="1511" to_slot="tile" />
-				<link object_id="1703" from_node="1201" from_slot="V" to_node="1345" to_slot="A" />
-				<link object_id="1704" from_node="1201" from_slot="V" to_node="1357" to_slot="A" />
-				<link object_id="1705" from_node="1201" from_slot="V" to_node="1387" to_slot="A" />
-				<link object_id="1706" from_node="1201" from_slot="V" to_node="1379" to_slot="A" />
-				<link object_id="1707" from_node="1201" from_slot="V" to_node="1417" to_slot="A" />
-				<link object_id="1708" from_node="1201" from_slot="V" to_node="1413" to_slot="A" />
-				<link object_id="1709" from_node="1529" from_slot="V" to_node="1538" to_slot="V" />
-				<link object_id="1710" from_node="962" from_slot="V" to_node="940" to_slot="Z" />
-				<link object_id="1711" from_node="1201" from_slot="V" to_node="1303" to_slot="A" />
-				<link object_id="1712" from_node="1499" from_slot="V" to_node="1508" to_slot="V" />
-				<link object_id="1713" from_node="1546" from_slot="V" to_node="1541" to_slot="tile" />
-				<link object_id="1714" from_node="1303" from_slot="V" to_node="1283" to_slot="A" />
-				<link object_id="1715" from_node="1441" from_slot="V" to_node="1264" to_slot="V" />
-				<link object_id="1716" from_node="1217" from_slot="V" to_node="1221" to_slot="A" />
-				<link object_id="1717" from_node="1307" from_slot="V" to_node="1300" to_slot="V" />
-				<link object_id="1718" from_node="1121" from_slot="V" to_node="1134" to_slot="Position" />
-				<link object_id="1719" from_node="1413" from_slot="V" to_node="1397" to_slot="A" />
-				<link object_id="1720" from_node="1345" from_slot="V" to_node="1349" to_slot="A" />
-				<link object_id="1721" from_node="1445" from_slot="V" to_node="1261" to_slot="V" />
-				<link object_id="1722" from_node="1357" from_slot="V" to_node="1361" to_slot="A" />
-				<link object_id="1723" from_node="1417" from_slot="V" to_node="1421" to_slot="A" />
-				<link object_id="1724" from_node="1413" from_slot="V" to_node="1410" to_slot="V" />
-				<link object_id="1725" from_node="1555" from_slot="Child" to_node="1567" to_slot="Entity" />
-				<link object_id="1726" from_node="1229" from_slot="V" to_node="1240" to_slot="V" />
-				<link object_id="1727" from_node="1387" from_slot="V" to_node="1394" to_slot="V" />
-				<link object_id="1728" from_node="971" from_slot="V" to_node="949" to_slot="B" />
-				<link object_id="1729" from_node="1172" from_slot="V" to_node="1176" to_slot="UV" />
-				<link object_id="1730" from_node="1379" from_slot="V" to_node="1391" to_slot="V" />
-				<link object_id="1731" from_node="1357" from_slot="V" to_node="1326" to_slot="V" />
-				<link object_id="1732" from_node="1307" from_slot="V" to_node="1287" to_slot="A" />
-				<link object_id="1733" from_node="1186" from_slot="R" to_node="1191" to_slot="A" />
-				<link object_id="1734" from_node="1555" from_slot="Child" to_node="1553" to_slot="Entity" />
-				<link object_id="1735" from_node="1421" from_slot="V" to_node="1425" to_slot="A" />
-				<link object_id="1736" from_node="1261" from_slot="V" to_node="1253" to_slot="Name" />
-				<link object_id="1737" from_node="1283" from_slot="V" to_node="1280" to_slot="V" />
-				<link object_id="1738" from_node="1191" from_slot="V" to_node="1204" to_slot="Cond" />
-				<link object_id="1739" from_node="1394" from_slot="V" to_node="1383" to_slot="Name" />
-				<link object_id="1740" from_node="1349" from_slot="V" to_node="1353" to_slot="A" />
-				<link object_id="1741" from_node="949" from_slot="V" to_node="940" to_slot="X" />
-				<link object_id="1742" from_node="1176" from_slot="V" to_node="1168" to_slot="A" />
-				<link object_id="1743" from_node="1264" from_slot="V" to_node="1257" to_slot="Name" />
-				<link object_id="1744" from_node="1300" from_slot="V" to_node="1296" to_slot="Name" />
-				<link object_id="1745" from_node="1421" from_slot="V" to_node="1438" to_slot="V" />
-				<link object_id="1746" from_node="1567" from_slot="Pos" to_node="1559" to_slot="A" />
-				<link object_id="1747" from_node="1391" from_slot="V" to_node="1370" to_slot="Name" />
-				<link object_id="1748" from_node="1410" from_slot="V" to_node="1406" to_slot="Name" />
-				<link object_id="1749" from_node="1283" from_slot="V" to_node="1267" to_slot="A" />
-				<link object_id="1750" from_node="1349" from_slot="V" to_node="1342" to_slot="V" />
-				<link object_id="1751" from_node="1361" from_slot="V" to_node="1313" to_slot="A" />
-				<link object_id="1752" from_node="1240" from_slot="V" to_node="1225" to_slot="Name" />
-				<link object_id="1753" from_node="1221" from_slot="V" to_node="1237" to_slot="V" />
-				<link object_id="1754" from_node="1326" from_slot="V" to_node="1322" to_slot="Name" />
-				<link object_id="1755" from_node="1225" from_slot="Entity" to_node="1207" to_slot="V" />
-				<link object_id="1756" from_node="1342" from_slot="V" to_node="1338" to_slot="Name" />
-				<link object_id="1757" from_node="1257" from_slot="Entity" to_node="1248" to_slot="V" />
-				<link object_id="1758" from_node="1253" from_slot="Entity" to_node="1243" to_slot="V" />
-				<link object_id="1759" from_node="1559" from_slot="V" to_node="1563" to_slot="V" />
-				<link object_id="1760" from_node="1296" from_slot="Entity" to_node="1291" to_slot="V" />
-				<link object_id="1761" from_node="1406" from_slot="Entity" to_node="1401" to_slot="V" />
-				<link object_id="1762" from_node="1204" from_slot="Else" to_node="1311" to_slot="Execute" />
-				<link object_id="1763" from_node="1383" from_slot="Entity" to_node="1374" to_slot="V" />
-				<link object_id="1764" from_node="1280" from_slot="V" to_node="1276" to_slot="Name" />
-				<link object_id="1765" from_node="1322" from_slot="Entity" to_node="1317" to_slot="V" />
-				<link object_id="1766" from_node="1438" from_slot="V" to_node="1434" to_slot="Name" />
-				<link object_id="1767" from_node="1237" from_slot="V" to_node="1233" to_slot="Name" />
-				<link object_id="1768" from_node="1353" from_slot="V" to_node="1329" to_slot="A" />
-				<link object_id="1769" from_node="1168" from_slot="V" to_node="979" to_slot="Cond" />
-				<link object_id="1770" from_node="1370" from_slot="Entity" to_node="1365" to_slot="V" />
-				<link object_id="1771" from_node="940" from_slot="V" to_node="945" to_slot="A" />
-				<link object_id="1772" from_node="1434" from_slot="Entity" to_node="1429" to_slot="V" />
-				<link object_id="1773" from_node="945" from_slot="V" to_node="982" to_slot="Position" />
-				<link object_id="1774" from_node="1276" from_slot="Entity" to_node="1271" to_slot="V" />
-				<link object_id="1775" from_node="1338" from_slot="Entity" to_node="1333" to_slot="V" />
-				<link object_id="1776" from_node="1233" from_slot="Entity" to_node="1212" to_slot="V" />
-				<link object_id="1777" from_node="982" from_slot="Entity" to_node="1134" to_slot="Parent" />
-				<link object_id="1778" from_node="982" from_slot="Entity" to_node="991" to_slot="Entity" />
-				<link object_id="1779" from_node="982" from_slot="Entity" to_node="1001" to_slot="Parent" />
-				<link object_id="1780" from_node="982" from_slot="Entity" to_node="1163" to_slot="Entity" />
-				<link object_id="1781" from_node="982" from_slot="Entity" to_node="1024" to_slot="Entity" />
-				<link object_id="1782" from_node="982" from_slot="Entity" to_node="1007" to_slot="Entity" />
-				<link object_id="1783" from_node="982" from_slot="Entity" to_node="1080" to_slot="Entity" />
-				<link object_id="1784" from_node="982" from_slot="Entity" to_node="997" to_slot="Entity" />
-				<link object_id="1785" from_node="982" from_slot="Entity" to_node="1051" to_slot="Parent" />
-				<link object_id="1786" from_node="982" from_slot="Entity" to_node="988" to_slot="Entity" />
-				<link object_id="1787" from_node="1051" from_slot="Entity" to_node="1057" to_slot="Entity" />
-				<link object_id="1788" from_node="1134" from_slot="Entity" to_node="1145" to_slot="Entity" />
-				<link object_id="1789" from_node="1051" from_slot="Entity" to_node="1070" to_slot="Entity" />
-				<link object_id="1790" from_node="1134" from_slot="Entity" to_node="1153" to_slot="Entity" />
-				<link object_id="1791" from_node="1001" from_slot="Child" to_node="1005" to_slot="Entity" />
+				<link object_id="1416" from_node="687" from_slot="V" to_node="820" to_slot="Parent" />
+				<link object_id="1417" from_node="1017" from_slot="V" to_node="1010" to_slot="B" />
+				<link object_id="1418" from_node="848" from_slot="V" to_node="853" to_slot="V" />
+				<link object_id="1419" from_node="776" from_slot="V" to_node="795" to_slot="A" />
+				<link object_id="1420" from_node="672" from_slot="Entity" to_node="676" to_slot="V" />
+				<link object_id="1421" from_node="650" from_slot="Entity" to_node="661" to_slot="V" />
+				<link object_id="1422" from_node="634" from_slot="Entity" to_node="642" to_slot="V" />
+				<link object_id="1423" from_node="634" from_slot="Entity" to_node="669" to_slot="Entity" />
+				<link object_id="1424" from_node="650" from_slot="Entity" to_node="680" to_slot="Entity" />
+				<link object_id="1425" from_node="994" from_slot="V" to_node="983" to_slot="Scl" />
+				<link object_id="1426" from_node="978" from_slot="V" to_node="986" to_slot="X" />
+				<link object_id="1427" from_node="952" from_slot="V" to_node="968" to_slot="A" />
+				<link object_id="1428" from_node="923" from_slot="V" to_node="964" to_slot="B" />
+				<link object_id="1429" from_node="903" from_slot="V" to_node="898" to_slot="X" />
+				<link object_id="1430" from_node="911" from_slot="V" to_node="908" to_slot="Scl" />
+				<link object_id="1431" from_node="638" from_slot="V" to_node="845" to_slot="Scl" />
+				<link object_id="1432" from_node="638" from_slot="V" to_node="665" to_slot="B" />
+				<link object_id="1433" from_node="638" from_slot="V" to_node="683" to_slot="B" />
+				<link object_id="1434" from_node="687" from_slot="V" to_node="691" to_slot="Entity" />
+				<link object_id="1435" from_node="687" from_slot="V" to_node="695" to_slot="Entity" />
+				<link object_id="1436" from_node="687" from_slot="V" to_node="707" to_slot="Entity" />
+				<link object_id="1437" from_node="699" from_slot="V" to_node="826" to_slot="Tag" />
+				<link object_id="1438" from_node="727" from_slot="V" to_node="1337" to_slot="B" />
+				<link object_id="1439" from_node="654" from_slot="Sheet" to_node="657" to_slot="V" />
+				<link object_id="1440" from_node="627" from_slot="Sheet" to_node="630" to_slot="V" />
+				<link object_id="1441" from_node="923" from_slot="V" to_node="928" to_slot="Times" />
+				<link object_id="1442" from_node="1287" from_slot="V" to_node="1329" to_slot="Array" />
+				<link object_id="1443" from_node="687" from_slot="V" to_node="1319" to_slot="Parent" />
+				<link object_id="1444" from_node="1334" from_slot="V" to_node="1341" to_slot="Entity" />
+				<link object_id="1445" from_node="776" from_slot="V" to_node="832" to_slot="V" />
+				<link object_id="1446" from_node="770" from_slot="V" to_node="1308" to_slot="Nodes" />
+				<link object_id="1447" from_node="687" from_slot="V" to_node="1294" to_slot="Parent" />
+				<link object_id="1448" from_node="1297" from_slot="V" to_node="1300" to_slot="Parent" />
+				<link object_id="1449" from_node="1322" from_slot="V" to_node="1325" to_slot="V" />
+				<link object_id="1450" from_node="1033" from_slot="V" to_node="1045" to_slot="Entity" />
+				<link object_id="1451" from_node="687" from_slot="V" to_node="1021" to_slot="Parent" />
+				<link object_id="1452" from_node="1033" from_slot="V" to_node="1036" to_slot="Entity" />
+				<link object_id="1453" from_node="687" from_slot="V" to_node="1063" to_slot="Parent" />
+				<link object_id="1454" from_node="739" from_slot="V" to_node="795" to_slot="B" />
+				<link object_id="1455" from_node="687" from_slot="V" to_node="1071" to_slot="Parent" />
+				<link object_id="1456" from_node="739" from_slot="V" to_node="1059" to_slot="B" />
+				<link object_id="1457" from_node="739" from_slot="V" to_node="1283" to_slot="B" />
+				<link object_id="1458" from_node="1033" from_slot="V" to_node="1129" to_slot="Entity" />
+				<link object_id="1459" from_node="687" from_slot="V" to_node="1134" to_slot="Parent" />
+				<link object_id="1460" from_node="1033" from_slot="V" to_node="1109" to_slot="Entity" />
+				<link object_id="1461" from_node="687" from_slot="V" to_node="1114" to_slot="Parent" />
+				<link object_id="1462" from_node="739" from_slot="V" to_node="1121" to_slot="B" />
+				<link object_id="1463" from_node="1033" from_slot="V" to_node="1171" to_slot="Entity" />
+				<link object_id="1464" from_node="687" from_slot="V" to_node="1176" to_slot="Parent" />
+				<link object_id="1465" from_node="687" from_slot="V" to_node="1160" to_slot="Parent" />
+				<link object_id="1466" from_node="687" from_slot="V" to_node="1221" to_slot="Parent" />
+				<link object_id="1467" from_node="687" from_slot="V" to_node="1272" to_slot="Parent" />
+				<link object_id="1468" from_node="1033" from_slot="V" to_node="1239" to_slot="Entity" />
+				<link object_id="1469" from_node="687" from_slot="V" to_node="1244" to_slot="Parent" />
+				<link object_id="1470" from_node="739" from_slot="V" to_node="1225" to_slot="B" />
+				<link object_id="1471" from_node="687" from_slot="V" to_node="1208" to_slot="Parent" />
+				<link object_id="1472" from_node="1033" from_slot="V" to_node="1267" to_slot="Entity" />
+				<link object_id="1473" from_node="739" from_slot="V" to_node="1187" to_slot="B" />
+				<link object_id="1474" from_node="1033" from_slot="V" to_node="1212" to_slot="Entity" />
+				<link object_id="1475" from_node="1033" from_slot="V" to_node="1203" to_slot="Entity" />
+				<link object_id="1476" from_node="1033" from_slot="V" to_node="1155" to_slot="Entity" />
+				<link object_id="1477" from_node="1033" from_slot="V" to_node="1050" to_slot="Entity" />
+				<link object_id="1478" from_node="1033" from_slot="V" to_node="1081" to_slot="Entity" />
+				<link object_id="1479" from_node="1033" from_slot="V" to_node="1086" to_slot="Entity" />
+				<link object_id="1480" from_node="739" from_slot="V" to_node="1217" to_slot="B" />
+				<link object_id="1481" from_node="687" from_slot="V" to_node="1095" to_slot="Parent" />
+				<link object_id="1482" from_node="739" from_slot="V" to_node="1279" to_slot="B" />
+				<link object_id="1483" from_node="687" from_slot="V" to_node="1091" to_slot="Parent" />
+				<link object_id="1484" from_node="739" from_slot="V" to_node="1259" to_slot="B" />
+				<link object_id="1485" from_node="687" from_slot="V" to_node="731" to_slot="Entity" />
+				<link object_id="1486" from_node="739" from_slot="V" to_node="1235" to_slot="B" />
+				<link object_id="1487" from_node="739" from_slot="V" to_node="1125" to_slot="B" />
+				<link object_id="1488" from_node="739" from_slot="V" to_node="1105" to_slot="B" />
+				<link object_id="1489" from_node="739" from_slot="V" to_node="1263" to_slot="B" />
+				<link object_id="1490" from_node="739" from_slot="V" to_node="1151" to_slot="B" />
+				<link object_id="1491" from_node="739" from_slot="V" to_node="1167" to_slot="B" />
+				<link object_id="1492" from_node="687" from_slot="V" to_node="719" to_slot="Entity" />
+				<link object_id="1493" from_node="954" from_slot="V" to_node="959" to_slot="R" />
+				<link object_id="1494" from_node="867" from_slot="V" to_node="872" to_slot="V" />
+				<link object_id="1495" from_node="930" from_slot="V" to_node="935" to_slot="V" />
+				<link object_id="1496" from_node="747" from_slot="V" to_node="1349" to_slot="faction" />
+				<link object_id="1497" from_node="735" from_slot="V" to_node="1379" to_slot="faction" />
+				<link object_id="1498" from_node="727" from_slot="V" to_node="1367" to_slot="B" />
+				<link object_id="1499" from_node="1364" from_slot="V" to_node="1371" to_slot="Entity" />
+				<link object_id="1500" from_node="1287" from_slot="V" to_node="1359" to_slot="Array" />
+				<link object_id="1501" from_node="766" from_slot="V" to_node="1408" to_slot="Vector" />
+				<link object_id="1502" from_node="1410" from_slot="V" to_node="1413" to_slot="Entity" />
+				<link object_id="1617" from_node="711" from_slot="V" to_node="862" to_slot="V0" />
+				<link object_id="1618" from_node="727" from_slot="V" to_node="1001" to_slot="V0" />
+				<link object_id="1619" from_node="715" from_slot="V" to_node="918" to_slot="V0" />
+				<link object_id="1506" from_node="795" from_slot="R" to_node="804" to_slot="A" />
+				<link object_id="1507" from_node="964" from_slot="V" to_node="968" to_slot="B" />
+				<link object_id="1508" from_node="853" from_slot="Branch 1" to_node="860" to_slot="Execute" />
+				<link object_id="1509" from_node="719" from_slot="Atlas" to_node="723" to_slot="V" />
+				<link object_id="1510" from_node="665" from_slot="V" to_node="669" to_slot="Scl" />
+				<link object_id="1511" from_node="795" from_slot="R" to_node="813" to_slot="Y" />
+				<link object_id="1512" from_node="683" from_slot="V" to_node="680" to_slot="Scl" />
+				<link object_id="1513" from_node="986" from_slot="V" to_node="991" to_slot="Eul" />
+				<link object_id="1514" from_node="935" from_slot="V" to_node="972" to_slot="Path" />
+				<link object_id="1515" from_node="872" from_slot="V" to_node="889" to_slot="Path" />
+				<link object_id="1516" from_node="853" from_slot="Else" to_node="999" to_slot="Execute" />
+				<link object_id="1517" from_node="898" from_slot="V" to_node="895" to_slot="Eul" />
+				<link object_id="1518" from_node="832" from_slot="V" to_node="829" to_slot="Name" />
+				<link object_id="1519" from_node="853" from_slot="Branch 2" to_node="916" to_slot="Execute" />
+				<link object_id="1520" from_node="795" from_slot="Q" to_node="791" to_slot="A" />
+				<link object_id="1521" from_node="1300" from_slot="Child" to_node="1304" to_slot="V" />
+				<link object_id="1522" from_node="1359" from_slot="Index" to_node="1384" to_slot="Index" />
+				<link object_id="1523" from_node="1329" from_slot="Index" to_node="1354" to_slot="Index" />
+				<link object_id="1503" from_node="795" from_slot="R" to_node="800" to_slot="A" />
+				<link object_id="1504" from_node="795" from_slot="Q" to_node="813" to_slot="X" />
+				<link object_id="1505" from_node="1036" from_slot="Name" to_node="1039" to_slot="V" />
+				<link object_id="1620" from_node="1371" from_slot="V0" to_node="1367" to_slot="A" />
+				<link object_id="1621" from_node="1341" from_slot="V0" to_node="1337" to_slot="A" />
+				<link object_id="1529" from_node="1039" from_slot="V" to_node="1055" to_slot="A" />
+				<link object_id="1530" from_node="1039" from_slot="V" to_node="1279" to_slot="A" />
+				<link object_id="1531" from_node="1039" from_slot="V" to_node="1067" to_slot="A" />
+				<link object_id="1532" from_node="1039" from_slot="V" to_node="1024" to_slot="A" />
+				<link object_id="1533" from_node="1354" from_slot="V" to_node="1393" to_slot="Parent" />
+				<link object_id="1534" from_node="804" from_slot="R" to_node="809" to_slot="A" />
+				<link object_id="1535" from_node="1354" from_slot="V" to_node="1349" to_slot="tile" />
+				<link object_id="1536" from_node="1039" from_slot="V" to_node="1183" to_slot="A" />
+				<link object_id="1537" from_node="1039" from_slot="V" to_node="1195" to_slot="A" />
+				<link object_id="1538" from_node="1039" from_slot="V" to_node="1225" to_slot="A" />
+				<link object_id="1539" from_node="1039" from_slot="V" to_node="1217" to_slot="A" />
+				<link object_id="1540" from_node="1039" from_slot="V" to_node="1255" to_slot="A" />
+				<link object_id="1541" from_node="1039" from_slot="V" to_node="1251" to_slot="A" />
+				<link object_id="1542" from_node="1367" from_slot="V" to_node="1376" to_slot="V" />
+				<link object_id="1543" from_node="800" from_slot="V" to_node="778" to_slot="Z" />
+				<link object_id="1544" from_node="1039" from_slot="V" to_node="1141" to_slot="A" />
+				<link object_id="1545" from_node="1337" from_slot="V" to_node="1346" to_slot="V" />
+				<link object_id="1546" from_node="1384" from_slot="V" to_node="1379" to_slot="tile" />
+				<link object_id="1527" from_node="968" from_slot="V" to_node="959" to_slot="A" />
+				<link object_id="1528" from_node="791" from_slot="V" to_node="787" to_slot="A" />
+				<link object_id="1524" from_node="1039" from_slot="V" to_node="1145" to_slot="A" />
+				<link object_id="1525" from_node="813" from_slot="V" to_node="1010" to_slot="A" />
+				<link object_id="1526" from_node="1039" from_slot="V" to_node="1283" to_slot="A" />
+				<link object_id="1552" from_node="1251" from_slot="V" to_node="1235" to_slot="A" />
+				<link object_id="1553" from_node="1183" from_slot="V" to_node="1187" to_slot="A" />
+				<link object_id="1554" from_node="1283" from_slot="V" to_node="1099" to_slot="V" />
+				<link object_id="1555" from_node="1195" from_slot="V" to_node="1199" to_slot="A" />
+				<link object_id="1556" from_node="1255" from_slot="V" to_node="1259" to_slot="A" />
+				<link object_id="1557" from_node="1251" from_slot="V" to_node="1248" to_slot="V" />
+				<link object_id="1558" from_node="1393" from_slot="Child" to_node="1405" to_slot="Entity" />
+				<link object_id="1559" from_node="1067" from_slot="V" to_node="1078" to_slot="V" />
+				<link object_id="1560" from_node="1225" from_slot="V" to_node="1232" to_slot="V" />
+				<link object_id="1561" from_node="809" from_slot="V" to_node="787" to_slot="B" />
+				<link object_id="1547" from_node="1141" from_slot="V" to_node="1121" to_slot="A" />
+				<link object_id="1563" from_node="1217" from_slot="V" to_node="1229" to_slot="V" />
+				<link object_id="1564" from_node="1195" from_slot="V" to_node="1164" to_slot="V" />
+				<link object_id="1565" from_node="1145" from_slot="V" to_node="1125" to_slot="A" />
+				<link object_id="1566" from_node="1024" from_slot="R" to_node="1029" to_slot="A" />
+				<link object_id="1562" from_node="1010" from_slot="V" to_node="1014" to_slot="UV" />
+				<link object_id="1548" from_node="1279" from_slot="V" to_node="1102" to_slot="V" />
+				<link object_id="1549" from_node="1055" from_slot="V" to_node="1059" to_slot="A" />
+				<link object_id="1550" from_node="1145" from_slot="V" to_node="1138" to_slot="V" />
+				<link object_id="1551" from_node="959" from_slot="V" to_node="972" to_slot="Position" />
+				<link object_id="1567" from_node="1393" from_slot="Child" to_node="1391" to_slot="Entity" />
+				<link object_id="1573" from_node="1187" from_slot="V" to_node="1191" to_slot="A" />
+				<link object_id="1574" from_node="787" from_slot="V" to_node="778" to_slot="X" />
+				<link object_id="1575" from_node="1014" from_slot="V" to_node="1006" to_slot="A" />
+				<link object_id="1576" from_node="1102" from_slot="V" to_node="1095" to_slot="Name" />
+				<link object_id="1577" from_node="1138" from_slot="V" to_node="1134" to_slot="Name" />
+				<link object_id="1578" from_node="1259" from_slot="V" to_node="1276" to_slot="V" />
+				<link object_id="1579" from_node="1405" from_slot="Pos" to_node="1397" to_slot="A" />
+				<link object_id="1580" from_node="1229" from_slot="V" to_node="1208" to_slot="Name" />
+				<link object_id="1581" from_node="1248" from_slot="V" to_node="1244" to_slot="Name" />
+				<link object_id="1582" from_node="1121" from_slot="V" to_node="1105" to_slot="A" />
+				<link object_id="1583" from_node="1187" from_slot="V" to_node="1180" to_slot="V" />
+				<link object_id="1584" from_node="1199" from_slot="V" to_node="1151" to_slot="A" />
+				<link object_id="1585" from_node="1078" from_slot="V" to_node="1063" to_slot="Name" />
+				<link object_id="1586" from_node="1059" from_slot="V" to_node="1075" to_slot="V" />
+				<link object_id="1587" from_node="1164" from_slot="V" to_node="1160" to_slot="Name" />
+				<link object_id="1568" from_node="1259" from_slot="V" to_node="1263" to_slot="A" />
+				<link object_id="1569" from_node="1099" from_slot="V" to_node="1091" to_slot="Name" />
+				<link object_id="1570" from_node="1121" from_slot="V" to_node="1118" to_slot="V" />
+				<link object_id="1571" from_node="1029" from_slot="V" to_node="1042" to_slot="Cond" />
+				<link object_id="1572" from_node="1232" from_slot="V" to_node="1221" to_slot="Name" />
+				<link object_id="1593" from_node="1075" from_slot="V" to_node="1071" to_slot="Name" />
+				<link object_id="1594" from_node="1191" from_slot="V" to_node="1167" to_slot="A" />
+				<link object_id="1595" from_node="1006" from_slot="V" to_node="817" to_slot="Cond" />
+				<link object_id="1596" from_node="778" from_slot="V" to_node="783" to_slot="A" />
+				<link object_id="1591" from_node="1118" from_slot="V" to_node="1114" to_slot="Name" />
+				<link object_id="1588" from_node="1180" from_slot="V" to_node="1176" to_slot="Name" />
+				<link object_id="1590" from_node="1042" from_slot="Else" to_node="1149" to_slot="Execute" />
+				<link object_id="1589" from_node="1397" from_slot="V" to_node="1401" to_slot="V" />
+				<link object_id="1592" from_node="1276" from_slot="V" to_node="1272" to_slot="Name" />
+				<link object_id="1622" from_node="1063" from_slot="Entity" to_node="1045" to_slot="V0" />
+				<link object_id="1623" from_node="1095" from_slot="Entity" to_node="1086" to_slot="V0" />
+				<link object_id="1624" from_node="1091" from_slot="Entity" to_node="1081" to_slot="V0" />
+				<link object_id="1625" from_node="1134" from_slot="Entity" to_node="1129" to_slot="V0" />
+				<link object_id="1626" from_node="1244" from_slot="Entity" to_node="1239" to_slot="V0" />
+				<link object_id="1627" from_node="1221" from_slot="Entity" to_node="1212" to_slot="V0" />
+				<link object_id="1628" from_node="1160" from_slot="Entity" to_node="1155" to_slot="V0" />
+				<link object_id="1629" from_node="1208" from_slot="Entity" to_node="1203" to_slot="V0" />
+				<link object_id="1597" from_node="783" from_slot="V" to_node="820" to_slot="Position" />
+				<link object_id="1633" from_node="1071" from_slot="Entity" to_node="1050" to_slot="V0" />
+				<link object_id="1630" from_node="1272" from_slot="Entity" to_node="1267" to_slot="V0" />
+				<link object_id="1631" from_node="1114" from_slot="Entity" to_node="1109" to_slot="V0" />
+				<link object_id="1632" from_node="1176" from_slot="Entity" to_node="1171" to_slot="V0" />
+				<link object_id="1600" from_node="820" from_slot="Entity" to_node="839" to_slot="Parent" />
+				<link object_id="1601" from_node="820" from_slot="Entity" to_node="1001" to_slot="Entity" />
+				<link object_id="1602" from_node="820" from_slot="Entity" to_node="862" to_slot="Entity" />
+				<link object_id="1604" from_node="820" from_slot="Entity" to_node="918" to_slot="Entity" />
+				<link object_id="1606" from_node="820" from_slot="Entity" to_node="889" to_slot="Parent" />
+				<link object_id="1607" from_node="820" from_slot="Entity" to_node="826" to_slot="Entity" />
+				<link object_id="1603" from_node="820" from_slot="Entity" to_node="845" to_slot="Entity" />
+				<link object_id="1598" from_node="820" from_slot="Entity" to_node="972" to_slot="Parent" />
+				<link object_id="1605" from_node="820" from_slot="Entity" to_node="835" to_slot="Entity" />
+				<link object_id="1599" from_node="820" from_slot="Entity" to_node="829" to_slot="Entity" />
+				<link object_id="1610" from_node="889" from_slot="Entity" to_node="908" to_slot="Entity" />
+				<link object_id="1609" from_node="972" from_slot="Entity" to_node="983" to_slot="Entity" />
+				<link object_id="1608" from_node="889" from_slot="Entity" to_node="895" to_slot="Entity" />
+				<link object_id="1612" from_node="839" from_slot="Child" to_node="843" to_slot="Entity" />
+				<link object_id="1611" from_node="972" from_slot="Entity" to_node="991" to_slot="Entity" />
 			</links>
 		</group>
 	</groups>

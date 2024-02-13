@@ -15,7 +15,7 @@
 				</node>
 				<node object_id="8" name="ESet V#u" position="339,98">
 					<inputs>
-						<input name="Name_hash" value="gold" />
+						<input name="Name0_hash" value="gold" />
 					</inputs>
 				</node>
 				<node object_id="13" name="Variable" position="0,100">
@@ -26,7 +26,7 @@
 				</node>
 				<node object_id="17" name="EGet V#u" position="115,186">
 					<inputs>
-						<input name="Name_hash" value="gold" />
+						<input name="Name0_hash" value="gold" />
 					</inputs>
 				</node>
 				<node object_id="22" name="Add" position="228,215" />
@@ -35,8 +35,8 @@
 				<link object_id="26" from_node="4" from_slot="V" to_node="8" to_slot="Entity" />
 				<link object_id="27" from_node="4" from_slot="V" to_node="17" to_slot="Entity" />
 				<link object_id="28" from_node="13" from_slot="V" to_node="22" to_slot="B" />
-				<link object_id="29" from_node="17" from_slot="V" to_node="22" to_slot="A" />
-				<link object_id="30" from_node="22" from_slot="V" to_node="8" to_slot="V" />
+				<link object_id="29" from_node="17" from_slot="V0" to_node="22" to_slot="A" />
+				<link object_id="30" from_node="22" from_slot="V" to_node="8" to_slot="V0" />
 			</links>
 		</group>
 	</groups>
