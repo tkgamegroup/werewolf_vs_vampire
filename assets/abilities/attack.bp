@@ -230,18 +230,18 @@
 				<link object_id="209" from_node="156" from_slot="Pos" to_node="146" to_slot="Location" />
 				<link object_id="210" from_node="61" from_slot="Pos" to_node="64" to_slot="A" />
 				<link object_id="211" from_node="163" from_slot="Else" to_node="177" to_slot="Execute" />
-				<link object_id="212" from_node="75" from_slot="V" to_node="71" to_slot="B" />
-				<link object_id="213" from_node="68" from_slot="Pos" to_node="64" to_slot="B" />
-				<link object_id="214" from_node="109" from_slot="V" to_node="99" to_slot="B" />
-				<link object_id="215" from_node="93" from_slot="V" to_node="84" to_slot="B" />
-				<link object_id="216" from_node="32" from_slot="Pos" to_node="29" to_slot="Position" />
-				<link object_id="217" from_node="58" from_slot="V" to_node="52" to_slot="Cond" />
-				<link object_id="248" from_node="15" from_slot="V0" to_node="20" to_slot="Cond" />
+				<link object_id="212" from_node="68" from_slot="Pos" to_node="64" to_slot="B" />
+				<link object_id="213" from_node="109" from_slot="V" to_node="99" to_slot="B" />
+				<link object_id="214" from_node="93" from_slot="V" to_node="84" to_slot="B" />
+				<link object_id="215" from_node="32" from_slot="Pos" to_node="29" to_slot="Position" />
+				<link object_id="216" from_node="58" from_slot="V" to_node="52" to_slot="Cond" />
+				<link object_id="217" from_node="15" from_slot="V0" to_node="20" to_slot="Cond" />
+				<link object_id="249" from_node="75" from_slot="V0" to_node="71" to_slot="B" />
 				<link object_id="218" from_node="71" from_slot="V" to_node="35" to_slot="B" />
 				<link object_id="219" from_node="64" from_slot="V" to_node="35" to_slot="A" />
-				<link object_id="221" from_node="20" from_slot="Else" to_node="27" to_slot="Execute" />
-				<link object_id="222" from_node="64" from_slot="V" to_node="84" to_slot="A" />
-				<link object_id="220" from_node="146" from_slot="Entity" to_node="159" to_slot="V" />
+				<link object_id="221" from_node="64" from_slot="V" to_node="84" to_slot="A" />
+				<link object_id="222" from_node="146" from_slot="Entity" to_node="159" to_slot="V" />
+				<link object_id="220" from_node="20" from_slot="Else" to_node="27" to_slot="Execute" />
 				<link object_id="223" from_node="35" from_slot="Else" to_node="79" to_slot="Execute" />
 				<link object_id="224" from_node="84" from_slot="Else" to_node="97" to_slot="Execute" />
 			</links>
@@ -274,8 +274,8 @@
 			</nodes>
 			<links>
 				<link object_id="246" from_node="228" from_slot="V" to_node="232" to_slot="Entity" />
-				<link object_id="249" from_node="232" from_slot="V0" to_node="241" to_slot="faction" />
-				<link object_id="247" from_node="241" from_slot="faction" to_node="237" to_slot="V" />
+				<link object_id="247" from_node="232" from_slot="V0" to_node="241" to_slot="faction" />
+				<link object_id="248" from_node="241" from_slot="faction" to_node="237" to_slot="V" />
 			</links>
 		</group>
 	</groups>
