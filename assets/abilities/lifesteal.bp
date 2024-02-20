@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" />
+		<variable name="percentage" type="D@uint" value="0" />
+	</variables>
+	<groups>
+		<group object_id="1" name="on_attacked">
+			<inputs>
+				<input name="target" type="PU@flame::Entity" />
+				<input name="damage" type="D@uint" />
+			</inputs>
+			<nodes>
+				<node object_id="6" name="Input" position="0,0" />
+				<node object_id="19" name="Variable" position="0,0">
+					<inputs>
+						<input name="Name" value="318910549" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="28" name="ECall#u|v" position="378,10">
+					<inputs>
+						<input name="Name_hash" value="take_heal" />
+					</inputs>
+				</node>
+				<node object_id="9" name="Multiply" position="212,15" />
+				<node object_id="37" name="To Uint" position="285,16" />
+				<node object_id="14" name="Float Divide" position="62,88">
+					<inputs>
+						<input name="B" value="100" />
+					</inputs>
+				</node>
+				<node object_id="31" name="Variable" position="0,100">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="13" from_node="6" from_slot="damage" to_node="9" to_slot="A" />
+				<link object_id="23" from_node="19" from_slot="V" to_node="14" to_slot="A" />
+				<link object_id="35" from_node="31" from_slot="V" to_node="28" to_slot="Entity" />
+				<link object_id="18" from_node="14" from_slot="V" to_node="9" to_slot="B" />
+				<link object_id="40" from_node="9" from_slot="V" to_node="37" to_slot="V" />
+				<link object_id="41" from_node="37" from_slot="V" to_node="28" to_slot="Input 1" />
+			</links>
+		</group>
+	</groups>
+</blueprint>

@@ -10,12 +10,12 @@
 		<column type="D@float" name="height" width="46" />
 		<column type="D@bool" name="flying" width="43" />
 		<column type="D@float" name="movemonet_speed" width="87" />
-		<column type="D@std::string" name="abilities" width="264" />
+		<column type="D@std::string" name="abilities" width="422" />
 	</columns>
 	<rows>
-		<row name="Archer" icon_name="archer,1944407138" prefab="assets\extra\characters\ELF_SM_archer_A.prefab" description="" radius="0.2" hp_max="100" height="1.8" flying="false" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=5&#10;damage=3&#10;interval=1&#10;projectile_prefab=assets\extra\characters\ELF_arrow.prefab&#10;projectile_speed=6&#10;sfx=assets\sfx\shoot.ogg" />
-		<row name="Infantry" icon_name="infantry,189813600" prefab="assets\characters\default_character.prefab" description="" radius="0.1" hp_max="100" height="0.9" flying="false" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=0.4&#10;damage=3&#10;interval=1&#10;sfx=assets\sfx\Socapex - new_hits.wav" />
-		<row name="Cavalry" icon_name="cavalry,4190592677" prefab="assets\extra\characters\ELF_SM_light_cavalry_A.prefab" description="" radius="0.2" hp_max="150" height="1.8" flying="false" movemonet_speed="10" abilities="assets\abilities\attack.bp&#10;range=1&#10;damage=3&#10;interval=1&#10;sfx=assets\sfx\shoot.ogg" />
-		<row name="Bat" icon_name=",0" prefab="assets\extra\characters\bat_v5.prefab" description="" radius="0.2" hp_max="20" height="1" flying="true" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=1&#10;damage=5&#10;interval=1&#10;sfx=assets\sfx\crunch.4.ogg" />
+		<row name="Archer" icon_name="archer,1944407138" prefab="assets\characters\default_character.prefab" description="" radius="0.2" hp_max="100" height="1.8" flying="false" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=5&#10;damage=3&#10;interval=1&#10;projectile_prefab=assets\extra\characters\ELF_arrow.prefab&#10;projectile_speed=6&#10;sfx=assets\sfx\shoot.ogg" />
+		<row name="Infantry" icon_name="infantry,189813600" prefab="assets\characters\default_character.prefab" description="" radius="0.1" hp_max="100" height="0.9" flying="false" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=0.5&#10;damage=8&#10;interval=1&#10;sfx=assets\sfx\Socapex - new_hits.wav" />
+		<row name="Cavalry" icon_name="cavalry,4190592677" prefab="assets\characters\default_character.prefab" description="" radius="0.2" hp_max="150" height="1.8" flying="false" movemonet_speed="10" abilities="assets\abilities\attack.bp&#10;range=1&#10;damage=3&#10;interval=1&#10;sfx=assets\sfx\shoot.ogg" />
+		<row name="Bat" icon_name=",0" prefab="assets\characters\default_character.prefab" description="" radius="0.2" hp_max="65" height="1" flying="false" movemonet_speed="5" abilities="assets\abilities\attack.bp&#10;range=1&#10;damage=4&#10;interval=0.8&#10;sfx=assets\sfx\crunch.4.ogg&#10;assets\abilities\lifesteal.bp&#10;percentage=50" />
 	</rows>
 </sheet>
