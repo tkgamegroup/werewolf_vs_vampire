@@ -3,6 +3,7 @@
 	<variables>
 		<variable name="type" type="D@uint" value="0" />
 		<variable name="faction" type="D@uint" value="0" />
+		<variable name="lord" type="PU@flame::Entity" />
 		<variable name="tile_lt" type="PU@flame::Entity" />
 		<variable name="tile_l" type="PU@flame::Entity" />
 		<variable name="tile_rt" type="PU@flame::Entity" />
