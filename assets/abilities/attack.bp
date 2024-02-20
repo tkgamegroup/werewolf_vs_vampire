@@ -122,7 +122,7 @@
 				<node object_id="123" parent_id="113" name="Total Time" position="900,1663" />
 				<node object_id="125" parent_id="113" name="Add" position="836,1719">
 					<inputs>
-						<input name="B" value="5" />
+						<input name="B" value="2" />
 					</inputs>
 				</node>
 				<node object_id="129" name="Variable" position="0,200">
@@ -252,7 +252,7 @@
 				<link object_id="235" from_node="8" from_slot="V" to_node="58" to_slot="Entity" />
 				<link object_id="236" from_node="66" from_slot="V" to_node="69" to_slot="Entity" />
 				<link object_id="237" from_node="153" from_slot="V" to_node="69" to_slot="Input 2" />
-				<link object_id="282" from_node="8" from_slot="V" to_node="97" to_slot="Entity" />
+				<link object_id="238" from_node="8" from_slot="V" to_node="97" to_slot="Entity" />
 				<link object_id="239" from_node="109" from_slot="V" to_node="100" to_slot="B" />
 				<link object_id="240" from_node="32" from_slot="Pos" to_node="29" to_slot="Position" />
 				<link object_id="241" from_node="74" from_slot="V" to_node="52" to_slot="Cond" />
@@ -260,41 +260,41 @@
 				<link object_id="243" from_node="91" from_slot="V0" to_node="87" to_slot="B" />
 				<link object_id="244" from_node="15" from_slot="V0" to_node="20" to_slot="Cond" />
 				<link object_id="245" from_node="172" from_slot="Pos" to_node="162" to_slot="Location" />
-				<link object_id="238" from_node="125" from_slot="V" to_node="115" to_slot="B" />
+				<link object_id="246" from_node="125" from_slot="V" to_node="115" to_slot="B" />
 				<link object_id="247" from_node="77" from_slot="Pos" to_node="80" to_slot="A" />
 				<link object_id="248" from_node="58" from_slot="V0" to_node="63" to_slot="Parent" />
 				<link object_id="249" from_node="179" from_slot="Else" to_node="193" to_slot="Execute" />
 				<link object_id="250" from_node="84" from_slot="Pos" to_node="80" to_slot="B" />
-				<link object_id="246" from_node="204" from_slot="V0" to_node="195" to_slot="A" />
-				<link object_id="251" from_node="87" from_slot="V" to_node="35" to_slot="B" />
+				<link object_id="251" from_node="204" from_slot="V0" to_node="195" to_slot="A" />
+				<link object_id="252" from_node="87" from_slot="V" to_node="35" to_slot="B" />
 				<link object_id="253" from_node="80" from_slot="V" to_node="100" to_slot="A" />
 				<link object_id="254" from_node="20" from_slot="Else" to_node="27" to_slot="Execute" />
 				<link object_id="255" from_node="162" from_slot="Entity" to_node="175" to_slot="V" />
-				<link object_id="252" from_node="80" from_slot="V" to_node="35" to_slot="A" />
-				<link object_id="256" from_node="100" from_slot="Else" to_node="113" to_slot="Execute" />
-				<link object_id="257" from_node="35" from_slot="Else" to_node="95" to_slot="Execute" />
+				<link object_id="256" from_node="80" from_slot="V" to_node="35" to_slot="A" />
+				<link object_id="257" from_node="100" from_slot="Else" to_node="113" to_slot="Execute" />
+				<link object_id="258" from_node="35" from_slot="Else" to_node="95" to_slot="Execute" />
 			</links>
 		</group>
-		<group object_id="258" name="on_gain">
+		<group object_id="259" name="on_gain">
 			<nodes>
-				<node object_id="261" name="Variable" position="0,0">
+				<node object_id="262" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="265" name="EGet V#u" position="-45,1689">
+				<node object_id="266" name="EGet V#u" position="-45,1689">
 					<inputs>
 						<input name="Name0_hash" value="faction" />
 					</inputs>
 				</node>
-				<node object_id="270" name="Set Variable" position="292,1696">
+				<node object_id="271" name="Set Variable" position="292,1696">
 					<inputs>
 						<input name="Name" value="238443914" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="274" name="Call" position="79,1696">
+				<node object_id="275" name="Call" position="79,1696">
 					<inputs>
 						<input name="Name" value="238443914" />
 						<input name="Location" value="70329639" />
@@ -302,9 +302,9 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="279" from_node="261" from_slot="V" to_node="265" to_slot="Entity" />
-				<link object_id="280" from_node="265" from_slot="V0" to_node="274" to_slot="faction" />
-				<link object_id="281" from_node="274" from_slot="faction" to_node="270" to_slot="V" />
+				<link object_id="280" from_node="262" from_slot="V" to_node="266" to_slot="Entity" />
+				<link object_id="281" from_node="266" from_slot="V0" to_node="275" to_slot="faction" />
+				<link object_id="282" from_node="275" from_slot="faction" to_node="271" to_slot="V" />
 			</links>
 		</group>
 	</groups>
