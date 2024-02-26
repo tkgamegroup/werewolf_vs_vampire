@@ -39,5 +39,30 @@
 				<link object_id="30" from_node="22" from_slot="V" to_node="8" to_slot="V0" />
 			</links>
 		</group>
+		<group object_id="31" name="on_show_ui">
+			<nodes>
+				<node object_id="34" name="Variable" position="0,0">
+					<inputs>
+						<input name="Name" value="245792979" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="38" name="Hud Text" position="440,103">
+					<inputs>
+						<input name="Font Size" value="24" />
+						<input name="Col" value="255,255,255,255" />
+					</inputs>
+				</node>
+				<node object_id="42" name="WFormat" position="285,106">
+					<inputs>
+						<input name="Fmt" value="Gold Production: {}" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="46" from_node="34" from_slot="V" to_node="42" to_slot="Arg1" />
+				<link object_id="47" from_node="42" from_slot="V" to_node="38" to_slot="Text" />
+			</links>
+		</group>
 	</groups>
 </blueprint>

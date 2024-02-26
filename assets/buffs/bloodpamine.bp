@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="stacks" type="D@uint" value="0" />
+		<variable name="max_stacks" type="D@uint" value="1" />
+		<variable name="duration" type="D@float" value="0" />
+	</variables>
+	<groups>
+		<group object_id="1" name="on_gain">
+			<nodes />
+			<links />
+		</group>
+	</groups>
+</blueprint>

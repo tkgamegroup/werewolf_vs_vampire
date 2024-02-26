@@ -21,7 +21,8 @@
 		<row name="Farm" icon_name=",0" prefab="" radius="1.5" height="2" cost_gold="300" description="Give you some gold at the end of rounds." hp_max="3" abilities="assets\abilities\resource_production.bp&#10;gold=200" />
 		<row name="Sawmill" icon_name="sawmill,2210157148" prefab="" radius="1.5" height="2" cost_gold="200" description="" hp_max="3" abilities="" />
 		<row name="Cannon Tower" icon_name="tower,1696842114" prefab="" radius="1.5" height="3.7" cost_gold="300" description="Defense your town by firing rocks to enemies." hp_max="3" abilities="assets\abilities\attack.bp&#10;range=20&#10;damage=30&#10;interval=1&#10;projectile_prefab=assets\ball.prefab&#10;projectile_speed=18&#10;projectile_parabolic=true&#10;projectile_hit_radius=1" />
-		<row name="Castle Bran" icon_name="town_center,1166834851" prefab="assets\buildings\castle_bran.prefab" radius="3" height="4" cost_gold="0" description="Upgrade to unlock more buildings." hp_max="10" abilities="assets\abilities\technology.bp&#10;available_constructions=Evil Hill" />
+		<row name="Castle Bran" icon_name="town_center,1166834851" prefab="assets\buildings\castle_bran.prefab" radius="3" height="4" cost_gold="0" description="Upgrade to unlock more buildings." hp_max="10" abilities="assets\abilities\technology.bp&#10;available_constructions=Evil Hill,Blood Manor" />
 		<row name="Evil Hill" icon_name=",0" prefab="assets\buildings\blank_building.prefab" radius="1.5" height="2" cost_gold="400" description="" hp_max="3" abilities="assets\abilities\spawn_units.bp&#10;uint_name=Bat&#10;number=4" />
+		<row name="Blood Manor" icon_name=",0" prefab="assets\buildings\blank_building.prefab" radius="1.5" height="2" cost_gold="300" description="" hp_max="3" abilities="assets\abilities\resource_production.bp&#10;gold=100&#10;assets\abilities\spawn_units.bp&#10;uint_name=Vampire&#10;number=1" />
 	</rows>
 </sheet>

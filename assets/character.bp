@@ -20,6 +20,7 @@
 		<variable name="target_building" type="PU@flame::Entity" />
 		<variable name="task" type="D@uint" value="0" />
 		<variable name="abilities" type="PU@flame::Entity" />
+		<variable name="buffs" type="PU@flame::Entity" />
 		<variable name="wounded_time" type="D@float" value="0" />
 		<variable name="staging_hp" type="D@int" value="0" />
 	</variables>
