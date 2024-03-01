@@ -117,13 +117,12 @@
 				</node>
 				<node object_id="109" parent_id="27" name="Get Pos" position="611,530" />
 				<node object_id="112" parent_id="27" name="Distance" position="772,546" />
-				<node object_id="116" parent_id="27" name="Get Pos" position="611,609" />
-				<node object_id="119" parent_id="27" name="Add" position="760,630" />
-				<node object_id="123" parent_id="27" name="EGet V" position="638,688">
+				<node object_id="123" parent_id="27" name="EGet V" position="615,626">
 					<inputs>
 						<input name="Name0_hash" value="radius" />
 					</inputs>
 				</node>
+				<node object_id="119" parent_id="27" name="Add" position="760,630" />
 				<node object_id="127" parent_id="27" name="Block" position="870,1281" />
 				<node object_id="129" parent_id="127" name="Nav Agent Set Speed Scale" position="870,1343">
 					<inputs>
@@ -268,7 +267,6 @@
 				<link object_id="250" from_node="8" from_slot="V" to_node="212" to_slot="Entity" />
 				<link object_id="251" from_node="8" from_slot="V" to_node="222" to_slot="Entity" />
 				<link object_id="252" from_node="8" from_slot="V" to_node="109" to_slot="Entity" />
-				<link object_id="253" from_node="4" from_slot="V" to_node="116" to_slot="Entity" />
 				<link object_id="254" from_node="169" from_slot="V" to_node="43" to_slot="Interval" />
 				<link object_id="255" from_node="165" from_slot="V" to_node="141" to_slot="A" />
 				<link object_id="256" from_node="50" from_slot="V" to_node="46" to_slot="V" />
@@ -305,9 +303,7 @@
 				<link object_id="287" from_node="141" from_slot="V" to_node="132" to_slot="B" />
 				<link object_id="288" from_node="59" from_slot="V0" to_node="64" to_slot="Parent" />
 				<link object_id="289" from_node="219" from_slot="Else" to_node="233" to_slot="Execute" />
-				<link object_id="290" from_node="116" from_slot="Pos" to_node="112" to_slot="B" />
 				<link object_id="291" from_node="244" from_slot="V0" to_node="235" to_slot="A" />
-				<link object_id="292" from_node="109" from_slot="Pos" to_node="112" to_slot="A" />
 				<link object_id="293" from_node="32" from_slot="Pos" to_node="29" to_slot="Position" />
 				<link object_id="294" from_node="75" from_slot="V" to_node="52" to_slot="Cond" />
 				<link object_id="295" from_node="12" from_slot="Else" to_node="197" to_slot="Execute" />
@@ -315,17 +311,19 @@
 				<link object_id="297" from_node="123" from_slot="V0" to_node="119" to_slot="B" />
 				<link object_id="298" from_node="15" from_slot="V0" to_node="20" to_slot="Cond" />
 				<link object_id="299" from_node="109" from_slot="Pos" to_node="80" to_slot="Position" />
-				<link object_id="300" from_node="52" from_slot="Else" to_node="78" to_slot="Execute" />
+				<link object_id="339" from_node="32" from_slot="Pos" to_node="112" to_slot="A" />
+				<link object_id="338" from_node="109" from_slot="Pos" to_node="112" to_slot="B" />
 				<link object_id="301" from_node="20" from_slot="Else" to_node="27" to_slot="Execute" />
 				<link object_id="302" from_node="202" from_slot="Entity" to_node="215" to_slot="V" />
 				<link object_id="303" from_node="119" from_slot="V" to_node="35" to_slot="B" />
 				<link object_id="304" from_node="80" from_slot="Entity" to_node="86" to_slot="Entity" />
 				<link object_id="305" from_node="80" from_slot="Entity" to_node="90" to_slot="Entity" />
 				<link object_id="306" from_node="112" from_slot="V" to_node="132" to_slot="A" />
-				<link object_id="307" from_node="80" from_slot="Entity" to_node="100" to_slot="Entity" />
+				<link object_id="300" from_node="52" from_slot="Else" to_node="78" to_slot="Execute" />
 				<link object_id="308" from_node="112" from_slot="V" to_node="35" to_slot="A" />
 				<link object_id="309" from_node="80" from_slot="Entity" to_node="105" to_slot="Entity" />
 				<link object_id="310" from_node="80" from_slot="Entity" to_node="95" to_slot="Entity" />
+				<link object_id="307" from_node="80" from_slot="Entity" to_node="100" to_slot="Entity" />
 				<link object_id="311" from_node="35" from_slot="Else" to_node="127" to_slot="Execute" />
 				<link object_id="312" from_node="132" from_slot="Else" to_node="145" to_slot="Execute" />
 			</links>
