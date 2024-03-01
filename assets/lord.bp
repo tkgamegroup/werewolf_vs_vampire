@@ -639,6 +639,51 @@
 				<link object_id="676" from_node="661" from_slot="Child" to_node="668" to_slot="Cond" />
 			</links>
 		</group>
+		<group object_id="1117" name="get_gold">
+			<inputs>
+				<input name="gold" type="D@uint" />
+				<input name="pos" type="D@glm::vec3" />
+			</inputs>
+			<nodes>
+				<node object_id="1139" name="Add" position="72,-16" />
+				<node object_id="1132" name="Input" position="0,0" />
+				<node object_id="1144" name="Variable" position="0,0">
+					<inputs>
+						<input name="Name" value="245792979" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="1135" name="Set Variable" position="180,0">
+					<inputs>
+						<input name="Name" value="245792979" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="1150" name="Add Floating Text" position="193,87">
+					<inputs>
+						<input name="Font Size" value="16" />
+						<input name="Color" value="255,255,0,255" />
+						<input name="Duration" value="1" />
+						<input name="Bind Target" value="cdcdcdcdcdcdcdcd" />
+						<input name="Offset 2D" value="0,0" />
+						<input name="Speed" value="0,0" />
+					</inputs>
+				</node>
+				<node object_id="1159" name="WFormat" position="88,90">
+					<inputs>
+						<input name="Fmt" value="{}" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="1143" from_node="1132" from_slot="gold" to_node="1139" to_slot="B" />
+				<link object_id="1148" from_node="1144" from_slot="V" to_node="1139" to_slot="A" />
+				<link object_id="1164" from_node="1132" from_slot="gold" to_node="1159" to_slot="Arg1" />
+				<link object_id="1165" from_node="1132" from_slot="pos" to_node="1150" to_slot="Offset 3D" />
+				<link object_id="1149" from_node="1139" from_slot="V" to_node="1135" to_slot="V" />
+				<link object_id="1163" from_node="1159" from_slot="V" to_node="1150" to_slot="Text" />
+			</links>
+		</group>
 		<group object_id="677" name="build_tile">
 			<inputs>
 				<input name="tile" type="PU@flame::Entity" />
