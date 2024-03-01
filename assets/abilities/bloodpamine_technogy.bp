@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<blueprint>
+	<groups>
+		<group object_id="1" name="on_unit_spawned">
+			<inputs>
+				<input name="unit" type="PU@flame::Entity" />
+				<input name="name" type="D@std::wstring" />
+			</inputs>
+			<nodes>
+				<node object_id="6" name="Input" position="-6,-32" />
+				<node object_id="9" name="EGet V#e" position="70,-23">
+					<inputs>
+						<input name="Name0_hash" value="abilities" />
+					</inputs>
+				</node>
+				<node object_id="14" name="Create Entity" position="211,0">
+					<inputs>
+						<input name="Name" value="bloodpamine" />
+					</inputs>
+				</node>
+				<node object_id="18" name="Set BP" position="387,16">
+					<inputs>
+						<input name="Path" value="assets\abilities\bloodpamine.bp" />
+					</inputs>
+				</node>
+				<node object_id="25" name="ESet V#e" position="129,113">
+					<inputs>
+						<input name="Name0_hash" value="self" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="22" from_node="6" from_slot="unit" to_node="9" to_slot="Entity" />
+				<link object_id="31" from_node="6" from_slot="unit" to_node="25" to_slot="V0" />
+				<link object_id="23" from_node="9" from_slot="V0" to_node="14" to_slot="Parent" />
+				<link object_id="24" from_node="14" from_slot="Entity" to_node="18" to_slot="Entity" />
+				<link object_id="30" from_node="14" from_slot="Entity" to_node="25" to_slot="Entity" />
+			</links>
+		</group>
+	</groups>
+</blueprint>

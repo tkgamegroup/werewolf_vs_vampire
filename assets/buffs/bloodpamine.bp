@@ -1,14 +1,32 @@
 <?xml version="1.0"?>
 <blueprint>
 	<variables>
+		<variable name="self" type="PU@flame::Entity" />
 		<variable name="stacks" type="D@uint" value="0" />
 		<variable name="max_stacks" type="D@uint" value="1" />
-		<variable name="duration" type="D@float" value="0" />
+		<variable name="duration" type="D@float" value="0.3" />
+		<variable name="timer" type="D@float" value="-1" />
 	</variables>
 	<groups>
 		<group object_id="1" name="on_gain">
-			<nodes />
-			<links />
+			<nodes>
+				<node object_id="4" name="Variable" position="0,0">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="8" name="EScale Datas#C1" position="350,87">
+					<inputs>
+						<input name="Filter" value="interval" />
+						<input name="Scaling" value="0.9" />
+						<input name="Child0" value="abilities" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="13" from_node="4" from_slot="V" to_node="8" to_slot="Entity" />
+			</links>
 		</group>
 	</groups>
 </blueprint>

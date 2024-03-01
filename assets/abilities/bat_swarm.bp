@@ -98,67 +98,67 @@
 					</inputs>
 				</node>
 				<node object_id="85" parent_id="20" name="Get Pos" position="-111,679" />
-				<node object_id="92" name="Variable" position="0,300">
+				<node object_id="88" name="Variable" position="0,300">
 					<inputs>
 						<input name="Name" value="4100355337" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="96" name="Variable" position="0,400">
+				<node object_id="92" name="Variable" position="0,400">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="70329639" />
 					</inputs>
 				</node>
-				<node object_id="100" name="Variable" position="0,500">
+				<node object_id="96" name="Variable" position="0,500">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="104" name="Variable" position="0,600">
+				<node object_id="100" name="Variable" position="0,600">
 					<inputs>
 						<input name="Name" value="2656653522" />
 						<input name="Location" value="322780295" />
 					</inputs>
 				</node>
-				<node object_id="108" name="Variable" position="0,700">
+				<node object_id="104" name="Variable" position="0,700">
 					<inputs>
 						<input name="Name" value="238443914" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="112" name="Variable" position="0,800">
+				<node object_id="108" name="Variable" position="0,800">
 					<inputs>
 						<input name="Name" value="1483455034" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="116" name="Variable" position="0,900">
+				<node object_id="112" name="Variable" position="0,900">
 					<inputs>
 						<input name="Name" value="3243549002" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="120" name="Variable" position="0,1000">
+				<node object_id="116" name="Variable" position="0,1000">
 					<inputs>
 						<input name="Name" value="2111981841" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="124" name="Variable" position="0,1100">
+				<node object_id="120" name="Variable" position="0,1100">
 					<inputs>
 						<input name="Name" value="2327019456" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="128" name="Variable" position="0,1200">
+				<node object_id="124" name="Variable" position="0,1200">
 					<inputs>
 						<input name="Name" value="34513087" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="221" name="Variable" position="0,200">
+				<node object_id="128" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="1784866936" />
 						<input name="Location" value="0" />
@@ -166,25 +166,25 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="133" from_node="92" from_slot="V" to_node="22" to_slot="Path" />
-				<link object_id="134" from_node="96" from_slot="V" to_node="22" to_slot="Parent" />
-				<link object_id="135" from_node="100" from_slot="V" to_node="85" to_slot="Entity" />
-				<link object_id="136" from_node="100" from_slot="V" to_node="17" to_slot="Entity" />
-				<link object_id="137" from_node="100" from_slot="V" to_node="47" to_slot="V0" />
-				<link object_id="138" from_node="112" from_slot="V" to_node="57" to_slot="V0" />
-				<link object_id="139" from_node="116" from_slot="V" to_node="61" to_slot="V0" />
-				<link object_id="140" from_node="112" from_slot="V" to_node="52" to_slot="Min Radius" />
-				<link object_id="141" from_node="112" from_slot="V" to_node="52" to_slot="Max Radius" />
-				<link object_id="142" from_node="120" from_slot="V" to_node="75" to_slot="V0" />
-				<link object_id="143" from_node="120" from_slot="V" to_node="80" to_slot="V0" />
-				<link object_id="144" from_node="104" from_slot="V" to_node="7" to_slot="Any Filter" />
-				<link object_id="145" from_node="108" from_slot="V" to_node="7" to_slot="V0" />
-				<link object_id="146" from_node="124" from_slot="V" to_node="37" to_slot="V0" />
-				<link object_id="147" from_node="128" from_slot="V" to_node="30" to_slot="Scl" />
-				<link object_id="225" from_node="221" from_slot="V" to_node="4" to_slot="Interval" />
+				<link object_id="132" from_node="88" from_slot="V" to_node="22" to_slot="Path" />
+				<link object_id="133" from_node="92" from_slot="V" to_node="22" to_slot="Parent" />
+				<link object_id="134" from_node="96" from_slot="V" to_node="85" to_slot="Entity" />
+				<link object_id="135" from_node="96" from_slot="V" to_node="17" to_slot="Entity" />
+				<link object_id="136" from_node="96" from_slot="V" to_node="47" to_slot="V0" />
+				<link object_id="137" from_node="108" from_slot="V" to_node="57" to_slot="V0" />
+				<link object_id="138" from_node="112" from_slot="V" to_node="61" to_slot="V0" />
+				<link object_id="139" from_node="108" from_slot="V" to_node="52" to_slot="Min Radius" />
+				<link object_id="140" from_node="108" from_slot="V" to_node="52" to_slot="Max Radius" />
+				<link object_id="141" from_node="116" from_slot="V" to_node="75" to_slot="V0" />
+				<link object_id="142" from_node="116" from_slot="V" to_node="80" to_slot="V0" />
+				<link object_id="143" from_node="100" from_slot="V" to_node="7" to_slot="Any Filter" />
+				<link object_id="144" from_node="104" from_slot="V" to_node="7" to_slot="V0" />
+				<link object_id="145" from_node="120" from_slot="V" to_node="37" to_slot="V0" />
+				<link object_id="146" from_node="124" from_slot="V" to_node="30" to_slot="Scl" />
+				<link object_id="147" from_node="128" from_slot="V" to_node="4" to_slot="Interval" />
 				<link object_id="148" from_node="52" from_slot="V" to_node="65" to_slot="V0" />
-				<link object_id="150" from_node="85" from_slot="Pos" to_node="22" to_slot="Position" />
-				<link object_id="149" from_node="17" from_slot="Pos" to_node="7" to_slot="Location" />
+				<link object_id="149" from_node="85" from_slot="Pos" to_node="22" to_slot="Position" />
+				<link object_id="150" from_node="17" from_slot="Pos" to_node="7" to_slot="Location" />
 				<link object_id="151" from_node="22" from_slot="Entity" to_node="61" to_slot="Entity" />
 				<link object_id="152" from_node="22" from_slot="Entity" to_node="65" to_slot="Entity" />
 				<link object_id="153" from_node="22" from_slot="Entity" to_node="70" to_slot="Entity" />
@@ -235,15 +235,20 @@
 		</group>
 		<group object_id="189" name="on_projectile_return">
 			<nodes>
-				<node object_id="192" name="ECall#u|v" position="82,-10">
+				<node object_id="192" name="ECall#u,u|v" position="82,-10">
 					<inputs>
-						<input name="Name_hash" value="take_heal" />
+						<input name="Name_hash" value="get_heal" />
 					</inputs>
 				</node>
 				<node object_id="196" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="222" name="String Hash" position="-44,112">
+					<inputs>
+						<input name="V_hash" value="lifesteal" />
 					</inputs>
 				</node>
 				<node object_id="200" name="Variable" position="0,200">
@@ -256,6 +261,7 @@
 			<links>
 				<link object_id="204" from_node="196" from_slot="V" to_node="192" to_slot="Entity" />
 				<link object_id="205" from_node="200" from_slot="V" to_node="192" to_slot="Input 1" />
+				<link object_id="225" from_node="222" from_slot="V" to_node="192" to_slot="Input 2" />
 			</links>
 		</group>
 		<group object_id="206" name="on_projectile_hit">
