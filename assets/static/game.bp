@@ -344,10 +344,6 @@
 				<link object_id="218" from_node="163" from_slot="V" to_node="174" to_slot="A" />
 			</links>
 		</group>
-		<group object_id="219" name="on_gui">
-			<nodes />
-			<links />
-		</group>
 		<group object_id="222" name="hostile_faction">
 			<variables>
 				<variable name="ret" type="D@uint" value="0" />
