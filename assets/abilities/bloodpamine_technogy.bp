@@ -8,33 +8,24 @@
 			</inputs>
 			<nodes>
 				<node object_id="6" name="Input" position="-6,-32" />
-				<node object_id="9" name="EGet V#e" position="70,-23">
+				<node object_id="34" name="WString Equal" position="77,-32">
 					<inputs>
-						<input name="Name0_hash" value="abilities" />
+						<input name="B" value="Vampire" />
 					</inputs>
 				</node>
-				<node object_id="14" name="Create Entity" position="211,0">
+				<node object_id="39" name="If" position="202,-6" />
+				<node object_id="28" parent_id="39" name="Call" position="131,80">
 					<inputs>
-						<input name="Name" value="bloodpamine" />
-					</inputs>
-				</node>
-				<node object_id="18" name="Set BP" position="387,16">
-					<inputs>
-						<input name="Path" value="assets\abilities\bloodpamine.bp" />
-					</inputs>
-				</node>
-				<node object_id="25" name="ESet V#e" position="129,113">
-					<inputs>
-						<input name="Name0_hash" value="self" />
+						<input name="Name" value="392575157" />
+						<input name="Location" value="70329639" />
+						<input name="path" value="assets\abilities\bloodpamine.bp" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="22" from_node="6" from_slot="unit" to_node="9" to_slot="Entity" />
-				<link object_id="31" from_node="6" from_slot="unit" to_node="25" to_slot="V0" />
-				<link object_id="23" from_node="9" from_slot="V0" to_node="14" to_slot="Parent" />
-				<link object_id="24" from_node="14" from_slot="Entity" to_node="18" to_slot="Entity" />
-				<link object_id="30" from_node="14" from_slot="Entity" to_node="25" to_slot="Entity" />
+				<link object_id="33" from_node="6" from_slot="unit" to_node="28" to_slot="target" />
+				<link object_id="38" from_node="6" from_slot="name" to_node="34" to_slot="A" />
+				<link object_id="41" from_node="34" from_slot="V" to_node="39" to_slot="Cond" />
 			</links>
 		</group>
 	</groups>

@@ -15,7 +15,7 @@
 		<variable name="target" type="PU@flame::Entity" />
 	</variables>
 	<groups>
-		<group object_id="1" name="on_gain">
+		<group object_id="1" name="start">
 			<nodes>
 				<node object_id="4" name="Variable" position="0,0">
 					<inputs>
@@ -256,11 +256,11 @@
 				<link object_id="224" from_node="124" from_slot="V0" to_node="120" to_slot="B" />
 				<link object_id="225" from_node="31" from_slot="V0" to_node="36" to_slot="Cond" />
 				<link object_id="226" from_node="113" from_slot="Pos" to_node="84" to_slot="Position" />
-				<link object_id="228" from_node="113" from_slot="Pos" to_node="116" to_slot="B" />
-				<link object_id="229" from_node="193" from_slot="Pos" to_node="183" to_slot="Location" />
-				<link object_id="230" from_node="45" from_slot="Pos" to_node="116" to_slot="A" />
-				<link object_id="231" from_node="63" from_slot="V0" to_node="68" to_slot="Parent" />
-				<link object_id="227" from_node="183" from_slot="Entity" to_node="196" to_slot="V" />
+				<link object_id="227" from_node="113" from_slot="Pos" to_node="116" to_slot="B" />
+				<link object_id="228" from_node="193" from_slot="Pos" to_node="183" to_slot="Location" />
+				<link object_id="229" from_node="45" from_slot="Pos" to_node="116" to_slot="A" />
+				<link object_id="230" from_node="63" from_slot="V0" to_node="68" to_slot="Parent" />
+				<link object_id="231" from_node="183" from_slot="Entity" to_node="196" to_slot="V" />
 				<link object_id="232" from_node="120" from_slot="V" to_node="48" to_slot="B" />
 				<link object_id="233" from_node="84" from_slot="Entity" to_node="90" to_slot="Entity" />
 				<link object_id="234" from_node="84" from_slot="Entity" to_node="94" to_slot="Entity" />

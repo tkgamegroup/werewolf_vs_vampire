@@ -14,59 +14,40 @@
 					<inputs>
 						<input name="Label" value="Bloodpamine" />
 						<input name="Font Size" value="24" />
-						<input name="Image Scale" value="1" />
 					</inputs>
 				</node>
-				<node object_id="14" parent_id="8" name="EGet V#e" position="-10,306">
+				<node object_id="11" parent_id="8" name="EGet V#e" position="-26,258">
 					<inputs>
 						<input name="Name0_hash" value="lord" />
 					</inputs>
 				</node>
-				<node object_id="19" parent_id="8" name="EGet V#e" position="115,329">
+				<node object_id="58" parent_id="8" name="Call" position="90,271">
 					<inputs>
-						<input name="Name0_hash" value="abilities" />
+						<input name="Name" value="392575157" />
+						<input name="Location" value="70329639" />
+						<input name="path" value="assets\abilities\bloodpamine_technogy.bp" />
 					</inputs>
 				</node>
-				<node object_id="24" parent_id="8" name="Create Entity" position="243,336">
+				<node object_id="34" parent_id="8" name="Add Assign" position="20,384">
 					<inputs>
-						<input name="Name" value="bloodpamine_technogy" />
+						<input name="Name" value="3042190183" />
+						<input name="Location" value="0" />
+						<input name="V" value="1" />
 					</inputs>
 				</node>
-				<node object_id="28" parent_id="8" name="Set BP" position="433,336">
-					<inputs>
-						<input name="Path" value="assets\abilities\bloodpamine_technogy.bp" />
-					</inputs>
-				</node>
-				<node object_id="63" parent_id="8" name="ESet V#e" position="33,433">
-					<inputs>
-						<input name="Name0_hash" value="self" />
-					</inputs>
-				</node>
-				<node object_id="32" parent_id="8" name="Add" position="-12,575">
-					<inputs>
-						<input type="D@int" name="B" value="1" />
-					</inputs>
-				</node>
-				<node object_id="36" parent_id="8" name="Set Variable" position="84,576">
+				<node object_id="38" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="3042190183" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="40" parent_id="4" name="Block" position="-10,705" />
-				<node object_id="42" name="Variable" position="0,0">
-					<inputs>
-						<input name="Name" value="3042190183" />
-						<input name="Location" value="0" />
-					</inputs>
-				</node>
-				<node object_id="46" name="Variable" position="0,100">
+				<node object_id="42" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="323827844" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="50" name="Variable" position="0,200">
+				<node object_id="46" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
@@ -74,17 +55,10 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="54" from_node="42" from_slot="V" to_node="4" to_slot="A" />
-				<link object_id="55" from_node="46" from_slot="V" to_node="4" to_slot="B" />
-				<link object_id="56" from_node="8" from_slot="Hovered" to_node="40" to_slot="Execute" />
-				<link object_id="57" from_node="50" from_slot="V" to_node="14" to_slot="Entity" />
-				<link object_id="58" from_node="42" from_slot="V" to_node="32" to_slot="A" />
-				<link object_id="59" from_node="14" from_slot="V0" to_node="19" to_slot="Entity" />
-				<link object_id="60" from_node="32" from_slot="V" to_node="36" to_slot="V" />
-				<link object_id="69" from_node="14" from_slot="V0" to_node="63" to_slot="V0" />
-				<link object_id="61" from_node="19" from_slot="V0" to_node="24" to_slot="Parent" />
-				<link object_id="62" from_node="24" from_slot="Entity" to_node="28" to_slot="Entity" />
-				<link object_id="68" from_node="24" from_slot="Entity" to_node="63" to_slot="Entity" />
+				<link object_id="50" from_node="38" from_slot="V" to_node="4" to_slot="A" />
+				<link object_id="51" from_node="42" from_slot="V" to_node="4" to_slot="B" />
+				<link object_id="52" from_node="46" from_slot="V" to_node="11" to_slot="Entity" />
+				<link object_id="63" from_node="11" from_slot="V0" to_node="58" to_slot="target" />
 			</links>
 		</group>
 	</groups>

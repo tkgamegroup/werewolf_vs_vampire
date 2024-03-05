@@ -8,7 +8,7 @@
 		<variable name="timer" type="D@float" value="-1" />
 	</variables>
 	<groups>
-		<group object_id="1" name="on_gain">
+		<group object_id="1" name="start">
 			<nodes>
 				<node object_id="4" name="Variable" position="0,0">
 					<inputs>

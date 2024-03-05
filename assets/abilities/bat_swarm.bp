@@ -201,7 +201,7 @@
 				<link object_id="164" from_node="22" from_slot="Entity" to_node="30" to_slot="Entity" />
 			</links>
 		</group>
-		<group object_id="165" name="on_gain">
+		<group object_id="165" name="start">
 			<nodes>
 				<node object_id="168" name="Variable" position="0,0">
 					<inputs>
@@ -240,18 +240,18 @@
 						<input name="Name_hash" value="get_heal" />
 					</inputs>
 				</node>
-				<node object_id="196" name="Variable" position="0,100">
+				<node object_id="197" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="222" name="String Hash" position="-44,112">
+				<node object_id="201" name="String Hash" position="-44,112">
 					<inputs>
 						<input name="V_hash" value="lifesteal" />
 					</inputs>
 				</node>
-				<node object_id="200" name="Variable" position="0,200">
+				<node object_id="204" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="2327019456" />
 						<input name="Location" value="0" />
@@ -259,23 +259,23 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="204" from_node="196" from_slot="V" to_node="192" to_slot="Entity" />
-				<link object_id="205" from_node="200" from_slot="V" to_node="192" to_slot="Input 1" />
-				<link object_id="225" from_node="222" from_slot="V" to_node="192" to_slot="Input 2" />
+				<link object_id="208" from_node="197" from_slot="V" to_node="192" to_slot="Entity" />
+				<link object_id="209" from_node="204" from_slot="V" to_node="192" to_slot="Input 1" />
+				<link object_id="210" from_node="201" from_slot="V" to_node="192" to_slot="Input 2" />
 			</links>
 		</group>
-		<group object_id="206" name="on_projectile_hit">
+		<group object_id="211" name="on_projectile_hit">
 			<inputs>
 				<input name="target" type="PU@flame::Entity" />
 			</inputs>
 			<nodes>
-				<node object_id="209" name="Input" position="0,0" />
-				<node object_id="211" name="ECall#u|v" position="106,-7">
+				<node object_id="214" name="Input" position="0,0" />
+				<node object_id="216" name="ECall#u|v" position="106,-7">
 					<inputs>
 						<input name="Name_hash" value="take_damage" />
 					</inputs>
 				</node>
-				<node object_id="215" name="Variable" position="0,0">
+				<node object_id="220" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="2327019456" />
 						<input name="Location" value="0" />
@@ -283,8 +283,8 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="219" from_node="209" from_slot="target" to_node="211" to_slot="Entity" />
-				<link object_id="220" from_node="215" from_slot="V" to_node="211" to_slot="Input 1" />
+				<link object_id="224" from_node="214" from_slot="target" to_node="216" to_slot="Entity" />
+				<link object_id="225" from_node="220" from_slot="V" to_node="216" to_slot="Input 1" />
 			</links>
 		</group>
 	</groups>
