@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="48f9f0a80ea1864ceba80ff71435d18f" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="4d5c93ff44ca8da716c785fb607485af" name="Cone">
+			<components>
+				<item type_name="flame::cNode" pos="0,0.463,9.044e-24" qut="0.7071,-0.7071,0,0" scl="0.4441,0.4441,0.3366" />
+				<item type_name="flame::cMesh" mesh_name="models\mountain.fmod#mesh0" material_name="materials\Material.001.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>

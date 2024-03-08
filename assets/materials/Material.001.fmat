@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<material color="0.8,0.8,0.8,1" color_map="0">
+	<textures>
+		<item filename="G:\werewolf_vs_vampire\assets\mountain.fbm" />
+	</textures>
+</material>
