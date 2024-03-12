@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<prefab file_id="47926e7de5ae5b22a8c78645bac2339d">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="47f49b9f7b144c25cbc41fa6b55b5480" name="RootNode">
+			<components>
+				<item type_name="flame::cNode" scl="0.2,0.2,0.2" />
+				<item type_name="flame::cArmature" armature_name="models\bat.fmod" default_animation="1623546442">
+					<animation_names>
+						<item first="animations\bat_attack.fani" second="attack" />
+						<item first="animations\bat_run.fani" second="run" />
+					</animation_names>
+				</item>
+			</components>
+			<children>
+				<item file_id="4f9fef0190055a53255adc49c91688bf" name="Armature">
+					<components>
+						<item type_name="flame::cNode" qut="0.7071,-0.7071,0,0" />
+					</components>
+					<children>
+						<item file_id="4dfae24a29aace99571e775e43ded29e" name="Root">
+							<components>
+								<item type_name="flame::cNode" qut="-1.377e-07,-1.377e-07,0.7071,0.7071" />
+							</components>
+							<children>
+								<item file_id="42e6dc3c8ae12cd9403ae2ed24c73180" name="Spine">
+									<components>
+										<item type_name="flame::cNode" pos="0,-0.01969,-0.2872" qut="0.9828,0.1845,0,0" />
+									</components>
+									<children>
+										<item file_id="41779721a2292933aa021591212a20aa" name="Wing.R">
+											<components>
+												<item type_name="flame::cNode" qut="0.5122,-0.5199,-0.4798,-0.487" />
+											</components>
+										</item>
+										<item file_id="48702af13079d324e4c65890bd3ecb9d" name="Wing.L">
+											<components>
+												<item type_name="flame::cNode" qut="0.5122,-0.5199,0.4798,0.487" />
+											</components>
+										</item>
+									</children>
+								</item>
+							</children>
+						</item>
+					</children>
+				</item>
+				<item file_id="4d277a97f9fc76c008228acb8c3b59a0" name="Cube">
+					<components>
+						<item type_name="flame::cNode" qut="-1.377e-07,1.377e-07,0.7071,0.7071" />
+						<item type_name="flame::cMesh" mesh_name="models\bat.fmod#mesh0" material_name="materials\Material.001.fmat" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>

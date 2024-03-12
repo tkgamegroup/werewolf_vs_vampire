@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<prefab file_id="4a9c23408ef22cadae7cd2cf81890394" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="479c65ef97642d98d055329ec4cb3a96" name="Plane">
+			<components>
+				<item type_name="flame::cNode" qut="0.7071,-0.7071,0,0" />
+				<item type_name="flame::cMesh" mesh_name="models\untitled.fmod#mesh0" material_name="default" />
+			</components>
+		</item>
+		<item file_id="4b05f9489123790dc9316df6cec8df8e" name="Sphere">
+			<components>
+				<item type_name="flame::cNode" pos="0,1.278,3.618e-23" qut="0.7071,-0.7071,0,0" scl="0.2262,0.2262,0.2262" />
+				<item type_name="flame::cMesh" mesh_name="models\untitled.fmod#mesh1" material_name="default" />
+			</components>
+		</item>
+	</children>
+</prefab>
