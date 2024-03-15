@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<prefab file_id="4b07bcdbde84a29c45c9c1c65687a685">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="4ef457c28c9ca25c04d3d308ea17c7a6" name="RootNode">
+			<components>
+				<item type_name="flame::cNode" scl="0.01,0.01,0.01" />
+			</components>
+			<children>
+				<item file_id="4d05ab183882225a7eaa3708ba4eedbf" name="Cube_cell.001">
+					<components>
+						<item type_name="flame::cNode" pos="-0.1089,1.386,-0.03172" qut="0.7071,-0.7071,0,0" />
+						<item type_name="flame::cMesh" mesh_name="models\pices_3_1.fmod#mesh0" material_name="default" />
+					</components>
+				</item>
+				<item file_id="43b0843943222e26708f3ef1906d09a6" name="Cube_cell.003">
+					<components>
+						<item type_name="flame::cNode" pos="-0.1083,1.386,-0.105" qut="0.7071,-0.7071,0,0" />
+						<item type_name="flame::cMesh" mesh_name="models\pices_3_1.fmod#mesh1" material_name="default" />
+					</components>
+				</item>
+				<item file_id="48059f0dbb197b48bc4e72ff80a02fb1" name="Cube_cell.006">
+					<components>
+						<item type_name="flame::cNode" pos="-0.08118,1.413,0.01128" qut="0.7071,-0.7071,0,0" />
+						<item type_name="flame::cMesh" mesh_name="models\pices_3_1.fmod#mesh2" material_name="default" />
+					</components>
+				</item>
+			</children>
+		</item>
+	</children>
+</prefab>
