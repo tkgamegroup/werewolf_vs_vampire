@@ -1,0 +1,23 @@
+armature:
+<?xml version="1.0"?>
+<armature>
+	<bones>
+		<bone name="Root">
+			<offset_matrix data_offset="0" data_size="64" />
+		</bone>
+		<bone name="Spine">
+			<offset_matrix data_offset="64" data_size="64" />
+		</bone>
+		<bone name="Wing.R">
+			<offset_matrix data_offset="128" data_size="64" />
+		</bone>
+		<bone name="Wing.L">
+			<offset_matrix data_offset="192" data_size="64" />
+		</bone>
+	</bones>
+</armature>
+
+data:
+AACAPyyFCQsAAAAAAAAAAAAAAAAyMY0kAACAvwAAAADcCG2KAACAPzIxjSQAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8shQkLAAAAAAAAAAAAAAAAMjGNJAAAgL8AAAAA3AhtigAAgD8yMY0kAAAAAAAAAAAAAAAAAAAAAAAAgD8MuYU96mx_P_cyczwAAAAAJnR_v0O1hT2pqn46AAAAAL7eTzQruHO8wfh_PwAAAAAAAAAAAAAAAAAAAAAAAIA_
+HrmFPe5sf7_bMnO8AAAAACl0fz9TtYU9JqR-OgAAAAD95s-zB7hzvMH4fz8AAAAAAAAAAAAAAAAAAAAAAACAPw==
+
