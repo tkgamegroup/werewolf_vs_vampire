@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<prefab file_id="4d2bb06b8d7ef3d27155c242abeec3b1">
+<prefab file_id="4b617c265d2f9b5b88d4195c5190a096">
 	<components>
 		<item type_name="flame::cNode" scl="0.2,0.2,0.2" />
 	</components>
 	<children>
-		<item file_id="4c364c28bc958d1a0f9a404ce04ff8b7" name="RootNode">
+		<item file_id="460b98a0badc76397ed309a33a5df489" name="RootNode">
 			<components>
 				<item type_name="flame::cNode" />
 				<item type_name="flame::cAnimator" armature_name="assets\characters\armatures\bat_Root.farm" default_animation="1623546442">
@@ -15,33 +15,33 @@
 				</item>
 			</components>
 			<children>
-				<item file_id="4f1e8d5f6e5d3f6d567b150c361b5e92" name="Cube">
+				<item file_id="47c86b4d91eb21d37aad9b18ce8a76b7" name="Cube">
 					<components>
 						<item type_name="flame::cNode" qut="-1.377e-07,1.377e-07,0.7071,0.7071" />
-						<item type_name="flame::cMesh" mesh_name="assets\characters\meshes\bat_Cube.002.fmesh" material_name="assets\characters\materials\bat_Material.001.fmat" />
+						<item type_name="flame::cSkinnedMesh" mesh_name="assets\characters\meshes\bat_Cube.002.fmesh" material_name="assets\characters\materials\bat_Material.001.fmat" />
 					</components>
 				</item>
-				<item file_id="43310cf13492579981ef33ec135b729e" name="Armature">
+				<item file_id="4351cbf84cca3a5eaf80484b6e653e83" name="Armature">
 					<components>
 						<item type_name="flame::cNode" qut="0.7071,-0.7071,0,0" />
 					</components>
 					<children>
-						<item file_id="4c138f05029b368c246853724228be88" name="Root">
+						<item file_id="46bea5828aadb3c81e3b685f7feef896" name="Root">
 							<components>
 								<item type_name="flame::cNode" qut="-1.377e-07,-1.377e-07,0.7071,0.7071" />
 							</components>
 							<children>
-								<item file_id="4d2e381e93d5bb00a66e654221a107b3" name="Spine">
+								<item file_id="4d912a0698c314cdf0df6fa0addb628e" name="Spine">
 									<components>
 										<item type_name="flame::cNode" pos="0,-0.01969,-0.2872" qut="0.9828,0.1845,0,0" />
 									</components>
 									<children>
-										<item file_id="4eeba457e920238640c542fa5c8bb48d" name="Wing.R">
+										<item file_id="432bdcc303b9eae30a0048a420eebaa0" name="Wing.R">
 											<components>
 												<item type_name="flame::cNode" qut="0.5122,-0.5199,-0.4798,-0.487" scl="1,1,1" />
 											</components>
 										</item>
-										<item file_id="4478f53540f7e358c1f557c3aebd4989" name="Wing.L">
+										<item file_id="45b603b0f920a010b77782c4568458b9" name="Wing.L">
 											<components>
 												<item type_name="flame::cNode" qut="0.5122,-0.5199,0.4798,0.487" scl="1,1,1" />
 											</components>
