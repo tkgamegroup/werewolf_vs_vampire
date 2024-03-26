@@ -1,21 +1,14 @@
 <?xml version="1.0"?>
-<prefab file_id="40a757d638ba541eaab995fbb002efba">
+<prefab file_id="426100512d19cf638c784f79eca314aa" name="RootNode">
 	<components>
-		<item type_name="flame::cNode" pos="0.500001,0.5,-0.5" scl="4,4,4" />
+		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="45057116f8b04cebd104f9ca36518d90" name="RootNode">
+		<item file_id="4edeb727158f237764fbccc7ea908a9a" name="Cube">
 			<components>
-				<item type_name="flame::cNode" />
+				<item type_name="flame::cNode" pos="0.5,3.725e-10,-0.5" qut="0.683,-0.683,0.183,0.183" scl="0.25,0.25,0.25" />
+				<item type_name="flame::cMesh" mesh_name="meshes\hexagon_select_Cube.001.fmesh" material_name="default" color="255,255,0,255" />
 			</components>
-			<children>
-				<item file_id="4c17733918dcd9111cc26cab67dcdb99" name="Cube" tag="General|NotPickable">
-					<components>
-						<item type_name="flame::cNode" pos="0,3.72529e-10,0" qut="0.683013,-0.683013,0.183013,0.183013" scl="0.25,0.25,0.25" />
-						<item type_name="flame::cMesh" mesh_name="models\hexagon_select.fmod#mesh0" material_name="default" color="255,255,0,255" />
-					</components>
-				</item>
-			</children>
 		</item>
 	</children>
 </prefab>

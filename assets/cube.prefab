@@ -3,5 +3,6 @@
 	<components>
 		<item type_name="flame::cNode" />
 		<item type_name="flame::cMesh" mesh_name="standard_cube" material_name="default" />
+		<item type_name="flame::cBpInstance" bp_name="test.bp" />
 	</components>
 </prefab>

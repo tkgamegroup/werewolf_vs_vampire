@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<prefab file_id="4b3b3a0876da8e0e0ede2917dca340be" name="RootNode">
+<prefab file_id="4c112d6bd9fc835412e3e6f002abeaa4" name="RootNode">
 	<components>
 		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="45b48a340ea7310755b95c2e6cff6292" name="castle">
+		<item file_id="40afd393277990d936adb5b0b9b43e87" name="castle">
 			<components>
-				<item type_name="flame::cNode" pos="-0.0211786,0.407572,0.0729003" qut="-0.488229,0.488228,0.511501,0.5115" scl="0.0580082,0.0580082,0.0580082" />
-				<item type_name="flame::cMesh" mesh_name="models\castle_bran.fmod#mesh0" material_name="materials\Material.001.fmat" />
+				<item type_name="flame::cNode" pos="-0.02118,0.4076,0.0729" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.05801,0.05801,0.05801" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
 			</components>
 		</item>
 	</children>

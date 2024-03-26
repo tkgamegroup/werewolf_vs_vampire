@@ -13,14 +13,14 @@
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="8" name="EGet V#e" position="22,10">
+				<node object_id="8" name="EGet V#e" position="67,10">
 					<inputs>
 						<input name="Name0_hash" value="lord" />
 					</inputs>
 				</node>
-				<node object_id="13" name="ECall#u,f3|v" position="195,10">
+				<node object_id="13" name="ECall#i,f3|v" position="195,10">
 					<inputs>
-						<input name="Name_hash" value="get_gold" />
+						<input name="Name_hash" value="change_gold" />
 					</inputs>
 				</node>
 				<node object_id="18" name="Variable" position="0,100">
@@ -33,38 +33,38 @@
 			</nodes>
 			<links>
 				<link object_id="25" from_node="4" from_slot="V" to_node="8" to_slot="Entity" />
-				<link object_id="26" from_node="18" from_slot="V" to_node="13" to_slot="Input 1" />
 				<link object_id="27" from_node="4" from_slot="V" to_node="22" to_slot="Entity" />
+				<link object_id="54" from_node="18" from_slot="V" to_node="13" to_slot="Input 1" />
 				<link object_id="28" from_node="8" from_slot="V0" to_node="13" to_slot="Entity" />
 				<link object_id="29" from_node="22" from_slot="Pos" to_node="13" to_slot="Input 2" />
 			</links>
 		</group>
 		<group object_id="30" name="on_show_ui">
 			<nodes>
-				<node object_id="51" name="Hud Vertical" position="350,-192">
+				<node object_id="33" name="Hud Vertical" position="350,-192">
 					<inputs>
 						<input name="Item Spacing" value="2,2" />
 					</inputs>
 				</node>
-				<node object_id="47" parent_id="51" name="Hud Text" position="333,-64">
+				<node object_id="35" parent_id="33" name="Hud Text" position="333,-64">
 					<inputs>
 						<input name="Text" value="Resource Production" />
 						<input name="Font Size" value="24" />
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="37" parent_id="51" name="Hud Text" position="413,103">
+				<node object_id="39" parent_id="33" name="Hud Text" position="413,103">
 					<inputs>
 						<input name="Font Size" value="24" />
 						<input name="Col" value="255,255,255,255" />
 					</inputs>
 				</node>
-				<node object_id="41" parent_id="51" name="WFormat" position="285,106">
+				<node object_id="43" parent_id="33" name="WFormat" position="285,106">
 					<inputs>
 						<input name="Fmt" value="Gold: {}" />
 					</inputs>
 				</node>
-				<node object_id="33" name="Variable" position="0,0">
+				<node object_id="47" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="245792979" />
 						<input name="Location" value="0" />
@@ -72,8 +72,8 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="45" from_node="33" from_slot="V" to_node="41" to_slot="Arg1" />
-				<link object_id="46" from_node="41" from_slot="V" to_node="37" to_slot="Text" />
+				<link object_id="51" from_node="47" from_slot="V" to_node="43" to_slot="Arg1" />
+				<link object_id="52" from_node="43" from_slot="V" to_node="39" to_slot="Text" />
 			</links>
 		</group>
 	</groups>

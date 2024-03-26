@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<prefab file_id="45db64d55bd455feab74d72e6b38e0aa" name="RootNode">
+<prefab file_id="4d7c1570e3d4b08518e218c15971cebf" name="RootNode">
 	<components>
 		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="4aea67610a9b6fdf14f1b98f76121aa9" name="Cube.001">
+		<item file_id="473d75ae6179f6e6ff78ae96ac913b92" name="Cube.001">
 			<components>
 				<item type_name="flame::cNode" qut="0.7071,-0.7071,0,0" scl="0.1135,0.1135,0.1135" />
-				<item type_name="flame::cMesh" mesh_name="models\blank_building.fmod#mesh0" material_name="default" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\blank_building_Cube.003.fmesh" material_name="default" />
 			</components>
 		</item>
 	</children>

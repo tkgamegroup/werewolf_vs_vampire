@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<blueprint>
+	<variables>
+		<variable name="self" type="PU@flame::Entity" />
+	</variables>
+	<groups>
+		<group object_id="1" name="start">
+			<nodes>
+				<node object_id="4" name="Variable" position="0,0">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="63" name="Loop" position="455,163">
+					<inputs>
+						<input name="Times" value="10" />
+					</inputs>
+				</node>
+				<node object_id="84" parent_id="63" name="If#E" position="580,234">
+					<inputs>
+						<input type="D@int" name="B" value="0" />
+					</inputs>
+				</node>
+				<node object_id="72" parent_id="84" name="Spawn Cube" position="652,424" />
+				<node object_id="67" parent_id="84" name="Multiply" position="512,424">
+					<inputs>
+						<input name="B" value="1" />
+					</inputs>
+				</node>
+				<node object_id="76" parent_id="84" name="Vec3" position="589,463">
+					<inputs>
+						<input name="Y" value="0" />
+						<input name="Z" value="0" />
+					</inputs>
+				</node>
+				<node object_id="95" parent_id="84" name="Co Wait" position="586,352">
+					<inputs>
+						<input name="Time" value="0.5" />
+					</inputs>
+				</node>
+				<node object_id="65" parent_id="63" name="Loop Index" position="388,256" />
+				<node object_id="88" parent_id="63" name="Integer Divide" position="500,256">
+					<inputs>
+						<input name="B" value="2" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="71" from_node="65" from_slot="V" to_node="67" to_slot="A" />
+				<link object_id="83" from_node="4" from_slot="V" to_node="72" to_slot="Parent" />
+				<link object_id="93" from_node="65" from_slot="V" to_node="88" to_slot="A" />
+				<link object_id="82" from_node="67" from_slot="V" to_node="76" to_slot="X" />
+				<link object_id="94" from_node="88" from_slot="R" to_node="84" to_slot="A" />
+				<link object_id="81" from_node="76" from_slot="V" to_node="72" to_slot="Position" />
+			</links>
+		</group>
+	</groups>
+</blueprint>

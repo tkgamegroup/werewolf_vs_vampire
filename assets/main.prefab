@@ -3,19 +3,18 @@
 	<components>
 		<item type_name="flame::cNode" />
 		<item type_name="flame::cWorldSettings" filename="world_settings.xml" />
-		<item type_name="cEditor" show_outline="false" show_axis="false" use_gizmos="false" />
 	</components>
 	<children>
 		<item file_id="440ed4a4311a3a844d5b6d33046d30b0" name="Camera">
 			<components>
-				<item type_name="flame::cNode" pos="74.8503,70.559,94.0182" qut="0.866025,-0.5,1.19433e-08,5.24285e-09" />
+				<item type_name="flame::cNode" pos="74.85,70.56,94.02" qut="0.866,-0.5,1.194e-08,5.243e-09" />
 				<item type_name="flame::cCamera" fovy="40" zNear="50" zFar="200" />
 				<item type_name="flame::cAudioListener" />
 			</components>
 		</item>
-		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Sun">
+		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Main Light">
 			<components>
-				<item type_name="flame::cNode" qut="0.853553,-0.353553,0.353554,0.146447" />
+				<item type_name="flame::cNode" qut="0.8536,-0.3536,0.3536,0.1464" />
 				<item type_name="flame::cDirectionalLight" color="0.77,0.945,0.941,1" cast_shadow="true" />
 			</components>
 		</item>
@@ -45,19 +44,15 @@
 			</components>
 		</item>
 		<item filename="hexagon_hovered_efx.prefab">
-			<modifications>
-				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_hovered_efx" />
-			</modifications>
+			<modifications />
 		</item>
 		<item filename="hexagon_select_efx.prefab">
-			<modifications>
-				<item target="40a757d638ba541eaab995fbb002efba|name" value="hexagon_select_efx" />
-			</modifications>
+			<modifications />
 		</item>
 		<item file_id="40ef0d713b583a63e798cc6e09c5fca8" name="Birds Spawner" enable="false">
 			<components>
 				<item type_name="flame::cNode" pos="0,30,0" />
-				<item type_name="flame::cParticleSystem" particle_size="0.5,0.5" particle_alpha_over_lifetime="true" particle_alpha_curve="(0.00533844,1.00363),(0.849463,1.01057),(0.995923,0.0146459)" emitt_type="Pie" emitt_duration="2" emitt_num="3" render_type="HorizontalBillboard" material_name="environment\birds\5a228731b8cc50.8721059615122122737569.fmat" />
+				<item type_name="flame::cParticleSystem" particle_size="0.5,0.5" particle_alpha_over_lifetime="true" particle_alpha_curve="(0.005338,1.004),(0.8495,1.011),(0.9959,0.01465)" emitt_type="Pie" emitt_duration="2" emitt_num="3" render_type="HorizontalBillboard" material_name="environment\birds\5a228731b8cc50.8721059615122122737569.fmat" />
 			</components>
 		</item>
 	</children>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<material color="0.8,0.8,0.8,0" color_map="0" alpha_map="0">
+	<textures>
+		<item filename="G:\werewolf_vs_vampire\assets\environment\mountains\textures\mountain_color_palette.png" />
+	</textures>
+</material>
