@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<sheet name="abilities">
+<sheet name="ability">
 	<columns>
 		<column type="D@std::wstring" name="name" width="116" />
 		<column type="U@flame::StrAndHash" name="icon_name" width="80" />

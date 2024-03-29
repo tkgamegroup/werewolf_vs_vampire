@@ -23,7 +23,7 @@
 						<input name="Name_hash" value="available_constructions" />
 					</inputs>
 				</node>
-				<node object_id="23" parent_id="9" name="Find Item In Sheet#w" position="-185,91">
+				<node object_id="23" parent_id="9" name="Sheet Find#w" position="-185,91">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>

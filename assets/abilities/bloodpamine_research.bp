@@ -23,7 +23,7 @@
 					<inputs>
 						<input name="Name" value="392575157" />
 						<input name="Location" value="70329639" />
-						<input name="path" value="assets\abilities\bloodpamine_technogy.bp" />
+						<input name="name" value="Bloodpamine Technogy" />
 					</inputs>
 				</node>
 				<node object_id="21" parent_id="8" name="Add Assign" position="20,337">

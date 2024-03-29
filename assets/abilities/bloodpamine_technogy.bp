@@ -18,7 +18,7 @@
 					<inputs>
 						<input name="Name" value="392575157" />
 						<input name="Location" value="70329639" />
-						<input name="path" value="assets\abilities\bloodpamine.bp" />
+						<input name="name" value="Bloodpamine" />
 					</inputs>
 				</node>
 			</nodes>
