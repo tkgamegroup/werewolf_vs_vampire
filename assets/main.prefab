@@ -15,7 +15,7 @@
 		<item file_id="4948ba0065ddd752da6634c9dc8e47b5" name="Main Light">
 			<components>
 				<item type_name="flame::cNode" qut="0.8536,-0.3536,0.3536,0.1464" />
-				<item type_name="flame::cDirectionalLight" color="0.77,0.945,0.941,1" cast_shadow="true" />
+				<item type_name="flame::cDirectionalLight" color="0.97,1,0.95,2.4" cast_shadow="true" />
 			</components>
 		</item>
 		<item file_id="4bac5acec6966ef81e576484531d228a" name="Root">

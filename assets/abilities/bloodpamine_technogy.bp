@@ -8,13 +8,13 @@
 			</inputs>
 			<nodes>
 				<node object_id="6" name="Input" position="-6,-32" />
-				<node object_id="34" name="WString Equal" position="77,-32">
+				<node object_id="9" name="WString Equal" position="77,-32">
 					<inputs>
 						<input name="B" value="Vampire" />
 					</inputs>
 				</node>
-				<node object_id="39" name="If" position="202,-6" />
-				<node object_id="28" parent_id="39" name="Call" position="131,80">
+				<node object_id="13" name="If" position="234,-6" />
+				<node object_id="15" parent_id="13" name="Call" position="211,64">
 					<inputs>
 						<input name="Name" value="392575157" />
 						<input name="Location" value="70329639" />
@@ -23,9 +23,9 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="33" from_node="6" from_slot="unit" to_node="28" to_slot="target" />
-				<link object_id="38" from_node="6" from_slot="name" to_node="34" to_slot="A" />
-				<link object_id="41" from_node="34" from_slot="V" to_node="39" to_slot="Cond" />
+				<link object_id="20" from_node="6" from_slot="unit" to_node="15" to_slot="target" />
+				<link object_id="21" from_node="6" from_slot="name" to_node="9" to_slot="A" />
+				<link object_id="22" from_node="9" from_slot="V" to_node="13" to_slot="Cond" />
 			</links>
 		</group>
 	</groups>

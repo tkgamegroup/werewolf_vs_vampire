@@ -1,11 +1,7 @@
 <?xml version="1.0"?>
-<blueprint>
-	<dependencies>
-		<dependency v="G:\werewolf_vs_vampire\assets\static\game.bp" />
-	</dependencies>
+<blueprint super="assets\abilities\ability.bp">
 	<variables>
-		<variable name="self" type="PU@flame::Entity" />
-		<variable name="available_constructions" type="VD@std::wstring" />
+		<variable name="available_constructions" flags="None" type="VD@std::wstring" />
 	</variables>
 	<groups>
 		<group object_id="1" name="on_get_available_constructions">
@@ -17,34 +13,34 @@
 				</node>
 				<node object_id="9" name="Foreach" position="-77,-64" />
 				<node object_id="11" parent_id="9" name="Loop Var#w" position="-157,18" />
-				<node object_id="43" parent_id="9" name="If#NE" position="52,34">
+				<node object_id="14" parent_id="9" name="If#NE" position="52,34">
 					<inputs>
 						<input type="D@int" name="B" value="-1" />
 					</inputs>
 				</node>
-				<node object_id="14" parent_id="43" name="EArray Add Item#u" position="42,161">
+				<node object_id="18" parent_id="14" name="EArray Add Item#u" position="42,161">
 					<inputs>
 						<input name="Name_hash" value="available_constructions" />
 					</inputs>
 				</node>
-				<node object_id="19" parent_id="9" name="Find Item In Sheet#w" position="-185,91">
+				<node object_id="23" parent_id="9" name="Find Item In Sheet#w" position="-185,91">
 					<inputs>
 						<input name="Name_hash" value="name" />
 					</inputs>
 				</node>
-				<node object_id="25" name="Variable" position="0,0">
+				<node object_id="29" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="29" name="Variable" position="0,100">
+				<node object_id="33" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="3249287885" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="33" name="Variable" position="0,200">
+				<node object_id="37" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="3308856741" />
 						<input name="Location" value="70329639" />
@@ -52,13 +48,13 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="37" from_node="29" from_slot="V" to_node="9" to_slot="Vector" />
-				<link object_id="38" from_node="11" from_slot="V" to_node="19" to_slot="Value" />
-				<link object_id="39" from_node="33" from_slot="V" to_node="19" to_slot="Sheet" />
-				<link object_id="40" from_node="25" from_slot="V" to_node="4" to_slot="Entity" />
-				<link object_id="41" from_node="19" from_slot="Index" to_node="14" to_slot="V" />
-				<link object_id="42" from_node="4" from_slot="V0" to_node="14" to_slot="Entity" />
-				<link object_id="51" from_node="19" from_slot="Index" to_node="43" to_slot="A" />
+				<link object_id="41" from_node="33" from_slot="V" to_node="9" to_slot="Vector" />
+				<link object_id="42" from_node="11" from_slot="V" to_node="23" to_slot="Value" />
+				<link object_id="43" from_node="37" from_slot="V" to_node="23" to_slot="Sheet" />
+				<link object_id="44" from_node="29" from_slot="V" to_node="4" to_slot="Entity" />
+				<link object_id="45" from_node="23" from_slot="Index" to_node="18" to_slot="V" />
+				<link object_id="46" from_node="4" from_slot="V0" to_node="18" to_slot="Entity" />
+				<link object_id="47" from_node="23" from_slot="Index" to_node="14" to_slot="A" />
 			</links>
 		</group>
 	</groups>

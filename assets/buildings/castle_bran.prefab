@@ -1,13 +1,43 @@
 <?xml version="1.0"?>
-<prefab file_id="4c112d6bd9fc835412e3e6f002abeaa4" name="RootNode">
+<prefab file_id="478b6d49428ea0f6d16a664533765ea0" name="RootNode">
 	<components>
 		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="40afd393277990d936adb5b0b9b43e87" name="castle">
+		<item file_id="465127eb8f70e5ecb4e170286fff59bc" name="Grid">
+			<components>
+				<item type_name="flame::cNode" pos="0.03847,0.1914,-0.04502" qut="-0.4882,0.4882,0.5115,0.5115" scl="1,1,1" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Grid.001.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+			</components>
+		</item>
+		<item file_id="409a8334181b6b31298d6af8648c3986" name="Cone">
+			<components>
+				<item type_name="flame::cNode" pos="-0.06596,0.199,0.2965" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.04307,0.04307,0.06003" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.001.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+			</components>
+		</item>
+		<item file_id="4cf965e3824a4d00975a33f346c0ba9f" name="Cone.001">
+			<components>
+				<item type_name="flame::cNode" pos="0.05198,0.2206,0.412" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.04713,0.04713,0.06568" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.002.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+			</components>
+		</item>
+		<item file_id="46e7ea2aacf432931e2f4919f22d879a" name="Cone.002">
+			<components>
+				<item type_name="flame::cNode" pos="0.1219,0.2774,0.289" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.05895,0.05895,0.08215" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.003.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+			</components>
+		</item>
+		<item file_id="44e1b1090ecd3c64d295dc8f80088c85" name="Cone.003">
+			<components>
+				<item type_name="flame::cNode" pos="0.3261,0.2571,0.2354" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.04861,0.04861,0.06774" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.004.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+			</components>
+		</item>
+		<item file_id="45a899129e8b6839b85a779e954686ab" name="castle">
 			<components>
 				<item type_name="flame::cNode" pos="-0.02118,0.4076,0.0729" qut="-0.4882,0.4882,0.5115,0.5115" scl="0.05801,0.05801,0.05801" />
-				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\castle_bran_Cone.005.fmesh" material_name="assets\buildings\materials\castle_bran_Material.001.fmat" />
 			</components>
 		</item>
 	</children>

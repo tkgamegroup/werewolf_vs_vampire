@@ -1,55 +1,54 @@
 <?xml version="1.0"?>
 <blueprint>
 	<variables>
-		<variable name="self" type="PU@flame::Entity" />
-		<variable name="lv" type="D@uint" value="0" />
-		<variable name="max_lv" type="D@uint" value="1" />
-		<variable name="cost_gold" type="D@uint" value="0" />
+		<variable name="self" flags="None" type="PU@flame::Entity" />
+		<variable name="lv" flags="None" type="D@uint" value="0" />
+		<variable name="max_lv" flags="None" type="D@uint" value="1" />
+		<variable name="cost_gold" flags="None" type="D@uint" value="0" />
 	</variables>
 	<groups>
 		<group object_id="1" name="on_show_ui">
 			<nodes>
 				<node object_id="4" name="If#L" position="-21,-22" />
-				<node object_id="8" parent_id="4" name="Hud Button" position="-12,111">
+				<node object_id="8" parent_id="4" name="Hud Button" position="-12,111" hide_defaults="true">
 					<inputs>
 						<input name="Label" value="Bloodpamine" />
-						<input name="Font Size" value="24" />
 					</inputs>
 				</node>
-				<node object_id="11" parent_id="8" name="EGet V#e" position="-26,258">
+				<node object_id="11" parent_id="8" name="EGet V#e" position="-26,211">
 					<inputs>
 						<input name="Name0_hash" value="lord" />
 					</inputs>
 				</node>
-				<node object_id="16" parent_id="8" name="Call" position="90,271">
+				<node object_id="16" parent_id="8" name="Call" position="106,224">
 					<inputs>
 						<input name="Name" value="392575157" />
 						<input name="Location" value="70329639" />
 						<input name="path" value="assets\abilities\bloodpamine_technogy.bp" />
 					</inputs>
 				</node>
-				<node object_id="21" parent_id="8" name="Add Assign" position="20,384">
+				<node object_id="21" parent_id="8" name="Add Assign" position="20,337">
 					<inputs>
 						<input name="Name" value="3042190183" />
 						<input name="Location" value="0" />
 						<input name="V" value="1" />
 					</inputs>
 				</node>
-				<node object_id="43" parent_id="4" name="If" position="122,474" />
-				<node object_id="41" parent_id="4" name="Hud Item Hovered" position="-28,480" />
-				<node object_id="25" name="Variable" position="0,0">
+				<node object_id="25" parent_id="4" name="If" position="122,427" />
+				<node object_id="27" parent_id="4" name="Hud Item Hovered" position="-28,433" />
+				<node object_id="29" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="3042190183" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="29" name="Variable" position="0,100">
+				<node object_id="33" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="323827844" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="33" name="Variable" position="0,200">
+				<node object_id="37" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
@@ -57,11 +56,11 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="37" from_node="25" from_slot="V" to_node="4" to_slot="A" />
-				<link object_id="38" from_node="29" from_slot="V" to_node="4" to_slot="B" />
-				<link object_id="39" from_node="33" from_slot="V" to_node="11" to_slot="Entity" />
-				<link object_id="45" from_node="41" from_slot="V" to_node="43" to_slot="Cond" />
-				<link object_id="40" from_node="11" from_slot="V0" to_node="16" to_slot="target" />
+				<link object_id="41" from_node="29" from_slot="V" to_node="4" to_slot="A" />
+				<link object_id="42" from_node="33" from_slot="V" to_node="4" to_slot="B" />
+				<link object_id="43" from_node="37" from_slot="V" to_node="11" to_slot="Entity" />
+				<link object_id="44" from_node="27" from_slot="V" to_node="25" to_slot="Cond" />
+				<link object_id="45" from_node="11" from_slot="V0" to_node="16" to_slot="target" />
 			</links>
 		</group>
 	</groups>

@@ -18,128 +18,157 @@
 				<output name="o_ao" type="D@float" />
 			</outputs>
 			<nodes>
-				<node object_id="63" name="Add" position="404,-161">
+				<node object_id="51" name="Add" position="404,-161">
 					<inputs>
 						<input name="B" value="0.2" />
 					</inputs>
 				</node>
-				<node object_id="59" name="Divide" position="324,-161">
+				<node object_id="55" name="Divide" position="324,-161">
 					<inputs>
 						<input name="B" value="4" />
 					</inputs>
 				</node>
-				<node object_id="55" name="Multiply" position="148,-145">
+				<node object_id="59" name="Multiply" position="148,-145">
 					<inputs>
 						<input name="B" value="0.1" />
 					</inputs>
 				</node>
-				<node object_id="52" name="Perlin" position="241,-144" />
-				<node object_id="67" name="Vec2" position="68,-129" />
-				<node object_id="71" name="Decompose" position="-44,-66" />
-				<node object_id="77" name="Add" position="187,-49">
+				<node object_id="63" name="Perlin" position="241,-144" />
+				<node object_id="66" name="Vec2" position="68,-129" />
+				<node object_id="70" name="Decompose" position="-44,-66" />
+				<node object_id="76" name="Add" position="187,-49">
 					<inputs>
 						<input type="D@glm::vec2" name="B" value="152.4,76.6" />
 					</inputs>
 				</node>
-				<node object_id="81" name="Multiply" position="100,-49">
+				<node object_id="80" name="Multiply" position="100,-49">
 					<inputs>
 						<input name="B" value="0.7" />
 					</inputs>
 				</node>
-				<node object_id="101" name="Multiply" position="356,-33">
+				<node object_id="84" name="Multiply" position="356,-33">
 					<inputs>
 						<input name="B" value="0.4" />
 					</inputs>
 				</node>
-				<node object_id="98" name="Perlin" position="289,-32" />
-				<node object_id="19" name="Input" position="-134,0" />
-				<node object_id="85" name="HSV Color" position="532,0">
+				<node object_id="88" name="Perlin" position="289,-32" />
+				<node object_id="18" name="Input" position="-134,0" />
+				<node object_id="91" name="HSV Color" position="532,0">
 					<inputs>
 						<input name="A" value="1" />
 					</inputs>
 				</node>
-				<node object_id="91" name="Multiply" position="851,0" />
-				<node object_id="95" name="Color To Vec4" position="685,32" />
-				<node object_id="105" name="Add" position="436,47">
+				<node object_id="97" name="Multiply" position="756,0" />
+				<node object_id="101" name="Color To Vec4" position="628,32" />
+				<node object_id="104" name="Add" position="436,47">
 					<inputs>
 						<input name="B" value="0.6" />
 					</inputs>
 				</node>
-				<node object_id="109" name="Multiply" position="100,112">
+				<node object_id="108" name="Multiply" position="100,112">
 					<inputs>
 						<input name="B" value="0.98" />
 					</inputs>
 				</node>
-				<node object_id="113" name="Add" position="203,112">
+				<node object_id="112" name="Add" position="203,112">
 					<inputs>
 						<input type="D@glm::vec2" name="B" value="67.9,178.7" />
 					</inputs>
 				</node>
-				<node object_id="45" name="Output" position="1045,123" />
-				<node object_id="117" name="Perlin" position="305,144" />
-				<node object_id="120" name="Multiply" position="372,159">
+				<node object_id="44" name="Output" position="1045,123" />
+				<node object_id="116" name="Perlin" position="305,144" />
+				<node object_id="119" name="Multiply" position="372,159">
 					<inputs>
 						<input name="B" value="0.5" />
 					</inputs>
 				</node>
-				<node object_id="124" name="Add" position="452,160">
-					<inputs>
-						<input name="B" value="0.5" />
-					</inputs>
-				</node>
-				<node object_id="128" name="Scalar" position="871,175">
+				<node object_id="123" name="Scalar" position="948,159">
 					<inputs>
 						<input name="V" value="0" />
 					</inputs>
 				</node>
-				<node object_id="131" name="Scalar" position="860,255">
+				<node object_id="126" name="Add" position="452,160">
+					<inputs>
+						<input name="B" value="0.5" />
+					</inputs>
+				</node>
+				<node object_id="130" name="Scalar" position="937,239">
 					<inputs>
 						<input name="V" value="0.9" />
 					</inputs>
 				</node>
-				<node object_id="134" name="Vec3" position="858,335">
+				<node object_id="192" name="Vec3" position="620,282">
+					<inputs>
+						<input name="Y" value="2" />
+					</inputs>
+				</node>
+				<node object_id="174" name="Multiply" position="194,299">
+					<inputs>
+						<input name="B" value="1.21" />
+					</inputs>
+				</node>
+				<node object_id="170" name="Add" position="283,303">
+					<inputs>
+						<input type="D@glm::vec2" name="B" value="99.7,21.95" />
+					</inputs>
+				</node>
+				<node object_id="180" name="Perlin Gradient" position="378,304">
+					<inputs>
+						<input name="Step" value="1.79" />
+					</inputs>
+				</node>
+				<node object_id="185" name="Decompose" position="515,304" />
+				<node object_id="199" name="Normalize" position="692,307" />
+				<node object_id="133" name="Vec3" position="935,319">
 					<inputs>
 						<input name="X" value="0" />
 						<input name="Y" value="0" />
 						<input name="Z" value="0" />
 					</inputs>
 				</node>
-				<node object_id="139" name="Scalar" position="855,495">
+				<node object_id="138" name="Scalar" position="932,480">
 					<inputs>
 						<input name="V" value="1" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="142" from_node="128" from_slot="V" to_node="45" to_slot="o_metallic" />
-				<link object_id="143" from_node="131" from_slot="V" to_node="45" to_slot="o_roughness" />
-				<link object_id="144" from_node="134" from_slot="V" to_node="45" to_slot="o_emissive" />
-				<link object_id="145" from_node="139" from_slot="V" to_node="45" to_slot="o_ao" />
-				<link object_id="146" from_node="19" from_slot="i_coordw" to_node="71" to_slot="V" />
-				<link object_id="147" from_node="19" from_slot="i_color" to_node="91" to_slot="A" />
-				<link object_id="148" from_node="19" from_slot="i_normal" to_node="45" to_slot="o_normal" />
-				<link object_id="149" from_node="71" from_slot="X" to_node="67" to_slot="X" />
-				<link object_id="150" from_node="71" from_slot="Z" to_node="67" to_slot="Y" />
-				<link object_id="151" from_node="67" from_slot="V" to_node="55" to_slot="A" />
-				<link object_id="152" from_node="67" from_slot="V" to_node="81" to_slot="A" />
-				<link object_id="153" from_node="67" from_slot="V" to_node="109" to_slot="A" />
-				<link object_id="154" from_node="55" from_slot="V" to_node="52" to_slot="UV" />
-				<link object_id="155" from_node="81" from_slot="V" to_node="77" to_slot="A" />
-				<link object_id="156" from_node="109" from_slot="V" to_node="113" to_slot="A" />
-				<link object_id="157" from_node="113" from_slot="V" to_node="117" to_slot="UV" />
-				<link object_id="158" from_node="52" from_slot="V" to_node="59" to_slot="A" />
-				<link object_id="159" from_node="77" from_slot="V" to_node="98" to_slot="UV" />
-				<link object_id="160" from_node="59" from_slot="V" to_node="63" to_slot="A" />
-				<link object_id="161" from_node="117" from_slot="V" to_node="120" to_slot="A" />
-				<link object_id="162" from_node="98" from_slot="V" to_node="101" to_slot="A" />
-				<link object_id="163" from_node="120" from_slot="V" to_node="124" to_slot="A" />
-				<link object_id="164" from_node="63" from_slot="V" to_node="85" to_slot="H" />
-				<link object_id="165" from_node="101" from_slot="V" to_node="105" to_slot="A" />
-				<link object_id="166" from_node="124" from_slot="V" to_node="85" to_slot="V" />
-				<link object_id="167" from_node="105" from_slot="V" to_node="85" to_slot="S" />
-				<link object_id="168" from_node="85" from_slot="RGB" to_node="95" to_slot="V" />
-				<link object_id="169" from_node="95" from_slot="V" to_node="91" to_slot="B" />
-				<link object_id="170" from_node="91" from_slot="V" to_node="45" to_slot="o_color" />
+				<link object_id="141" from_node="123" from_slot="V" to_node="44" to_slot="o_metallic" />
+				<link object_id="142" from_node="130" from_slot="V" to_node="44" to_slot="o_roughness" />
+				<link object_id="143" from_node="133" from_slot="V" to_node="44" to_slot="o_emissive" />
+				<link object_id="144" from_node="138" from_slot="V" to_node="44" to_slot="o_ao" />
+				<link object_id="145" from_node="18" from_slot="i_coordw" to_node="70" to_slot="V" />
+				<link object_id="146" from_node="18" from_slot="i_color" to_node="97" to_slot="A" />
+				<link object_id="148" from_node="70" from_slot="X" to_node="66" to_slot="X" />
+				<link object_id="149" from_node="70" from_slot="Z" to_node="66" to_slot="Y" />
+				<link object_id="150" from_node="66" from_slot="V" to_node="59" to_slot="A" />
+				<link object_id="151" from_node="66" from_slot="V" to_node="80" to_slot="A" />
+				<link object_id="152" from_node="66" from_slot="V" to_node="108" to_slot="A" />
+				<link object_id="178" from_node="66" from_slot="V" to_node="174" to_slot="A" />
+				<link object_id="153" from_node="59" from_slot="V" to_node="63" to_slot="UV" />
+				<link object_id="154" from_node="80" from_slot="V" to_node="76" to_slot="A" />
+				<link object_id="155" from_node="108" from_slot="V" to_node="112" to_slot="A" />
+				<link object_id="179" from_node="174" from_slot="V" to_node="170" to_slot="A" />
+				<link object_id="156" from_node="112" from_slot="V" to_node="116" to_slot="UV" />
+				<link object_id="157" from_node="63" from_slot="V" to_node="55" to_slot="A" />
+				<link object_id="158" from_node="76" from_slot="V" to_node="88" to_slot="UV" />
+				<link object_id="184" from_node="170" from_slot="V" to_node="180" to_slot="UV" />
+				<link object_id="159" from_node="55" from_slot="V" to_node="51" to_slot="A" />
+				<link object_id="160" from_node="116" from_slot="V" to_node="119" to_slot="A" />
+				<link object_id="161" from_node="88" from_slot="V" to_node="84" to_slot="A" />
+				<link object_id="191" from_node="180" from_slot="V" to_node="185" to_slot="V" />
+				<link object_id="162" from_node="119" from_slot="V" to_node="126" to_slot="A" />
+				<link object_id="163" from_node="51" from_slot="V" to_node="91" to_slot="H" />
+				<link object_id="164" from_node="84" from_slot="V" to_node="104" to_slot="A" />
+				<link object_id="197" from_node="185" from_slot="X" to_node="192" to_slot="X" />
+				<link object_id="198" from_node="185" from_slot="Y" to_node="192" to_slot="Z" />
+				<link object_id="166" from_node="104" from_slot="V" to_node="91" to_slot="S" />
+				<link object_id="165" from_node="126" from_slot="V" to_node="91" to_slot="V" />
+				<link object_id="202" from_node="192" from_slot="V" to_node="199" to_slot="V" />
+				<link object_id="167" from_node="91" from_slot="RGB" to_node="101" to_slot="V" />
+				<link object_id="203" from_node="199" from_slot="V" to_node="44" to_slot="o_normal" />
+				<link object_id="168" from_node="101" from_slot="V" to_node="97" to_slot="B" />
+				<link object_id="169" from_node="97" from_slot="V" to_node="44" to_slot="o_color" />
 			</links>
 		</group>
 	</groups>

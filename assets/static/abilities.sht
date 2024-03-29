@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<sheet name="abilities">
+	<columns>
+		<column type="D@std::wstring" name="name" width="116" />
+		<column type="U@flame::StrAndHash" name="icon_name" width="80" />
+		<column type="D@std::filesystem::path" name="class" width="357" />
+	</columns>
+	<rows>
+		<row name="Gold Production" icon_name="coins,842332877" class="assets\abilities\resource_production.bp" />
+		<row name="Spawn Units" icon_name="creatures,3552769105" class="assets\abilities\spawn_units.bp" />
+		<row name="Technology" icon_name=",0" class="assets\abilities\technology.bp" />
+		<row name="Attack" icon_name=",0" class="assets\abilities\attack.bp" />
+		<row name="Building Attack" icon_name=",0" class="assets\abilities\building_attack.bp" />
+		<row name="Lifesteal" icon_name=",0" class="assets\abilities\lifesteal.bp" />
+		<row name="Bloodpamine" icon_name=",0" class="assets\abilities\bloodpamine.bp" />
+		<row name="Bloodpamine Research" icon_name=",0" class="assets\abilities\bloodpamine_research.bp" />
+		<row name="Bloodpamine Technogy" icon_name=",0" class="assets\abilities\bloodpamine_technogy.bp" />
+	</rows>
+</sheet>

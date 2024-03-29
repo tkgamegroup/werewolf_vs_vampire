@@ -2,31 +2,36 @@ animation:
 <?xml version="1.0"?>
 <animation duration="0.75">
 	<channels>
+		<channel node_name="Cube">
+			<position_keys data_offset="0" data_size="0" />
+			<rotation_keys data_offset="0" data_size="0" />
+			<scaling_keys data_offset="0" data_size="48" />
+		</channel>
 		<channel node_name="Spine">
-			<position_keys data_offset="0" data_size="304" />
-			<rotation_keys data_offset="304" data_size="380" />
-			<scaling_keys data_offset="684" data_size="0" />
+			<position_keys data_offset="48" data_size="304" />
+			<rotation_keys data_offset="352" data_size="380" />
+			<scaling_keys data_offset="732" data_size="0" />
 		</channel>
 		<channel node_name="Wing.R">
-			<position_keys data_offset="684" data_size="0" />
-			<rotation_keys data_offset="684" data_size="380" />
-			<scaling_keys data_offset="1064" data_size="0" />
+			<position_keys data_offset="732" data_size="0" />
+			<rotation_keys data_offset="732" data_size="380" />
+			<scaling_keys data_offset="1112" data_size="0" />
 		</channel>
 		<channel node_name="Wing.L">
-			<position_keys data_offset="1064" data_size="0" />
-			<rotation_keys data_offset="1064" data_size="380" />
-			<scaling_keys data_offset="1444" data_size="0" />
+			<position_keys data_offset="1112" data_size="0" />
+			<rotation_keys data_offset="1112" data_size="380" />
+			<scaling_keys data_offset="1492" data_size="0" />
 		</channel>
 	</channels>
 </animation>
 
 data:
-AAAAAAAAAAAAAAAAAAAAAKuqKj0AAACXAAAAANG4W7yrqqo9AAAAmAAAABhSFU-9AAAAPgAAgJgAAAAAwnnZvauqKj4AAACZAAAAAO80Mb5WVVU-AACAmQAAAAD8lX6-AACAPgAAgJkAAIAZFOGmvlVVlT4AAICZAAAAAKOWy76qqqo-AAAAAAAAAJqjcuy-__-_PgAAAACyvuC8d8ICv1RV1T4AAACa0zC2vYvoC7-pquo-AAAAmjXtGr4DWRG_
-_v__PgAAAAC7hje-bxwTv6qqCj8AAACaWEkhvukPEr9VVRU_AAAAAFSP2r39Vwq_AAAgPwAAAADSbVu9GGzqvquqKj8AAICZmsWlvNRtlL5WVTU_AACAmLbBg7tTD8G9AABAPwAAAAAAAAAAAAAAAAAAAADqRnc_8IOEPgAAAAAAAAAAq6oqPft0dj_MfYo-z_QEDs_0BA-rqqo9rRJ0P391mj5EQQYOREEGDwAAAD4rM3A_fRaxPgAAAAAAAAAA
-q6oqPnU0az-YIso-qPlQDqj50A5WVVU-aGllPxs24z6YQFYOmEDWDgAAgD7D1V8_ZXf4PgAAAAAAAAAAVVWVPtO7Wz_hWQM_4VmDDmCw3w6qqqo-bgtaP-AiBj_6foMO9mvhDv__vz4NCFo_XygGP05Klg51b-EOVFXVPg0IWj9fKAY_TkqWDnVv4Q6pquo-DQhaP18oBj9OSpYOdW_hDv7__z4NCFo_XygGP05Klg51b-EOqqoKP5NAZj_myN8-
-5shfDpNA5g5VVRU_YE93P7hEhD5mfwQO8t7nDgAAID9Uxnw_uQgiPhuiAQ4bogEPq6oqPw2gez_lfzw-5X-8DbY5Ag9WVTU_nvp4P-Usbj4AAAAAAAAAAAAAQD_qRnc_8IOEPgAAAAAAAAAAAAAAAFogAz-CFwW_Rqf1vt9V-b6rqio94uAEP7RXA7-R7_i-9A72vquqqj2ihQk_2_H8vkjRAL867-y-AAAAPmv5Dz-jJu6-hdwGv7kT376rqio-
--PUWP8kq3L7fZw2_RjvOvlZVVT6B2x0_x-LHvqfdE7_kO7u-AACAPvfJIz80ybO-AGwZvwNoqL5VVZU-OzEoP5y2or7qix2_DmqYvqqqqj4_Dys_Q0iWvng7IL8ixYy-__-_PrENLD9PrJG-zikhv99ziL5UVdU-FT0oP5SFor4Dlx2_IzyYvqmq6j5Ypxw_g6PLvv-8Er_Uv76-_v__Pu05Cj-PZ_u-K3oBv-V9676qqgo_-yTnviLNEj-dg9g-
-bYIJP1VVFT8ftb--lV8gP8SSsz71OBY_AAAgP6bkrr6nGyU_wNKjPk-oGj-rqio_6uTGvpcrHj8eTro-qSgUP1ZVNT_qIfG-bLoOP7ne4T60sQU_AABAP1ogAz-CFwW_Rqf1vt9V-b4AAAAAYSADP30XBb9Rp_U-0lX5PquqKj3p4AQ_sFcDv5Xv-D7pDvY-q6qqPaWFCT_Y8fy-SdEAPzbv7D4AAAA-afkPP60m7r5_3AY_whPfPquqKj719RY_
-1ircvthnDT9QO84-VlVVPojbHT-44se-qt0TP9U7uz4AAIA-9skjPz7Js778axk_C2ioPlVVlT46MSg_p7aivueLHT8Yapg-qqqqPkEPKz89SJa-dzsgPx3FjD7__78-rw0sP1yskb7KKSE_63OIPlRV1T4VPSg_moWivgGXHT8nPJg-qarqPlGnHD-fo8u-9bwSP-2_vj7-__8-7jkKP5Fn-74pegE_5X3rPqqqCj_tJOe-Kc0SP4qD2L5yggm_
-VVUVPyK1v76WXyA_xJKzvvQ4Fr8AACA_seSuvqYbJT_G0qO-S6gav6uqKj_v5Ma-lysePx1Our6oKBS_VlU1P-sh8b5tug4_st7hvrSxBb8AAEA_YSADP30XBb9Rp_U-0lX5Pg==
+AAAAAJyZmT6cmZk-nJmZPlZVNT-cmZk-nJmZPpyZmT4AAEA_nJmZPpyZmT6cmZk-AAAAAAAAoCcAAAAAAACAgquqKj0AAKAnAACAFbDraLqrqqo9AACgJwAAAAAPDeu7AAAAPgAAoCcAAAAA8LjHvKuqKj4AAKAnAAAAALiEar1WVVU-AACgJwAAABn8Qea9AACAPgAAoCcAAAAA8LhHvlVVlT4AAKAnAACAme-inb6qqqo-AACgJwAAAJo6Fey-
+__-_PgAAoCcZe_e903dCv1RV1T4AAKAnK5_IvsQxmr-pquo-AACgJ3mZKr_5FM6__v__PgAAoCeqF0q_Vk7kv6qqCj8AAKAn6V0rv3Akx79VVRU_AACgJ4Wlz75jPoS_AAAgPwAAoCcoFSu--In9vquqKj8AAKAnPHhSvU-OMb5WVTU_AACgJ50e1rvoK_e8AABAPwAAoCcAAAAAAACAggAAAADqRnc_8IOEPgAAAAAAAAAAq6oqPft0dj_MfYo-
+z_QEjgRL-Y6rqqo9rRJ0P391mj4AAAAAAAAAAAAAAD4rM3A_fRaxPgAAAAAAAAAAq6oqPnU0az-YIso-qPlQju_N845WVVU-aGllPxs24z5naeUZIjZjmQAAgD7D1V8_ZXf4PgAAAAAAAAAAVVWVPtO7Wz_hWQM_AAAAAAAAAACqqqo-bgtaP-AiBj8AAAAAAAAAAP__vz4NCFo_XygGPwAAAAAAAAAAVFXVPg0IWj9fKAY_AAAAAAAAAACpquo-
+DQhaP18oBj8AAAAAAAAAAP7__z4NCFo_XygGPwAAAAAAAAAAqqoKP5NAZj_myN8-AAAAAAAAAABVVRU_YE93P7hEhD4AAAAAAAAAAAAAID9Uxnw_uQgiPgAAAAAAAAAAq6oqPw2gez_lfzw-5X-8jTUs9I5WVTU_nvp4P-Usbj4AAAAAAAAAAAAAQD_qRnc_8IOEPgAAAAAAAAAAAAAAAFkgAz-CFwW_SKf1vuFV-b6rqio9mggGP98pAr-TGfu-
+gNnzvquqqj3pmQ0_l8bzvnijBL-LWOS-AAAAPva3Fz_ZEtq-lB0Ov0NFzL6rqio-rP4hP64sur7IvRe_-WOuvlZVVT7tMCs_iK6VvgVbIL8kNYy-AACAPskKMj-Vk2K-38Umvzc8VL5VVZU-qTw2P4HKJL7Esyq_Slwavqqqqj5UaTg_ZP_vvTS9LL-MzuC9__-_PmoJOT-a6c69KVMtv9vQwb1UVdU-atY2P0HHGb7LQyu_fQsQvqmq6j6yXS0_
+Pk-LvoxkIr_ufYK-_v__PrCcGT-TtNS-n-MPv_09x76qqgo_7836vqB_Cj8A7uo-dLsBP1VVFT-aA8a-M3IePxF7uT7QahQ_AAAgP6Dkrr6oGyU_u9KjPlGoGj-rqio_6uTGvpcrHj8eTro-qSgUP1ZVNT_sIfG-a7oOP7ve4T61sQU_AABAP1kgAz-CFwW_SKf1vuFV-b4AAAAAYCADP3wXBb9Tp_U-1FX5PquqKj2XCAY_4ikCv4cZ-z6J2fM-
+q6qqPeSZDT-jxvO-cqMEP5hY5D4AAAA-87cXP-ES2r6SHQ4_SkXMPquqKj6v_iE_oyy6vsy9Fz_uY64-VlVVPuwwKz-NrpW-BVsgPyc1jD4AAIA-zQoyP2mTYr7hxSY_BzxUPlVVlT6qPDY_YMokvsezKj8jXBo-qqqqPlZpOD_y_u-9Nr0sPxDO4D3__78-bQk5Pwnpzr0rUy0_P9DBPVRV1T5t1jY_DccZvs5DKz9BCxA-qarqPrddLT8kT4u-
+kmQiP9N9gj7-__8-vJwZP3G01L6s4w8_2T3HPqqqCj8Dzvq-l38KPxXu6r5quwG_VVUVP5gDxr40ch4_Dnu5vs9qFL8AACA_ruSuvqQbJT_H0qO-Tqgav6uqKj_r5Ma-lisePx9Our6pKBS_VlU1P-wh8b5rug4_t97hvraxBb8AAEA_YCADP3wXBb9Tp_U-1FX5Pg==
 
