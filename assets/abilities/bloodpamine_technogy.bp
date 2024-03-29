@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<blueprint>
+<blueprint super="assets\abilities\ability.bp">
 	<groups>
 		<group object_id="1" name="on_unit_spawned">
 			<inputs>

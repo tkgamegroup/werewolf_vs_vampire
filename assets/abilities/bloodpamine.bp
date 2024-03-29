@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
-<blueprint>
-	<variables>
-		<variable name="self" type="PU@flame::Entity" />
-	</variables>
+<blueprint super="assets\abilities\ability.bp">
 	<groups>
 		<group object_id="1" name="on_get_heal">
 			<inputs>
@@ -35,7 +32,7 @@
 			<links>
 				<link object_id="26" from_node="23" from_slot="V" to_node="9" to_slot="B" />
 				<link object_id="27" from_node="6" from_slot="type" to_node="9" to_slot="A" />
-				<link object_id="29" from_node="19" from_slot="V" to_node="13" to_slot="target" />
+				<link object_id="28" from_node="19" from_slot="V" to_node="13" to_slot="target" />
 			</links>
 		</group>
 	</groups>

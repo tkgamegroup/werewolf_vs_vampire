@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
-<blueprint>
-	<dependencies>
-		<dependency v="G:\werewolf_vs_vampire\assets\static\game.bp" />
-	</dependencies>
+<blueprint super="assets\abilities\ability.bp">
 	<variables>
-		<variable name="self" flags="None" type="PU@flame::Entity" />
-		<variable name="ability" flags="None" type="PU@flame::Entity" />
 		<variable name="uint_id" flags="None" type="D@int" value="-1" />
 		<variable name="uint_name" flags="None" type="D@std::wstring" value="" />
 		<variable name="number" flags="None" type="D@uint" value="0" />
@@ -431,31 +426,31 @@
 						<input name="Immediately" value="true" />
 					</inputs>
 				</node>
-				<node object_id="432" parent_id="373" name="Subtract" position="441,800">
+				<node object_id="429" parent_id="373" name="Subtract" position="441,800">
 					<inputs>
 						<input type="D@glm::vec2" name="B" value="0,30" />
 					</inputs>
 				</node>
-				<node object_id="477" parent_id="373" name="Hud Rect LT" position="340,816" />
-				<node object_id="436" parent_id="351" name="Hud Item Hovered" position="484,720" />
-				<node object_id="438" name="Subtract" position="356,176">
+				<node object_id="433" parent_id="373" name="Hud Rect LT" position="340,816" />
+				<node object_id="435" parent_id="351" name="Hud Item Hovered" position="484,720" />
+				<node object_id="437" name="Subtract" position="356,176">
 					<inputs>
 						<input name="B" value="120" />
 					</inputs>
 				</node>
-				<node object_id="442" name="Variable" position="0,200">
+				<node object_id="441" name="Variable" position="0,200">
 					<inputs>
 						<input name="Name" value="2031974080" />
 						<input name="Location" value="70329639" />
 					</inputs>
 				</node>
-				<node object_id="446" name="Variable" position="0,300">
+				<node object_id="445" name="Variable" position="0,300">
 					<inputs>
 						<input name="Name" value="1154571927" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="450" name="Variable" position="0,400">
+				<node object_id="449" name="Variable" position="0,400">
 					<inputs>
 						<input name="Name" value="2111981841" />
 						<input name="Location" value="0" />
@@ -463,29 +458,29 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="454" from_node="341" from_slot="V" to_node="362" to_slot="A" />
-				<link object_id="455" from_node="345" from_slot="V" to_node="366" to_slot="Arg1" />
-				<link object_id="456" from_node="436" from_slot="V" to_node="373" to_slot="Cond" />
-				<link object_id="457" from_node="341" from_slot="V" to_node="382" to_slot="Text" />
-				<link object_id="458" from_node="442" from_slot="V" to_node="386" to_slot="Sheet" />
-				<link object_id="459" from_node="446" from_slot="V" to_node="386" to_slot="Row" />
-				<link object_id="460" from_node="450" from_slot="V" to_node="390" to_slot="Parent" />
-				<link object_id="461" from_node="442" from_slot="V" to_node="406" to_slot="sheet" />
-				<link object_id="462" from_node="446" from_slot="V" to_node="406" to_slot="row" />
-				<link object_id="463" from_node="423" from_slot="V" to_node="420" to_slot="Entity" />
-				<link object_id="464" from_node="349" from_slot="V" to_node="438" to_slot="A" />
-				<link object_id="479" from_node="477" from_slot="V" to_node="432" to_slot="A" />
-				<link object_id="466" from_node="390" from_slot="BPI" to_node="386" to_slot="Instance" />
-				<link object_id="467" from_node="390" from_slot="Entity" to_node="395" to_slot="Entity" />
-				<link object_id="468" from_node="366" from_slot="V" to_node="362" to_slot="B" />
-				<link object_id="469" from_node="390" from_slot="Entity" to_node="426" to_slot="Entity" />
-				<link object_id="470" from_node="390" from_slot="Entity" to_node="406" to_slot="target" />
-				<link object_id="471" from_node="390" from_slot="Entity" to_node="412" to_slot="Entity" />
-				<link object_id="472" from_node="432" from_slot="V" to_node="375" to_slot="Pos" />
-				<link object_id="473" from_node="395" from_slot="V" to_node="399" to_slot="In" />
-				<link object_id="474" from_node="362" from_slot="V" to_node="358" to_slot="Text" />
-				<link object_id="475" from_node="412" from_slot="V0" to_node="417" to_slot="Parent" />
-				<link object_id="476" from_node="399" from_slot="V" to_node="402" to_slot="Text" />
+				<link object_id="453" from_node="341" from_slot="V" to_node="362" to_slot="A" />
+				<link object_id="454" from_node="345" from_slot="V" to_node="366" to_slot="Arg1" />
+				<link object_id="455" from_node="435" from_slot="V" to_node="373" to_slot="Cond" />
+				<link object_id="456" from_node="341" from_slot="V" to_node="382" to_slot="Text" />
+				<link object_id="457" from_node="441" from_slot="V" to_node="386" to_slot="Sheet" />
+				<link object_id="458" from_node="445" from_slot="V" to_node="386" to_slot="Row" />
+				<link object_id="459" from_node="449" from_slot="V" to_node="390" to_slot="Parent" />
+				<link object_id="460" from_node="441" from_slot="V" to_node="406" to_slot="sheet" />
+				<link object_id="461" from_node="445" from_slot="V" to_node="406" to_slot="row" />
+				<link object_id="462" from_node="423" from_slot="V" to_node="420" to_slot="Entity" />
+				<link object_id="463" from_node="349" from_slot="V" to_node="437" to_slot="A" />
+				<link object_id="464" from_node="433" from_slot="V" to_node="429" to_slot="A" />
+				<link object_id="465" from_node="390" from_slot="BPI" to_node="386" to_slot="Instance" />
+				<link object_id="466" from_node="390" from_slot="Entity" to_node="395" to_slot="Entity" />
+				<link object_id="467" from_node="366" from_slot="V" to_node="362" to_slot="B" />
+				<link object_id="468" from_node="390" from_slot="Entity" to_node="426" to_slot="Entity" />
+				<link object_id="469" from_node="390" from_slot="Entity" to_node="406" to_slot="target" />
+				<link object_id="470" from_node="390" from_slot="Entity" to_node="412" to_slot="Entity" />
+				<link object_id="471" from_node="429" from_slot="V" to_node="375" to_slot="Pos" />
+				<link object_id="472" from_node="395" from_slot="V" to_node="399" to_slot="In" />
+				<link object_id="473" from_node="362" from_slot="V" to_node="358" to_slot="Text" />
+				<link object_id="474" from_node="412" from_slot="V0" to_node="417" to_slot="Parent" />
+				<link object_id="475" from_node="399" from_slot="V" to_node="402" to_slot="Text" />
 			</links>
 		</group>
 	</groups>

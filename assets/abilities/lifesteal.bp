@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<blueprint>
+<blueprint super="assets\abilities\ability.bp">
 	<variables>
-		<variable name="self" type="PU@flame::Entity" />
-		<variable name="percentage" type="D@uint" value="0" />
+		<variable name="percentage" flags="None" type="D@uint" value="0" />
 	</variables>
 	<groups>
 		<group object_id="1" name="on_attacked">
@@ -23,33 +22,33 @@
 						<input name="Name_hash" value="get_heal" />
 					</inputs>
 				</node>
-				<node object_id="17" name="Multiply" position="212,15" />
-				<node object_id="21" name="To Uint" position="285,16" />
-				<node object_id="24" name="Float Divide" position="62,88">
+				<node object_id="18" name="Multiply" position="212,15" />
+				<node object_id="22" name="To Uint" position="285,16" />
+				<node object_id="25" name="Float Divide" position="62,88">
 					<inputs>
 						<input name="B" value="100" />
 					</inputs>
 				</node>
-				<node object_id="28" name="Variable" position="0,100">
+				<node object_id="29" name="Variable" position="0,100">
 					<inputs>
 						<input name="Name" value="3557266103" />
 						<input name="Location" value="0" />
 					</inputs>
 				</node>
-				<node object_id="39" name="String Hash" position="260,112">
+				<node object_id="33" name="String Hash" position="260,112">
 					<inputs>
 						<input name="V_hash" value="lifesteal" />
 					</inputs>
 				</node>
 			</nodes>
 			<links>
-				<link object_id="32" from_node="6" from_slot="damage" to_node="17" to_slot="A" />
-				<link object_id="33" from_node="9" from_slot="V" to_node="24" to_slot="A" />
-				<link object_id="34" from_node="28" from_slot="V" to_node="13" to_slot="Entity" />
-				<link object_id="42" from_node="39" from_slot="V" to_node="13" to_slot="Input 2" />
-				<link object_id="35" from_node="24" from_slot="V" to_node="17" to_slot="B" />
-				<link object_id="36" from_node="17" from_slot="V" to_node="21" to_slot="V" />
-				<link object_id="37" from_node="21" from_slot="V" to_node="13" to_slot="Input 1" />
+				<link object_id="36" from_node="6" from_slot="damage" to_node="18" to_slot="A" />
+				<link object_id="37" from_node="9" from_slot="V" to_node="25" to_slot="A" />
+				<link object_id="38" from_node="29" from_slot="V" to_node="13" to_slot="Entity" />
+				<link object_id="39" from_node="33" from_slot="V" to_node="13" to_slot="Input 2" />
+				<link object_id="40" from_node="25" from_slot="V" to_node="18" to_slot="B" />
+				<link object_id="41" from_node="18" from_slot="V" to_node="22" to_slot="V" />
+				<link object_id="42" from_node="22" from_slot="V" to_node="13" to_slot="Input 1" />
 			</links>
 		</group>
 	</groups>

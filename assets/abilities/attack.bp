@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <blueprint super="assets\abilities\ability.bp">
 	<variables>
-		<variable name="self" flags="None" type="PU@flame::Entity" />
-		<variable name="ability" flags="None" type="PU@flame::Entity" />
 		<variable name="range" flags="None" type="D@float" value="0" />
 		<variable name="damage" flags="None" type="D@uint" value="0" />
 		<variable name="interval" flags="None" type="D@float" value="0" />

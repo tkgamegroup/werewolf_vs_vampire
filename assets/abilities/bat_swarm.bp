@@ -1,33 +1,21 @@
 <?xml version="1.0"?>
-<blueprint>
-	<dependencies>
-		<dependency v="G:\werewolf_vs_vampire\assets\static\game.bp" />
-	</dependencies>
+<blueprint super="assets\abilities\ability.bp">
 	<variables>
-		<variable name="self" type="PU@flame::Entity" />
-		<variable name="ability" type="PU@flame::Entity" />
-		<variable name="range" type="D@float" value="0" />
-		<variable name="damage" type="D@uint" value="0" />
-		<variable name="interval" type="D@float" value="0" />
-		<variable name="projectile_prefab" type="D@std::filesystem::path" value="" />
-		<variable name="projectile_scale" type="D@float" value="1" />
-		<variable name="projectile_speed" type="D@float" value="0" />
-		<variable name="projectile_force" type="D@float" value="0" />
-		<variable name="hostile_faction" type="D@uint" value="0" />
+		<variable name="range" flags="None" type="D@float" value="0" />
+		<variable name="damage" flags="None" type="D@uint" value="0" />
+		<variable name="interval" flags="None" type="D@float" value="0" />
+		<variable name="projectile_prefab" flags="None" type="D@std::filesystem::path" value="" />
+		<variable name="projectile_scale" flags="None" type="D@float" value="1" />
+		<variable name="projectile_speed" flags="None" type="D@float" value="0" />
+		<variable name="projectile_force" flags="None" type="D@float" value="0" />
+		<variable name="hostile_faction" flags="None" type="D@uint" value="0" />
 	</variables>
 	<groups>
 		<group object_id="1" name="update">
 			<nodes>
-				<node object_id="4" name="Timer" position="-36,176">
-					<inputs>
-						<input name="t" value="0" />
-					</inputs>
-				</node>
+				<node object_id="4" name="Timer" position="-36,176" />
 				<node object_id="7" parent_id="4" name="Find Random Entity#u" position="53,265">
 					<inputs>
-						<input name="Radius" value="5" />
-						<input name="All Filter" value="0" />
-						<input name="Parent Search Times" value="3" />
 						<input name="Name0_hash" value="faction" />
 						<input name="OP0_hash" value="any_flag" />
 					</inputs>
