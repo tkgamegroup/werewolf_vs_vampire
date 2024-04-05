@@ -40,19 +40,24 @@
 		</group>
 		<group object_id="30" name="on_show_ui">
 			<nodes>
-				<node object_id="33" name="Hud Vertical" position="350,-192" />
-				<node object_id="36" parent_id="33" name="Hud Text" position="333,-64">
+				<node object_id="33" name="Hud Vertical" position="350,-192" hide_defaults="true" />
+				<node object_id="37" parent_id="33" name="Hud Text" position="333,-128" hide_defaults="true">
 					<inputs>
-						<input name="Text" value="Resource Production" />
+						<input name="Text" value="- Income" />
+						<input name="Font Size" value="18" />
 					</inputs>
 				</node>
-				<node object_id="40" parent_id="33" name="Hud Text" position="413,103" />
-				<node object_id="44" parent_id="33" name="WFormat" position="285,106">
+				<node object_id="41" parent_id="33" name="Hud Text" position="413,-9">
 					<inputs>
-						<input name="Fmt" value="Gold: {}" />
+						<input name="Font Size" value="18" />
 					</inputs>
 				</node>
-				<node object_id="48" name="Variable" position="0,0">
+				<node object_id="45" parent_id="33" name="WFormat" position="285,-6">
+					<inputs>
+						<input name="Fmt" value="  +{}" />
+					</inputs>
+				</node>
+				<node object_id="49" name="Variable" position="0,0">
 					<inputs>
 						<input name="Name" value="245792979" />
 						<input name="Location" value="0" />
@@ -60,8 +65,8 @@
 				</node>
 			</nodes>
 			<links>
-				<link object_id="52" from_node="48" from_slot="V" to_node="44" to_slot="Arg1" />
-				<link object_id="53" from_node="44" from_slot="V" to_node="40" to_slot="Text" />
+				<link object_id="53" from_node="49" from_slot="V" to_node="45" to_slot="Arg1" />
+				<link object_id="54" from_node="45" from_slot="V" to_node="41" to_slot="Text" />
 			</links>
 		</group>
 	</groups>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<prefab file_id="4742fa265a51c9c4c3168eb9ea4ae69e" name="RootNode">
+<prefab file_id="40926d78ebefa77b25755446af89aeb3" name="RootNode">
 	<components>
 		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="43dfa1e98b5a80363e2ab7135cb490a0" name="Cube">
+		<item file_id="44c137d018cd805cb2a632e8cb62aebc" name="Cube">
 			<components>
 				<item type_name="flame::cNode" pos="0,3.725e-10,0" qut="0.683,-0.683,0.183,0.183" />
 				<item type_name="flame::cMesh" mesh_name="meshes\hexagon_Cube.002.fmesh" material_name="materials\grass_field.fmat" />

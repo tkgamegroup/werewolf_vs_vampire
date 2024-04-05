@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="43f04f2d481ef1e7285db37871aacc97" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="47b6780e69e14ddc76217e5eb4790f9b" name="hill">
+			<components>
+				<item type_name="flame::cNode" pos="-1.49e-08,0.125,2.235e-08" qut="0.9823,-0.1871,0,0" scl="0.09582,0.137,0.1033" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\evil_hill_Circle.001.fmesh" material_name="assets\buildings\materials\evil_hill_Material.001.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>

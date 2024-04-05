@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="46eb85e7253c8144aef7c553cccb1080" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="435507cda0d0d8c81eed4ca4797a04ba" name="Cylinder">
+			<components>
+				<item type_name="flame::cNode" pos="0.01373,0.125,-0.006893" qut="0.7071,-0.7071,0,0" scl="0.08624,0.08624,0.2181" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\barracks_Cylinder.001.fmesh" material_name="assets\buildings\materials\barracks_Material.001.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>

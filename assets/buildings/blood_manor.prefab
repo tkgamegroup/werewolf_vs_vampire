@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<prefab file_id="44475dd9e8b6489e0d9609f62c82e2a4" name="RootNode">
+	<components>
+		<item type_name="flame::cNode" />
+	</components>
+	<children>
+		<item file_id="458c6c413e38ee7040aa9ccd7d9ce3b0" name="manor">
+			<components>
+				<item type_name="flame::cNode" pos="9.481e-24,0.125,1.49e-08" qut="0.4458,-0.4458,0.5489,0.5489" scl="0.004238,0.004238,0.01429" />
+				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\blood_manor_Cylinder.001.fmesh" material_name="assets\buildings\materials\blood_manor_Material.001.fmat" />
+			</components>
+		</item>
+	</children>
+</prefab>
