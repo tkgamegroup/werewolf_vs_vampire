@@ -18,6 +18,7 @@
 				<item type_name="flame::cDirectionalLight" color="0.97,1,0.95,2.4" cast_shadow="true" />
 			</components>
 		</item>
+		<item file_id="4d09fa41d7e77129fea1702f107fe689" name="Players" />
 		<item file_id="4bac5acec6966ef81e576484531d228a" name="Root">
 			<components>
 				<item type_name="flame::cNode" />
