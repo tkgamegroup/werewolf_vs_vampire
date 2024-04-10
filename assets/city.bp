@@ -1,9 +1,305 @@
 <?xml version="1.0"?>
 <blueprint>
+	<variables>
+		<variable name="self" flags="None" type="PU@flame::Entity" />
+		<variable name="radius" flags="None" type="D@float" value="0.0000" />
+		<variable name="height" flags="None" type="D@float" value="0.0000" />
+		<variable name="lord" flags="None" type="PU@flame::Entity" />
+		<variable name="tile" flags="None" type="PU@flame::Entity" />
+		<variable name="territories" flags="None" type="VPU@flame::Entity" />
+		<variable name="available_constructions" flags="None" type="VD@uint" />
+		<variable name="domain_points" flags="None" type="VD@glm::vec3" />
+		<variable name="abilities" flags="None" type="PU@flame::Entity" />
+		<variable name="walls" flags="None" type="PU@flame::Entity" />
+	</variables>
 	<groups>
-		<group object_id="1" name="main">
-			<nodes />
-			<links />
+		<group object_id="1" name="update_territories">
+			<nodes>
+				<node object_id="4" name="Variable" position="0.0000,0.0000">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="70329639" />
+					</inputs>
+				</node>
+				<node object_id="8" name="Array Clear" position="562.0000,7.0000">
+					<inputs>
+						<input name="Name" value="763864581" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="11" name="Get Pos" position="435.0000,48.0000" />
+				<node object_id="14" name="Foreach Child" position="579.0000,64.0000" />
+				<node object_id="17" parent_id="14" name="Distance" position="797.0000,144.0000" />
+				<node object_id="21" parent_id="14" name="Loop Var#e" position="548.0000,153.0000" />
+				<node object_id="24" parent_id="14" name="Get Pos" position="659.0000,160.0000" />
+				<node object_id="27" parent_id="14" name="Multiply" position="548.0000,232.0000">
+					<inputs>
+						<input name="A" value="4.1000" />
+					</inputs>
+				</node>
+				<node object_id="31" parent_id="14" name="If#L" position="724.0000,234.0000" />
+				<node object_id="35" parent_id="31" name="Array Add Item" position="740.0000,321.0000">
+					<inputs>
+						<input name="Name" value="763864581" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="39" name="Variable" position="0.0000,100.0000">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="43" name="Variable" position="0.0000,200.0000">
+					<inputs>
+						<input name="Name" value="1008179795" />
+						<input name="Location" value="70329639" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="47" from_node="4" from_slot="V" to_node="14" to_slot="Parent" />
+				<link object_id="48" from_node="39" from_slot="V" to_node="11" to_slot="Entity" />
+				<link object_id="49" from_node="21" from_slot="V" to_node="24" to_slot="Entity" />
+				<link object_id="50" from_node="43" from_slot="V" to_node="27" to_slot="B" />
+				<link object_id="51" from_node="21" from_slot="V" to_node="35" to_slot="V" />
+				<link object_id="52" from_node="24" from_slot="Pos" to_node="17" to_slot="A" />
+				<link object_id="53" from_node="11" from_slot="Pos" to_node="17" to_slot="B" />
+				<link object_id="54" from_node="27" from_slot="V" to_node="31" to_slot="B" />
+				<link object_id="55" from_node="17" from_slot="V" to_node="31" to_slot="A" />
+			</links>
+		</group>
+		<group object_id="56" name="start">
+			<nodes>
+				<node object_id="59" name="Update Transform" position="467.0000,0.0000" />
+				<node object_id="61" name="Variable" position="0.0000,0.0000">
+					<inputs>
+						<input name="Name" value="3557266103" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="65" name="Variable" position="0.0000,100.0000">
+					<inputs>
+						<input name="Name" value="1008179795" />
+						<input name="Location" value="70329639" />
+					</inputs>
+				</node>
+				<node object_id="69" name="Call" position="451.0000,103.0000">
+					<inputs>
+						<input name="Name" value="2401314417" />
+					</inputs>
+				</node>
+				<node object_id="72" name="Create Node" position="578.0000,159.0000">
+					<inputs>
+						<input name="Name" value="walls" />
+					</inputs>
+				</node>
+				<node object_id="76" name="Get Parent" position="432.0000,160.0000" />
+				<node object_id="79" name="Set Variable" position="717.0000,160.0000">
+					<inputs>
+						<input name="Name" value="4146073426" />
+						<input name="Location" value="0" />
+					</inputs>
+				</node>
+				<node object_id="83" name="Spawn Prefab" position="698.0000,271.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="89" name="Add Nav Box Obstacle" position="1059.0000,288.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="92" name="Set Scl" position="947.0000,303.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+				<node object_id="95" name="Arc Point" position="569.0000,319.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="0.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="100" name="Spawn Prefab" position="698.0000,480.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="106" name="Set Eul" position="1069.0000,511.0000">
+					<inputs>
+						<input name="Eul" value="-60.0000,0.0000,0.0000" />
+					</inputs>
+				</node>
+				<node object_id="213" name="Add Nav Box Obstacle" position="1187.0000,511.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="109" name="Arc Point" position="569.0000,512.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="60.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="114" name="Set Scl" position="947.0000,527.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+				<node object_id="117" name="Spawn Prefab" position="697.0000,713.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="123" name="Arc Point" position="564.0000,736.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="120.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="128" name="Set Eul" position="1068.0000,744.0000">
+					<inputs>
+						<input name="Eul" value="-120.0000,0.0000,0.0000" />
+					</inputs>
+				</node>
+				<node object_id="131" name="Set Scl" position="946.0000,760.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+				<node object_id="218" name="Add Nav Box Obstacle" position="1187.0000,768.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="134" name="Spawn Prefab" position="702.0000,927.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="140" name="Set Eul" position="1073.0000,958.0000">
+					<inputs>
+						<input name="Eul" value="-180.0000,0.0000,0.0000" />
+					</inputs>
+				</node>
+				<node object_id="143" name="Arc Point" position="569.0000,959.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="180.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="148" name="Set Scl" position="951.0000,974.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+				<node object_id="223" name="Add Nav Box Obstacle" position="1187.0000,992.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="151" name="Spawn Prefab" position="704.0000,1146.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="157" name="Arc Point" position="569.0000,1176.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="240.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="162" name="Set Eul" position="1075.0000,1177.0000">
+					<inputs>
+						<input name="Eul" value="-240.0000,0.0000,0.0000" />
+					</inputs>
+				</node>
+				<node object_id="165" name="Set Scl" position="953.0000,1193.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+				<node object_id="228" name="Add Nav Box Obstacle" position="1187.0000,1200.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="168" name="Arc Point" position="570.0000,1356.0000" hide_defaults="true">
+					<inputs>
+						<input name="C" value="0.0000,0.0000,0.0000" />
+						<input name="A" value="300.0000" />
+						<input name="R" value="1.8000" />
+					</inputs>
+				</node>
+				<node object_id="173" name="Spawn Prefab" position="704.0000,1361.0000">
+					<inputs>
+						<input name="Path" value="assets\buildings\wall.prefab" />
+						<input name="Snap NavMesh" value="false" />
+					</inputs>
+				</node>
+				<node object_id="179" name="Set Eul" position="1075.0000,1392.0000">
+					<inputs>
+						<input name="Eul" value="-300.0000,0.0000,0.0000" />
+					</inputs>
+				</node>
+				<node object_id="233" name="Add Nav Box Obstacle" position="1187.0000,1407.0000">
+					<inputs>
+						<input name="Extent" value="0.2000,5.0000,3.0000" />
+					</inputs>
+				</node>
+				<node object_id="182" name="Set Scl" position="953.0000,1408.0000">
+					<inputs>
+						<input type="D@float" name="Scl" value="4.0000" />
+					</inputs>
+				</node>
+			</nodes>
+			<links>
+				<link object_id="185" from_node="61" from_slot="V" to_node="59" to_slot="Entity" />
+				<link object_id="186" from_node="61" from_slot="V" to_node="76" to_slot="Entity" />
+				<link object_id="187" from_node="95" from_slot="V" to_node="83" to_slot="Position" />
+				<link object_id="188" from_node="109" from_slot="V" to_node="100" to_slot="Position" />
+				<link object_id="189" from_node="123" from_slot="V" to_node="117" to_slot="Position" />
+				<link object_id="190" from_node="143" from_slot="V" to_node="134" to_slot="Position" />
+				<link object_id="191" from_node="157" from_slot="V" to_node="151" to_slot="Position" />
+				<link object_id="192" from_node="168" from_slot="V" to_node="173" to_slot="Position" />
+				<link object_id="193" from_node="76" from_slot="Parent" to_node="72" to_slot="Parent" />
+				<link object_id="194" from_node="72" from_slot="Entity" to_node="79" to_slot="V" />
+				<link object_id="195" from_node="72" from_slot="Entity" to_node="83" to_slot="Parent" />
+				<link object_id="196" from_node="72" from_slot="Entity" to_node="100" to_slot="Parent" />
+				<link object_id="197" from_node="72" from_slot="Entity" to_node="117" to_slot="Parent" />
+				<link object_id="198" from_node="72" from_slot="Entity" to_node="134" to_slot="Parent" />
+				<link object_id="199" from_node="72" from_slot="Entity" to_node="151" to_slot="Parent" />
+				<link object_id="200" from_node="72" from_slot="Entity" to_node="173" to_slot="Parent" />
+				<link object_id="201" from_node="83" from_slot="Entity" to_node="92" to_slot="Entity" />
+				<link object_id="202" from_node="100" from_slot="Entity" to_node="114" to_slot="Entity" />
+				<link object_id="203" from_node="100" from_slot="Entity" to_node="106" to_slot="Entity" />
+				<link object_id="204" from_node="117" from_slot="Entity" to_node="131" to_slot="Entity" />
+				<link object_id="205" from_node="117" from_slot="Entity" to_node="128" to_slot="Entity" />
+				<link object_id="206" from_node="134" from_slot="Entity" to_node="148" to_slot="Entity" />
+				<link object_id="207" from_node="134" from_slot="Entity" to_node="140" to_slot="Entity" />
+				<link object_id="208" from_node="151" from_slot="Entity" to_node="165" to_slot="Entity" />
+				<link object_id="209" from_node="151" from_slot="Entity" to_node="162" to_slot="Entity" />
+				<link object_id="210" from_node="173" from_slot="Entity" to_node="182" to_slot="Entity" />
+				<link object_id="211" from_node="173" from_slot="Entity" to_node="179" to_slot="Entity" />
+				<link object_id="212" from_node="83" from_slot="Entity" to_node="89" to_slot="Entity" />
+				<link object_id="217" from_node="100" from_slot="Entity" to_node="213" to_slot="Entity" />
+				<link object_id="222" from_node="117" from_slot="Entity" to_node="218" to_slot="Entity" />
+				<link object_id="227" from_node="134" from_slot="Entity" to_node="223" to_slot="Entity" />
+				<link object_id="232" from_node="151" from_slot="Entity" to_node="228" to_slot="Entity" />
+				<link object_id="237" from_node="173" from_slot="Entity" to_node="233" to_slot="Entity" />
+			</links>
 		</group>
 	</groups>
 </blueprint>

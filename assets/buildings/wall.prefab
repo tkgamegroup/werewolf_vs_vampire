@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<prefab file_id="4bf67dd9e7b0beba1696f0a1fa4e82aa" name="RootNode">
+<prefab file_id="4d0106f2916eaef5e561627a88b50e9a" name="RootNode">
 	<components>
 		<item type_name="flame::cNode" />
 	</components>
 	<children>
-		<item file_id="4fe965ad007e8085241359fd9cdb7d91" name="wall">
+		<item file_id="44fd142f25c29ed2e06b7e2394633587" name="wall">
 			<components>
-				<item type_name="flame::cNode" pos="-1.49e-08,0.125,-7.451e-09" qut="0.7071,-0.7071,0,0" scl="0.2508,0.01636,0.04865" />
+				<item type_name="flame::cNode" pos="-1.49e-08,0.125,-7.451e-09" qut="0.5,-0.5,0.5,0.5" scl="0.2508,0.01636,0.04865" />
 				<item type_name="flame::cMesh" mesh_name="assets\buildings\meshes\wall_Cube.001.fmesh" material_name="assets\buildings\materials\wall_Material.001.fmat" />
 			</components>
 		</item>
